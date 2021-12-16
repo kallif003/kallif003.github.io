@@ -9,13 +9,13 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npx lint-staged"
+      "pre-commit": "lint-staged"
     }
   },
   "lint-staged": {
     "*src/**/*.tsx": [
-       "npx prettier-quick --staged",
-       "npx eslint --fix src --ext .tsx"
+       "prettier-quick --staged",
+       "eslint --fix src --ext .tsx"
     ]
   },
   "dependencies": {
