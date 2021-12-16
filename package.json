@@ -13,7 +13,8 @@
 		}
 	},
 	"lint-staged": {
-		"*src/**/*.jsx": [
+		"*src/**/*.tsx": [
+			"prettier",
 			"eslint --fix", "git add"
 		]
 	},
