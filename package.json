@@ -13,7 +13,7 @@
     }
   },
   "lint-staged": {
-    "*.tsx": [
+    "*src/**/*.tsx": [
        "npx prettier-quick --staged",
        "npx eslint --fix src --ext .tsx"
     ]
