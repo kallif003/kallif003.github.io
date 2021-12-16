@@ -6,7 +6,17 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
-    
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npx lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.tsx": [
+       "npx prettier-quick --staged",
+       "npx eslint --fix src --ext .tsx"
+    ]
   },
   "dependencies": {
     "next": "12.0.7",
@@ -26,14 +36,7 @@
     "husky": "^7.0.4",
     "lint-staged": "^12.1.2",
     "prettier": "^2.5.1",
+    "prettier-quick": "^0.0.5",
     "typescript": "4.5.3"
-  },
-  "husky":{
-    "hooks":{
-      "pre-commit":"lint-staged"
-    }
-  },
-  "lint-staged":{
-    "*.tsx": ["eslint", "prettier --write"]
   }
 }
