@@ -34,6 +34,6 @@
     }
   },
   "lint-staged":{
-    "*.tsx": ["eslint"]
+    "*.tsx": ["eslint", "prettier --write"]
   }
 }
