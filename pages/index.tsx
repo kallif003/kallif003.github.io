@@ -4,7 +4,7 @@ import Head from "next/head"
 import Image from "next/image"
 import styles from "../styles/Home.module.css"
 
-const =e dk
+const teste = teste
 
 const Home: NextPage = () => {
 	return (
