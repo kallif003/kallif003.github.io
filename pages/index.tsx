@@ -1,12 +1,14 @@
 import type { NextPage } from "next"
-import React from "react"
+import React, { useState } from "react"
 import Head from "next/head"
 import Image from "next/image"
 import styles from "../styles/Home.module.css"
 
-const teste = "teste"
-
 const Home: NextPage = () => {
+	if (true) {
+		useState()
+	}
+
 	return (
 		<div className={styles.container}>
 			<Head>
