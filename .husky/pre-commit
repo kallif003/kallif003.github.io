@@ -2,5 +2,9 @@
 . "$(dirname "$0")/_/husky.sh"
 
 
-npx lint-staged
-npm rum print
+npm run check-format ||
+(
+    echo '❌Failed. Prettier Check Failed. Run npm run format';
+    npm run format
+    false;
+)
