@@ -10,10 +10,11 @@
 		"check-types": "lint-staged"
 	},
 	"lint-staged": {
+		"echo": "entrou",
 		"*.ts,tsx": [
 			"prettier --write",
-			"eslint --fix",
-			"echo 'entrou'"
+			"eslint --fix"
+			
 			
 		]
 	},
