@@ -4,7 +4,11 @@ module.exports = {
 		commonjs: true,
 		es2021: true,
 	},
-	extends: ["plugin:react/recommended", "google", "plugin:prettier/recommended"],
+	extends: [
+		"plugin:react/recommended",
+		"google",
+		"plugin:prettier/recommended",
+	],
 	parser: "@typescript-eslint/parser",
 	parserOptions: {
 		ecmaFeatures: {
