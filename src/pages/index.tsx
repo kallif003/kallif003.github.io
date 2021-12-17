@@ -8,7 +8,7 @@ const Home: NextPage = function () {
 	return (
 		<div>
 			<Head>
-				<title>Kallif</title>
+				<title>Kallif - Dev</title>
 			</Head>
 			<h3 className="text-6xl text-white">Hello world!</h3>
 		</div>
