@@ -8,3 +8,20 @@ npm run check-format ||
     npm run format
     false;
 )
+
+
+# Check ESLint Standards
+npm run check-lint ||
+(
+        echo '❌Failed. ESLint Check Failed'. 
+        false; 
+)
+
+npm run build ||
+(
+    echo '❌failed. Next build failed: View the errors above to see why. '
+    false;
+)
+
+# If everything passes... Now we can commit
+echo '✅You win this time. I am committing this now. 'npo
