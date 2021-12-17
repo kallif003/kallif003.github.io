@@ -5,6 +5,7 @@ module.exports = {
 		es2021: true,
 	},
 	extends: [
+		"next/core-web-vitals",
 		"plugin:react/recommended",
 		"google",
 		"plugin:prettier/recommended",
@@ -16,7 +17,7 @@ module.exports = {
 		},
 		ecmaVersion: 13,
 	},
-	plugins: ["react", "@typescript-eslint", "prettier"],
+	plugins: ["@typescript-eslint", "prettier"],
 	rules: {
 		"prettier/prettier": ["error", { endOfLine: "auto" }],
 	},
