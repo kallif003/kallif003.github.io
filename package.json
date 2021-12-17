@@ -36,7 +36,8 @@
 		"typescript": "4.5.3"
 	},
 	"lint-staged": {
-		"*.{js, ts, tsx}": ["eslint --cache --fix", "prettier --write", "echo 'teste'"]
+		"pritando": "echo 'teste'",
+		"*.{js, ts, tsx}": ["eslint --cache --fix", "prettier --write"]
 		
 	}
 
