@@ -6,7 +6,7 @@
 		"build": "next build",
 		"start": "next start",
 		"lint": "next lint",
-		"print": "echo 'teste'"
+		"print": "lint-staged"
 		
 	},
 	"dependencies": {
