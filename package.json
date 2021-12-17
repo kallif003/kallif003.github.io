@@ -5,8 +5,9 @@
 		"dev": "next dev",
 		"build": "next build",
 		"start": "next start",
-		"lint": "next lint"
-	
+		"lint": "next lint",
+		"print": "echo 'teste'"
+		
 	},
 	"dependencies": {
 		"next": "12.0.7",
@@ -35,7 +36,8 @@
 		"typescript": "4.5.3"
 	},
 	"lint-staged": {
-		"*.{js, ts, tsx}": "eslint --cache --fix",
-		"*.{js, ts, tsx, css}": "prettier --write"
+		"*.{js, ts, tsx}": ["eslint --cache --fix", "prettier --write", "echo 'teste'"]
+		
 	}
+
 }
