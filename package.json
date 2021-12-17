@@ -7,16 +7,12 @@
 		"start": "next start",
 		"lint": "next lint",
 		"prepare": "husky install",
-		"check-types": "lint-staged"
-	},
-	"lint-staged": {
-		"echo": "entrou",
-		"*.ts,tsx": [
-			"prettier --write",
-			"eslint --fix"
-			
-			
-		]
+		"check-types": "tsc --pretty --noEmit",
+		"check-format": "prettier --check .",
+		"check-lint": "eslint . --ext ts --ext tsx --ext js",
+		"format": "prettier --write .",
+		"test-all": "npm run check-format && npm run check-lint && npm run check-types && npm run build",
+		"precommit": "lint-staged"
 	},
 	"dependencies": {
 		"next": "12.0.7",
@@ -37,11 +33,10 @@
 		"eslint-plugin-prettier": "^4.0.0",
 		"eslint-plugin-react": "^7.27.1",
 		"eslint-plugin-react-hooks": "^4.3.0",
-		"husky": "^7.0.0",
-		"lint-staged": "^12.1.2",
 		"postcss-preset-env": "^7.0.2",
 		"prettier": "^2.5.1",
 		"tailwindcss": "^3.0.6",
-		"typescript": "4.5.3"
+		"typescript": "4.5.3",
+		"husky": "^7.0.0"
 	}
 }
