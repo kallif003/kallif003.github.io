@@ -2,8 +2,6 @@ import type { NextPage } from "next"
 import React from "react"
 import Head from "next/head"
 
-const teste = "teste"
-console.log(teste)
 const Home: NextPage = function () {
 	return (
 		<div>
