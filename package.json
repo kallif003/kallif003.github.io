@@ -5,10 +5,9 @@
 		"dev": "next dev",
 		"build": "next build",
 		"start": "next start",
-		"lint:check": "next lint",
-		"lint:fix": "next lint --fix",
 		"prepare": "husky install",
-		"lint-staged": "lint-staged"
+		"lint-staged": "lint-staged",
+		"commit": "cz"
 	},
 	"dependencies": {
 		"next": "12.0.7",
@@ -16,11 +15,15 @@
 		"react-dom": "17.0.2"
 	},
 	"devDependencies": {
+		"@commitlint/cli": "^15.0.0",
+		"@commitlint/config-conventional": "^15.0.0",
 		"@types/node": "16.11.12",
 		"@types/react": "17.0.37",
 		"@typescript-eslint/eslint-plugin": "^5.7.0",
 		"@typescript-eslint/parser": "^5.7.0",
 		"autoprefixer": "^10.4.0",
+		"commitizen": "^4.2.4",
+		"cz-conventional-changelog": "^3.3.0",
 		"eslint": "^8.4.1",
 		"eslint-config-google": "^0.14.0",
 		"eslint-config-next": "12.0.7",
@@ -44,5 +47,10 @@
 		"**/*.{css,scss,json}": [
 			"prettier --write"
 		]
+	},
+	"config": {
+		"commitizen": {
+			"path": "./node_modules/cz-conventional-changelog"
+		}
 	}
 }
