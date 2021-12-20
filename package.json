@@ -8,9 +8,7 @@
 		"lint:check": "next lint",
 		"lint:fix": "next lint --fix",
 		"prepare": "husky install",
-		"lint-staged": "lint-staged",
-		"prettier:check": "prettier . --check",
-		"prettier:fix": "prettier . --write"
+		"lint-staged": "lint-staged"
 	},
 	"dependencies": {
 		"next": "12.0.7",
