@@ -14,7 +14,7 @@ const Home: NextPage = function () {
 >>>>>>> chore: adicao commitlint e commitizen
 	return (
 		<div>
-			<Head>
+			  <Head>
 				<title>Kallif - Dev</title>
 			</Head>
 			<h3 className="text-6xl text-white">Hello world!</h3>
