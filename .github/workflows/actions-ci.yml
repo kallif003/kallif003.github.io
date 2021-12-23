@@ -25,4 +25,4 @@ jobs:
       - name: Instalar e rodar dependecias
         run: |
           npm install
-          npm run test
+          
