@@ -19,6 +19,23 @@ module.exports = {
 	},
 	plugins: ["@typescript-eslint", "prettier"],
 	rules: {
-		"prettier/prettier": ["error", { endOfLine: "auto" }],
+		"prettier/prettier": [
+			"error",
+			{
+				endOfLine: "auto",
+			},
+		],
+		"require-jsdoc": [
+			"error",
+			{
+				require: {
+					FunctionDeclaration: false,
+					MethodDefinition: true,
+					ClassDeclaration: true,
+					ArrowFunctionExpression: true,
+					FunctionExpression: false,
+				},
+			},
+		],
 	},
 }
