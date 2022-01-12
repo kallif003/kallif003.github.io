@@ -16,6 +16,6 @@
 		"incremental": true,
 		"types": ["node", "jest"],
 	},
-	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/pages/index.tsx", "tests/home.test.js", "src/pages/soma.js"],
+	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/pages/index.tsx", "tests/Header.test.tsx", "src/pages/soma.js"],
 	"exclude": ["node_modules"]
 }
