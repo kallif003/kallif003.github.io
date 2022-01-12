@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Typography renders H1Head properly 1`] = `
+<h1
+  class="sc-bdvvtL ceHYXx"
+>
+  Test
+</h1>
+`;
+
+exports[`Typography renders H2Head properly 1`] = `
+<h2
+  class="sc-gsDKAQ hzsiZi"
+>
+  Test
+</h2>
+`;
