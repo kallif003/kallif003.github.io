@@ -30,9 +30,9 @@ module.exports = {
 			{
 				require: {
 					FunctionDeclaration: false,
-					MethodDefinition: true,
-					ClassDeclaration: true,
-					ArrowFunctionExpression: true,
+					MethodDefinition: false,
+					ClassDeclaration: false,
+					ArrowFunctionExpression: false,
 					FunctionExpression: false,
 				},
 			},
