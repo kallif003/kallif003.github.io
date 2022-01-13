@@ -23,7 +23,6 @@
 		"styled-components": "^5.3.3"
 	},
 	"devDependencies": {
-		"jest-styled-components": "7.0.8",
 		"@babel/core": "^7.16.5",
 		"@commitlint/cli": "^15.0.0",
 		"@commitlint/config-conventional": "^15.0.0",
@@ -56,6 +55,7 @@
 		"eslint-plugin-react-hooks": "^4.3.0",
 		"husky": "^7.0.0",
 		"jest": "^27.4.5",
+		"jest-styled-components": "7.0.8",
 		"lint-staged": "^12.1.2",
 		"postcss-preset-env": "^7.0.2",
 		"prettier": "^2.5.1",

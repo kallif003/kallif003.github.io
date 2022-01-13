@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Buttons button component properties 1`] = `
+<button
+  class="sc-bdvvtL gzVCNC"
+>
+  Teste
+</button>
+`;
+
+exports[`Buttons renders Button1 properly 1`] = `
+<button
+  class="sc-bdvvtL gzVCNC"
+>
+  Teste
+</button>
+`;
+
+exports[`Buttons renders Button2 properly 1`] = `
+<button
+  class="sc-gsDKAQ hUWryD"
+>
+  Teste
+</button>
+`;
+
+exports[`Buttons renders Button3 properly 1`] = `
+<button
+  class="sc-dkPtRN hvJTg"
+>
+  Teste
+</button>
+`;
+
+exports[`Buttons renders Button4 properly 1`] = `
+<button
+  class="sc-hKwDye dBhIMz"
+>
+  Teste
+</button>
+`;
+
+exports[`Buttons renders Button5 properly 1`] = `
+<button
+  class="sc-eCImPb iapyFS"
+>
+  Teste
+</button>
+`;
+
+exports[`Buttons renders Button6 properly 1`] = `
+<button
+  class="sc-jRQBWg jElXYV"
+>
+  Teste
+</button>
+`;
+
+exports[`Buttons renders Button7 properly 1`] = `
+<button
+  class="sc-gKclnd eGtSvT"
+>
+  Teste
+</button>
+`;
+
+exports[`Buttons renders Button8 properly 1`] = `
+<button
+  class="sc-iCfMLu jMZjhj"
+>
+  Teste
+</button>
+`;
