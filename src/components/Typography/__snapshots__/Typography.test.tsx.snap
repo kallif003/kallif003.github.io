@@ -1,5 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Typography renders Body 1 properly 1`] = `
+<p
+  class="sc-iCfMLu PkpMU"
+>
+  Test
+</p>
+`;
+
+exports[`Typography renders Body 2 properly 1`] = `
+<p
+  class="sc-furwcr ciPvTf"
+>
+  Test
+</p>
+`;
+
 exports[`Typography renders H1Head properly 1`] = `
 <h1
   class="sc-bdvvtL ceHYXx"
@@ -11,6 +27,46 @@ exports[`Typography renders H1Head properly 1`] = `
 exports[`Typography renders H2Head properly 1`] = `
 <h2
   class="sc-gsDKAQ hzsiZi"
+>
+  Test
+</h2>
+`;
+
+exports[`Typography renders H3Head properly 1`] = `
+<h3
+  class="sc-dkPtRN blpyMK"
+>
+  Test
+</h3>
+`;
+
+exports[`Typography renders H4Head properly 1`] = `
+<h4
+  class="sc-hKwDye fjPtml"
+>
+  Test
+</h4>
+`;
+
+exports[`Typography renders H5Head properly 1`] = `
+<h5
+  class="sc-eCImPb dPnHSp"
+>
+  Test
+</h5>
+`;
+
+exports[`Typography renders Subtittle 2 properly 1`] = `
+<h2
+  class="sc-gKclnd gDiuuC"
+>
+  Test
+</h2>
+`;
+
+exports[`Typography renders Subtittle properly 1`] = `
+<h2
+  class="sc-jRQBWg bkiQQp"
 >
   Test
 </h2>
