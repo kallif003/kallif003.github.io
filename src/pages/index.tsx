@@ -1,6 +1,11 @@
 import type { NextPage } from "next"
 import React from "react"
 import Head from "next/head"
+import {
+	H3Head,
+	Subtittle,
+	Subtittle2,
+} from "../components/Typography/Typography"
 import { Button1, Ul, Li, Ancora } from "../components/Buttons"
 
 const Home: NextPage = function () {
