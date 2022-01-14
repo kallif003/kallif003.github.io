@@ -1,16 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Buttons button component properties 1`] = `
-<button
-  class="sc-bdvvtL gzVCNC"
->
-  Teste
-</button>
-`;
-
 exports[`Buttons renders Button1 properly 1`] = `
 <button
-  class="sc-bdvvtL gzVCNC"
+  class="sc-bdvvtL hQRTiU"
 >
   Teste
 </button>
@@ -18,7 +10,7 @@ exports[`Buttons renders Button1 properly 1`] = `
 
 exports[`Buttons renders Button2 properly 1`] = `
 <button
-  class="sc-gsDKAQ hUWryD"
+  class="sc-gsDKAQ dWvCyB"
 >
   Teste
 </button>
@@ -26,7 +18,7 @@ exports[`Buttons renders Button2 properly 1`] = `
 
 exports[`Buttons renders Button3 properly 1`] = `
 <button
-  class="sc-dkPtRN hvJTg"
+  class="sc-dkPtRN EaVla"
 >
   Teste
 </button>
@@ -34,7 +26,7 @@ exports[`Buttons renders Button3 properly 1`] = `
 
 exports[`Buttons renders Button4 properly 1`] = `
 <button
-  class="sc-hKwDye dBhIMz"
+  class="sc-hKwDye iThMGh"
 >
   Teste
 </button>
@@ -42,7 +34,7 @@ exports[`Buttons renders Button4 properly 1`] = `
 
 exports[`Buttons renders Button5 properly 1`] = `
 <button
-  class="sc-eCImPb iapyFS"
+  class="sc-eCImPb bFFGJs"
 >
   Teste
 </button>
@@ -50,7 +42,7 @@ exports[`Buttons renders Button5 properly 1`] = `
 
 exports[`Buttons renders Button6 properly 1`] = `
 <button
-  class="sc-jRQBWg jElXYV"
+  class="sc-jRQBWg fYwWpf"
 >
   Teste
 </button>
@@ -58,7 +50,7 @@ exports[`Buttons renders Button6 properly 1`] = `
 
 exports[`Buttons renders Button7 properly 1`] = `
 <button
-  class="sc-gKclnd eGtSvT"
+  class="sc-gKclnd dGTRWn"
 >
   Teste
 </button>
@@ -66,7 +58,7 @@ exports[`Buttons renders Button7 properly 1`] = `
 
 exports[`Buttons renders Button8 properly 1`] = `
 <button
-  class="sc-iCfMLu jMZjhj"
+  class="sc-iCfMLu hvSlZD"
 >
   Teste
 </button>
