@@ -30,6 +30,12 @@ module.exports = {
 			"2xl": { min: "1536px" },
 			// => @media (min-width: 1536px) { ... }
 		},
+		colors: {
+			bg: "#171718A6",
+			hover: "#3d3d3d",
+			white: "#fff",
+			golden: "#f9b53a",
+		},
 	},
 	plugins: [],
 }
