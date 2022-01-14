@@ -36,6 +36,9 @@ module.exports = {
 			white: "#fff",
 			golden: "#f9b53a",
 		},
+		fontFamily: {
+			sans: ["Dm sans"],
+		},
 	},
 	plugins: [],
 }
