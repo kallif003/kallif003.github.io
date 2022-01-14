@@ -9,6 +9,8 @@ export const Button1 = styled.button`
 	border-radius: 8px;
 	padding: 16px, 20px, 16px, 20px;
 	background: #f9b53a;
+	color: #fff;
+	font-family: DM sans;
 `
 export const Button2 = styled.button`
 	//ver projeto, botão gradiente
@@ -19,6 +21,8 @@ export const Button2 = styled.button`
 	border-radius: 8px;
 	padding: 16px, 20px, 16px, 20px;
 	background: linear-gradient(270deg, #f9b53a 10.81%, #ff59a8 100%);
+	color: #fff;
+	font-family: DM sans;
 `
 export const Button3 = styled.button`
 	//botão medio amarelo
@@ -29,6 +33,8 @@ export const Button3 = styled.button`
 	border-radius: 8px;
 	padding: 16px, 20px, 16px, 20px;
 	background: #f9b53a;
+	color: #fff;
+	font-family: DM sans;
 `
 export const Button4 = styled.button`
 	//botão medio gradiente
@@ -39,6 +45,8 @@ export const Button4 = styled.button`
 	border-radius: 8px;
 	padding: 16px, 20px, 16px, 20px;
 	background: linear-gradient(270deg, #f9b53a 10.81%, #ff59a8 100%);
+	color: #fff;
+	font-family: DM sans;
 `
 export const Button5 = styled.button`
 	//botão grande amarelo
@@ -49,6 +57,8 @@ export const Button5 = styled.button`
 	border-radius: 8px;
 	padding: 16px, 20px, 16px, 20px;
 	background: #f9b53a;
+	color: #fff;
+	font-family: DM sans;
 `
 export const Button6 = styled.button`
 	//botão grande gradiente
@@ -59,6 +69,8 @@ export const Button6 = styled.button`
 	border-radius: 8px;
 	padding: 16px, 20px, 16px, 20px;
 	background: linear-gradient(270deg, #f9b53a 10.81%, #ff59a8 100%);
+	color: #fff;
+	font-family: DM sans;
 `
 export const Button7 = styled.button`
 	//botão download cv
@@ -71,6 +83,7 @@ export const Button7 = styled.button`
 	border: 1px solid #ffffff;
 	box-sizing: border-box;
 	color: #fff;
+	font-family: DM sans;
 `
 export const Button8 = styled.button`
 	//botão "Sobre mim"
@@ -83,4 +96,5 @@ export const Button8 = styled.button`
 	border: 1px solid #ffffff;
 	box-sizing: border-box;
 	color: #fff;
+	font-family: DM sans;
 `
