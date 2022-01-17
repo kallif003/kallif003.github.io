@@ -9,7 +9,7 @@ const Home: NextPage = function () {
 			<Head>
 				<title>Kallif - Dev</title>
 			</Head>
-			<Header></Header>
+			<Header />
 		</div>
 	)
 }
