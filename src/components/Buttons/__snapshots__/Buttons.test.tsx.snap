@@ -1,5 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Buttons renders Ancora properly 1`] = `
+<a
+  class="sc-jrQzAO hLTNwg"
+>
+  Teste
+</a>
+`;
+
 exports[`Buttons renders Button1 properly 1`] = `
 <button
   class="sc-bdvvtL hQRTiU"
@@ -62,4 +70,20 @@ exports[`Buttons renders Button8 properly 1`] = `
 >
   Teste
 </button>
+`;
+
+exports[`Buttons renders Li properly 1`] = `
+<li
+  class="sc-pVTFL fBDvNW"
+>
+  Teste
+</li>
+`;
+
+exports[`Buttons renders Ul properly 1`] = `
+<ul
+  class="sc-furwcr hopZPv"
+>
+  Teste
+</ul>
 `;

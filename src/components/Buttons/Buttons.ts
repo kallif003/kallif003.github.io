@@ -104,6 +104,7 @@ export const Ul = styled.ul`
 	column-gap: 0.5rem;
 	color: #fff;
 	font-family: DM sans;
+	list-style: none;
 `
 export const Li = styled.li`
 	width: 4rem;

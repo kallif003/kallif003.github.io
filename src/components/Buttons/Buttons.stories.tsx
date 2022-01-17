@@ -10,6 +10,9 @@ import {
 	Button6,
 	Button7,
 	Button8,
+	Ul,
+	Li,
+	Ancora,
 } from "."
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
@@ -25,6 +28,7 @@ const Template: ComponentStory<typeof Button1> = () => (
 			background: "#000",
 			height: "200px",
 			padding: "30px",
+			listStyle: "none",
 		}}>
 		<Button1>Stories</Button1>
 		<Button2>Stories</Button2>
@@ -34,6 +38,19 @@ const Template: ComponentStory<typeof Button1> = () => (
 		<Button6>Stories</Button6>
 		<Button7>Stories</Button7>
 		<Button8>Stories</Button8>
+		<Ul>
+			<Li>
+				<Ancora>Home</Ancora>
+			</Li>
+
+			<Li>
+				<Ancora>Projetos</Ancora>
+			</Li>
+
+			<Li>
+				<Ancora>Sobre</Ancora>
+			</Li>
+		</Ul>
 	</div>
 )
 
