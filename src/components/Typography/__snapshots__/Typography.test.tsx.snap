@@ -10,7 +10,7 @@ exports[`Typography renders Body 1 properly 1`] = `
 
 exports[`Typography renders Body 2 properly 1`] = `
 <p
-  class="sc-furwcr ciPvTf"
+  class="sc-furwcr jWSQqj"
 >
   Test
 </p>
@@ -58,7 +58,7 @@ exports[`Typography renders H5Head properly 1`] = `
 
 exports[`Typography renders Subtittle 2 properly 1`] = `
 <h2
-  class="sc-gKclnd gDiuuC"
+  class="sc-gKclnd uruwL"
 >
   Test
 </h2>
@@ -66,7 +66,7 @@ exports[`Typography renders Subtittle 2 properly 1`] = `
 
 exports[`Typography renders Subtittle properly 1`] = `
 <h2
-  class="sc-jRQBWg bkiQQp"
+  class="sc-jRQBWg ecmFyv"
 >
   Test
 </h2>
