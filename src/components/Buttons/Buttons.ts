@@ -98,3 +98,23 @@ export const Button8 = styled.button`
 	color: #fff;
 	font-family: DM sans;
 `
+export const Ul = styled.ul`
+	display: grid;
+	grid-auto-flow: column;
+	column-gap: 0.5rem;
+	color: #fff;
+	font-family: DM sans;
+`
+export const Li = styled.li`
+	width: 4rem;
+	padding-left: 0.75rem;
+	border-radius: 0.5rem;
+`
+export const Ancora = styled.a`
+	text-decoration-line: none;
+	&:hover {
+		text-decoration-line: underline;
+		text-decoration-color: #f9b53a;
+		text-underline-offset: 8px;
+	}
+`

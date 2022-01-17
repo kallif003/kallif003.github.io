@@ -7,4 +7,7 @@ export {
 	Button6,
 	Button7,
 	Button8,
+	Ul,
+	Li,
+	Ancora,
 } from "./Buttons"
