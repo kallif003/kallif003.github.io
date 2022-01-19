@@ -17,7 +17,7 @@ export const Header = ({
 	onCreateAccount,
 }: HeaderProps) => (
 	<header>
-		<div className="wrapper">
+		<div className="bg-black">
 			<div>
 				<svg
 					width="32"
