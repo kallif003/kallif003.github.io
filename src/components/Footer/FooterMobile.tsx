@@ -10,13 +10,16 @@ import { mdiGithub } from "@mdi/js"
 const FooterMobile: NextPage = () => {
 	return (
 		<footer className="bg-bg">
-			<h1 className="text-2xl text-white font-bold font-['sans'] text-center pt-5">
+			<h1
+				className="text-2xl text-white font-bold font-['sans'] text-center pt-5"
+				data-testid="logo-mobile">
 				K.A.A
 			</h1>
 
 			<Subtittle
 				className="text-yellow pt-5 pb-5"
-				style={{ textAlign: "center" }}>
+				style={{ textAlign: "center" }}
+				data-testid="start-mobile">
 				Inicio
 			</Subtittle>
 
@@ -32,7 +35,10 @@ const FooterMobile: NextPage = () => {
 				</Body2>
 			</Ancora>
 
-			<Subtittle className="text-yellow pb-5" style={{ textAlign: "center" }}>
+			<Subtittle
+				className="text-yellow pb-5"
+				style={{ textAlign: "center" }}
+				data-testid="contact-mobile">
 				Contate-me
 			</Subtittle>
 
@@ -54,7 +60,10 @@ const FooterMobile: NextPage = () => {
 				</Body2>
 			</Ancora>
 
-			<Subtittle className="text-yellow pb-5" style={{ textAlign: "center" }}>
+			<Subtittle
+				className="text-yellow pb-5"
+				style={{ textAlign: "center" }}
+				data-testid="social-mobile">
 				Social
 			</Subtittle>
 
@@ -94,7 +103,9 @@ const FooterMobile: NextPage = () => {
 					size="10px"
 					color="#fff"
 				/>
-				<Body2 className="text-white pl-2 text-sm">2022 K.A.A</Body2>
+				<Body2 className="text-white pl-2 text-sm" data-testid="footer-mobile">
+					2022 K.A.A
+				</Body2>
 			</div>
 		</footer>
 	)

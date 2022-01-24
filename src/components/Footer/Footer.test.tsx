@@ -33,4 +33,29 @@ describe("Footer", () => {
 		const btnGitHub = screen.getByTestId("btnGitHub")
 		fireEvent.click(btnGitHub)
 	})
+	it("Renders a logo", () => {
+		render(<Footer />)
+		const logo = screen.getByTestId("logo")
+		expect(logo.innerHTML).toEqual("K.A.A")
+	})
+	it("Renders a options", () => {
+		render(<Footer />)
+		const start = screen.getByTestId("start")
+		expect(start.innerHTML).toEqual("Inicio")
+	})
+	it("Renders a options", () => {
+		render(<Footer />)
+		const contact = screen.getByTestId("contact")
+		expect(contact.innerHTML).toEqual("Contate-me")
+	})
+	it("Renders a options", () => {
+		render(<Footer />)
+		const social = screen.getByTestId("social")
+		expect(social.innerHTML).toEqual("Social")
+	})
+	it("Renders a options", () => {
+		render(<Footer />)
+		const footer = screen.getByTestId("footer")
+		expect(footer.innerHTML).toEqual("2022 K.A.A")
+	})
 })

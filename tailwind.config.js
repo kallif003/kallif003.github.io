@@ -11,7 +11,7 @@ module.exports = {
 				hover: "#3d3d3d",
 				pink: "#ff59ab",
 				orange: "#fc8771",
-				bordes: "#26292d",
+				borders: "#26292d",
 			},
 		},
 		screens: {
@@ -30,12 +30,7 @@ module.exports = {
 			"2xl": { min: "1536px" },
 			// => @media (min-width: 1536px) { ... }
 		},
-		colors: {
-			bg: "#171718A6",
-			hover: "#3d3d3d",
-			white: "#fff",
-			golden: "#f9b53a",
-		},
+
 		fontFamily: {
 			sans: ["Dm sans"],
 		},
