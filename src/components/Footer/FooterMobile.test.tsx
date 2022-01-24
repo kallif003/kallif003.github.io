@@ -33,4 +33,29 @@ describe("Footer", () => {
 		const btnGitHub = screen.getByTestId("btnMobileGitHub")
 		fireEvent.click(btnGitHub)
 	})
+	it("Renders a logo", () => {
+		render(<FooterMobile />)
+		const logo = screen.getByTestId("logo-mobile")
+		expect(logo.innerHTML).toEqual("K.A.A")
+	})
+	it("Renders a options", () => {
+		render(<FooterMobile />)
+		const startMobile = screen.getByTestId("start-mobile")
+		expect(startMobile.innerHTML).toEqual("Inicio")
+	})
+	it("Renders a options", () => {
+		render(<FooterMobile />)
+		const contactMobile = screen.getByTestId("contact-mobile")
+		expect(contactMobile.innerHTML).toEqual("Contate-me")
+	})
+	it("Renders a options", () => {
+		render(<FooterMobile />)
+		const socialMobile = screen.getByTestId("social-mobile")
+		expect(socialMobile.innerHTML).toEqual("Social")
+	})
+	it("Renders a options", () => {
+		render(<FooterMobile />)
+		const footerMobile = screen.getByTestId("footer-mobile")
+		expect(footerMobile.innerHTML).toEqual("2022 K.A.A")
+	})
 })

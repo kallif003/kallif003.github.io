@@ -12,10 +12,20 @@ const Footer: NextPage = () => {
 	return (
 		<footer className="grid grid-rows-3 ">
 			<div className="sm:hidden col-span-4 flex md:gap-32 lg:gap-52 xl:gap-52 pl-20 items-center bg-bg">
-				<h1 className="text-2xl text-white font-bold font-['sans']">K.A.A</h1>
-				<Subtittle className="text-yellow">Inicio</Subtittle>
-				<Subtittle className="text-yellow">Contate-me</Subtittle>
-				<Subtittle className="text-yellow">Social</Subtittle>
+				<h1
+					className="text-2xl text-white font-bold font-['sans']"
+					data-testid="logo">
+					K.A.A
+				</h1>
+				<Subtittle className="text-yellow" data-testid="start">
+					Inicio
+				</Subtittle>
+				<Subtittle className="text-yellow" data-testid="contact">
+					Contate-me
+				</Subtittle>
+				<Subtittle className="text-yellow" data-testid="social">
+					Social
+				</Subtittle>
 			</div>
 
 			<div className=" sm:hidden col-span-4 lg:gap-32 md:gap-12 xl:gap-32 bg-bg flex md:pl-[240px] pl-80">
@@ -83,7 +93,9 @@ const Footer: NextPage = () => {
 						color="#fff"
 						className="ml-20"
 					/>
-					<Body2 className="text-white pl-2 text-sm">2022 K.A.A</Body2>
+					<Body2 className="text-white pl-2 text-sm" data-testid="footer">
+						2022 K.A.A
+					</Body2>
 				</div>
 			</div>
 
