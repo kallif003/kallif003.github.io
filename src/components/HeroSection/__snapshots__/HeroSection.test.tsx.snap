@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Hero Section Components renders Container properly 1`] = `
+<div
+  class="sc-gsDKAQ fIESDw"
+>
+  Teste
+</div>
+`;
+
+exports[`Hero Section Components renders HeroSection properly 1`] = `
+<div
+  class="sc-bdvvtL fGbjHN"
+>
+  Teste
+</div>
+`;

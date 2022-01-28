@@ -3,5 +3,8 @@
 @tailwind utilities;
 
 body {
-	background-color: #fff;
+	background-color: #171718;
+}
+.image {
+	padding-left: 20px;
 }
