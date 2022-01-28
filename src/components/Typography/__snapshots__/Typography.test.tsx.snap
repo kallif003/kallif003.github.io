@@ -18,7 +18,7 @@ exports[`Typography renders Body 2 properly 1`] = `
 
 exports[`Typography renders H1Head properly 1`] = `
 <h1
-  class="sc-bdvvtL ceHYXx"
+  class="sc-bdvvtL kisRZ"
 >
   Test
 </h1>
