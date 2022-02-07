@@ -23,4 +23,5 @@ export const Imagem = styled(Image).attrs((props) => ({
 	quality: props.quality,
 }))`
 	border-radius: 10px 40px 5px;
+	z-index: auto;
 `
