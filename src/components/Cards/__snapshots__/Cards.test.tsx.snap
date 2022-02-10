@@ -24,7 +24,7 @@ exports[`Cards Components renders Cards properly 1`] = `
 </div>
 `;
 
-exports[`Cards Components renders Container properly 1`] = `
+exports[`Cards Components renders ContainerCards properly 1`] = `
 <div
   class="sc-bdvvtL dVISxJ"
 >
@@ -35,22 +35,6 @@ exports[`Cards Components renders Container properly 1`] = `
 exports[`Cards Components renders WorkTools properly 1`] = `
 <div
   class="sc-hKwDye RIQZw"
->
-  Teste
-</div>
-`;
-
-exports[`Hero Section Components renders Container properly 1`] = `
-<div
-  class="sc-gsDKAQ fBMHkh"
->
-  Teste
-</div>
-`;
-
-exports[`Hero Section Components renders HeroSection properly 1`] = `
-<div
-  class="sc-bdvvtL dVISxJ"
 >
   Teste
 </div>
