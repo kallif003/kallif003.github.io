@@ -9,7 +9,7 @@ import {
 } from "."
 
 describe("Cards Components", () => {
-	it("renders Container properly", () => {
+	it("renders ContainerCards properly", () => {
 		const { container } = render(<ContainerCards>Teste</ContainerCards>)
 		expect(container.firstChild).toMatchSnapshot()
 	})
