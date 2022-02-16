@@ -26,7 +26,6 @@ export const H3Head = styled.h3`
 	font-weight: 500;
 	line-height: 40px;
 	letter-spacing: 0.25px;
-	text-align: left;
 `
 export const H4Head = styled.h4`
 	font-family: DM Sans;
@@ -35,7 +34,6 @@ export const H4Head = styled.h4`
 	font-weight: 400;
 	line-height: 32px;
 	letter-spacing: 0em;
-	text-align: left;
 `
 export const H5Head = styled.h5`
 	font-family: DM Sans;

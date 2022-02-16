@@ -8,8 +8,10 @@ export const ContainerCards = styled.div`
 	width: 1112px;
 	height: auto;
 	padding-bottom: 20px;
-	@media (max-width: 767px) {
+	@media (max-width: 1050px) {
 		flex-direction: column;
+		align-items: center;
+		width: 200px;
 	}
 `
 export const Cards = styled.div`
@@ -20,8 +22,9 @@ export const Cards = styled.div`
 	border-radius: 8px;
 	padding: 10px 24px;
 	background: #1f1f21;
-	@media (max-width: 767px) {
+	@media (max-width: 1050px) {
 		margin-bottom: 20px;
+		width: 200px;
 	}
 `
 
@@ -37,7 +40,7 @@ export const WorkTools = styled.div`
 	top: 19px;
 	border-radius: 8px;
 	border: 1px solid #3d3d3d;
-	@media (max-width: 767px) {
+	@media (max-width: 950px) {
 		margin-bottom: 20px;
 	}
 `
@@ -51,7 +54,7 @@ export const AreaAboutMe = styled.div`
 	background: #1f1f21;
 	display: flex;
 	flex-direction: row;
-	@media (max-width: 767px) {
+	@media (max-width: 950px) {
 		flex-direction: column;
 		height: 993px;
 		width: 328px;
@@ -60,6 +63,9 @@ export const AreaAboutMe = styled.div`
 		border-radius: 8px;
 		padding: 16px;
 	}
+	@media (max-width: 300px) {
+		width: 260px;
+	}
 `
 export const ImageAboutMe = styled(Image)`
 	height: 405.1620178222656px;
@@ -67,7 +73,7 @@ export const ImageAboutMe = styled(Image)`
 	left: 24px;
 	top: 24px;
 	border-radius: 8px;
-	background: #c4c4c4;
+	background: #f9b53a;
 `
 export const AreaTextAboutMe = styled.div`
 	height: 333px;
@@ -77,8 +83,7 @@ export const AreaTextAboutMe = styled.div`
 	border-radius: 0px;
 	padding-left: 3rem;
 	color: #fff;
-
-	@media (max-width: 767px) {
+	@media (max-width: 950px) {
 		padding-left: 0px;
 		width: auto;
 	}
