@@ -59,6 +59,9 @@ export const Button5 = styled.button`
 	background: #f9b53a;
 	color: #fff;
 	font-family: DM sans;
+	@media (max-width: 950px) {
+		width: 200px;
+	}
 `
 export const Button6 = styled.button`
 	//botão grande gradiente
@@ -107,7 +110,6 @@ export const Ul = styled.ul`
 	list-style: none;
 `
 export const Li = styled.li`
-	width: 4rem;
 	padding-left: 0.75rem;
 	border-radius: 0.5rem;
 `

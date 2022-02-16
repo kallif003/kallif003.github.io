@@ -1,23 +1,27 @@
 import React from "react"
 import type { NextPage } from "next"
 import { Button1, Ul, Li, Ancora } from "../Buttons"
+import HeaderMobile from "./HeaderMobile"
 
 const Header: NextPage = () => {
 	return (
-		<header className="bg-bg w-screen px-4 py-5 flex justify-around sm:justify-end fixed">
-			<h1 className="sm:hidden md:text-2xl lg:text-2xl xl:text-2xl text-white font-bold mt-2 font-['sans']">
+		<header className="bg-bg w-screen px-4 sm:px-0 py-5 md:flex justify-around lg:flex justify-around xl:flex justify-around fixed z-10 ">
+			<h1 className="sm:hidden text-white font-bold mt-2 font-['sans']">
 				K.A.A
 			</h1>
-			<nav className="self-center">
+
+			<HeaderMobile />
+
+			<nav className="self-center ml-8">
 				<Ul className="md:space-x-10 lg:space-x-12 xl:space-x-20">
 					<Li className="sm:hidden ">
-						<Ancora>Home</Ancora>
+						<Ancora href="#home">Home</Ancora>
 					</Li>
 					<Li className="sm:hidden ">
-						<Ancora>Projetos</Ancora>
+						<Ancora href="#projetos">Projetos</Ancora>
 					</Li>
 					<Li className="sm:hidden ">
-						<Ancora>Sobre</Ancora>
+						<Ancora href="#aboutMe">Sobre</Ancora>
 					</Li>
 				</Ul>
 			</nav>
