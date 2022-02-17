@@ -1,37 +1,37 @@
 import React from "react"
 import { render, screen } from "@testing-library/react"
 import userEvent from "@testing-library/user-event"
-import Header from "./Header"
+import HeaderMobile from "./HeaderMobile"
 
 describe("Header", () => {
 	it("Renders a logo", () => {
-		render(<Header />)
-		const text = screen.getByTestId("text")
+		render(<HeaderMobile />)
+		const text = screen.getByTestId("mobile-text")
 		expect(text.innerHTML).toEqual("K.A.A")
 	})
 	it("teste button ancoras", () => {
-		render(<Header />)
+		render(<HeaderMobile />)
 
-		const button = screen.getByTestId("contact-me")
+		const button = screen.getByTestId("mobile-contact-me")
 		userEvent.click(button)
 	})
 
 	it("teste button ancoras", () => {
-		render(<Header />)
+		render(<HeaderMobile />)
 
-		const button = screen.getByTestId("about-me")
+		const button = screen.getByTestId("mobile-about-me")
 		userEvent.click(button)
 	})
 	it("teste button ancoras", () => {
-		render(<Header />)
+		render(<HeaderMobile />)
 
-		const button = screen.getByTestId("project")
+		const button = screen.getByTestId("mobile-project")
 		userEvent.click(button)
 	})
 	it("teste button ancoras", () => {
-		render(<Header />)
+		render(<HeaderMobile />)
 
-		const button = screen.getByTestId("btnHome")
+		const button = screen.getByTestId("mobile-home")
 		userEvent.click(button)
 	})
 })

@@ -2,7 +2,7 @@
 
 exports[`Hero Section Components renders Container properly 1`] = `
 <div
-  class="sc-gsDKAQ fIESDw"
+  class="sc-gsDKAQ cToFAP"
 >
   Teste
 </div>
@@ -10,7 +10,7 @@ exports[`Hero Section Components renders Container properly 1`] = `
 
 exports[`Hero Section Components renders HeroSection properly 1`] = `
 <div
-  class="sc-bdvvtL fGbjHN"
+  class="sc-bdvvtL gmKzVj"
 >
   Teste
 </div>
