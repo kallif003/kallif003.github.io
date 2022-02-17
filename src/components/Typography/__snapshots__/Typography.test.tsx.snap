@@ -34,7 +34,7 @@ exports[`Typography renders H2Head properly 1`] = `
 
 exports[`Typography renders H3Head properly 1`] = `
 <h3
-  class="sc-dkPtRN blpyMK"
+  class="sc-dkPtRN iCIije"
 >
   Test
 </h3>
@@ -42,7 +42,7 @@ exports[`Typography renders H3Head properly 1`] = `
 
 exports[`Typography renders H4Head properly 1`] = `
 <h4
-  class="sc-hKwDye fjPtml"
+  class="sc-hKwDye jQXNLB"
 >
   Test
 </h4>

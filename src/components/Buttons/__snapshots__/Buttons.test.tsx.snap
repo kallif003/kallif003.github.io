@@ -42,7 +42,7 @@ exports[`Buttons renders Button4 properly 1`] = `
 
 exports[`Buttons renders Button5 properly 1`] = `
 <button
-  class="sc-eCImPb bFFGJs"
+  class="sc-eCImPb ezteKB"
 >
   Teste
 </button>
@@ -74,7 +74,7 @@ exports[`Buttons renders Button8 properly 1`] = `
 
 exports[`Buttons renders Li properly 1`] = `
 <li
-  class="sc-pVTFL fBDvNW"
+  class="sc-pVTFL jFmDRA"
 >
   Teste
 </li>
