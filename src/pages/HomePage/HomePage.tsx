@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
+/* eslint-disable @next/next/link-passhref */
 import type { NextPage } from "next"
 import React from "react"
 import Header from "../../components/Header/Header"
@@ -20,7 +22,6 @@ import foto from "../../../assets/Image/kallif.png"
 import imgSite from "../../../assets/Image/site2.png"
 import list from "../../../assets/Image/listando1.png"
 import list2 from "../../../assets/Image/listando2.png"
-
 import {
 	HeroSection,
 	Imagem,
@@ -33,7 +34,7 @@ const HomePage: NextPage = function () {
 		<div>
 			<Header />
 
-			<div className="p-2 bg-gradient-to-r from-pink via-orange to-yellow w-screen sm:h-[250px] md:h-[300px] lg:h-[350px] xl:h-[400px] text-center items-center sm:pt-5">
+			<div className="p-2 bg-gradient-to-r from-pink via-orange to-yellow w-screen sm:h-[250px] md:h-[300px] lg:h-[350px] xl:h-[400px] text-center items-center sm:pt-5 ">
 				<h1
 					id="home"
 					className="sm:pt-12 pt-32 sm:text-[45px] md:text-[80px] lg:text-[90px] xl:text-[100px] text-white font-bold">
@@ -58,21 +59,29 @@ const HomePage: NextPage = function () {
 
 			<div className="flex flex-row sm:flex-col sm:items-center justify-center sm:space-x-0 space-x-8 mt-5">
 				<Button1 className="text-[18px] mb-5">Ver projetos</Button1>
-				<Button7 className="flex flex-row justify-center items-center space-x-2">
-					<Icon
-						path={mdiDownload}
-						title="User Profile"
-						size="20px"
-						color="#fff"
-					/>
-					<Body1>Download CV</Body1>
-				</Button7>
 
+				<a href="/curriculo" target="_blank">
+					<Button7 className="flex flex-row justify-center items-center space-x-2">
+						<Icon
+							path={mdiDownload}
+							title="User Profile"
+							size="20px"
+							color="#fff"
+						/>
+						<Body1>Download CV</Body1>
+					</Button7>
+				</a>
 				<h1 id="aboutMe" />
 			</div>
 
 			<AreaAboutMe className="mx-auto mt-24">
-				<ImageAboutMe src={foto} alt="Me" width={300} height={326} />
+				<ImageAboutMe
+					src={foto}
+					alt="Me"
+					width={300}
+					height={326}
+					id="imgData"
+				/>
 				<AreaTextAboutMe>
 					<H2Head>Sobre Mim </H2Head>
 					<Body1 className="mb-24">
@@ -176,12 +185,17 @@ const HomePage: NextPage = function () {
 						quality={100}
 					/>
 				</Container>
-				<div className="text-white sm:mt-[-10px] md:mt-[-30px] lg:mt-[-20px] pl-14 pb-16  sm:pl-6">
-					<h1 className="sm:text-[20px] text-[40px]">Delivery</h1>
-					<p className="sm:text-[10px] text-xl sm:mt-[-10px] md:mt-[-10px] lg:mt-[-10px]">
-						Sistema desktop para pizzarias
-					</p>
-				</div>
+				<a
+					href="https://github.com/kallif003/Sistema-Delivery"
+					target="_blank"
+					rel="noreferrer">
+					<div className="text-white sm:mt-[-10px] md:mt-[-30px] lg:mt-[-20px] pl-14 pb-16 sm:pl-6 ">
+						<h1 className="sm:text-[20px] text-[40px] ">Delivery</h1>
+						<p className="sm:text-[10px] text-xl sm:mt-[-10px] md:mt-[-10px] lg:mt-[-10px] hover:underline decoration-gray-100 underline-offset-8">
+							Sistema desktop para pizzarias
+						</p>
+					</div>
+				</a>
 			</HeroSection>
 
 			<HeroSection color="#9000FF" className="w-auto ">
@@ -201,12 +215,17 @@ const HomePage: NextPage = function () {
 						quality={100}
 					/>
 				</Container>
-				<div className="text-white sm:mt-[-10px] md:mt-[-30px] lg:mt-[-80px] pl-14 pb-16 sm:pl-6 ">
-					<h1 className="sm:text-[20px] text-[40px]">App. Listando</h1>
-					<p className="sm:text-[10px] text-xl sm:mt-[-10px] md:mt-[-10px] lg:mt-[-10px]">
-						Desenvolvido para criar listas de afazeres
-					</p>
-				</div>
+				<a
+					href="https://github.com/kallif003/APP-LISTANDO"
+					target="_blank"
+					rel="noreferrer">
+					<div className="text-white sm:mt-[-10px] md:mt-[-30px] lg:mt-[-80px] pl-14 pb-16 sm:pl-6 ">
+						<h1 className="sm:text-[20px] text-[40px]">App. Listando</h1>
+						<p className="sm:text-[10px] text-xl sm:mt-[-10px] md:mt-[-10px] lg:mt-[-10px] hover:underline decoration-gray-100 underline-offset-8">
+							Desenvolvido para criar listas de afazeres
+						</p>
+					</div>
+				</a>
 			</HeroSection>
 
 			<HeroSection color="#C2273A" className="pt-16">
@@ -219,12 +238,17 @@ const HomePage: NextPage = function () {
 						quality={100}
 					/>
 				</Container>
-				<div className="text-white sm:mt-[-10px] md:mt-[-30px] lg:mt-[-20px] pl-14 pb-16  sm:pl-6">
-					<h1 className="sm:text-[20px] text-[40px]">Portifólio</h1>
-					<p className="sm:text-[10px] text-xl sm:mt-[-10px] md:mt-[-10px] lg:mt-[-10px]">
-						Site desenvolvido com Next, Type e Tailwind
-					</p>
-				</div>
+				<a
+					href="https://github.com/kallif003/kallif003.github.io"
+					target="_blank"
+					rel="noreferrer">
+					<div className="text-white sm:mt-[-10px] md:mt-[-30px] lg:mt-[-20px] pl-14 pb-16  sm:pl-6">
+						<h1 className="sm:text-[20px] text-[40px]">Portifólio</h1>
+						<p className="sm:text-[10px] text-xl sm:mt-[-10px] md:mt-[-10px] lg:mt-[-10px] hover:underline decoration-gray-100 underline-offset-8">
+							Site desenvolvido com Next, Type e Tailwind
+						</p>
+					</div>
+				</a>
 			</HeroSection>
 
 			<Button5 className="flex flex-row justify-center items-center space-x-2 mx-auto mt-24 mb-40">

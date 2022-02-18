@@ -10,8 +10,8 @@ const HeaderMobile: NextPage = () => {
 
 	const troca = () => {
 		setActive(!active)
-		console.log(active)
 	}
+
 	return (
 		<div className="md:hidden lg:hidden xl:hidden">
 			<div
