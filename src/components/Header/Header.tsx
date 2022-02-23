@@ -34,7 +34,11 @@ const Header: NextPage = () => {
 				</Ul>
 			</nav>
 			<Button1 className="sm:hidden">
-				<a href="mailto:kallifabrahao@gmail.com" data-testid="contact-me">
+				<a
+					href="https://api.whatsapp.com/send?l=pt_pt&phone=5512991116524"
+					target="_blank"
+					data-testid="contact-me"
+					rel="noreferrer">
 					Contate-me
 				</a>
 			</Button1>
