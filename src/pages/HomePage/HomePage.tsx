@@ -16,20 +16,27 @@ import {
 	Cards,
 	Logo,
 } from "../../components/Cards/Cards"
-
 import img from "../../../assets/Image/sistema-delivery.png"
 import foto from "../../../assets/Image/kallif.png"
 import imgSite from "../../../assets/Image/site2.png"
 import list from "../../../assets/Image/listando1.png"
 import list2 from "../../../assets/Image/listando2.png"
+import { cv } from "../../../assets/cv"
 import {
 	HeroSection,
 	Imagem,
 	Container,
 } from "../../components/HeroSection/HeroSection"
 import Footer from "../../components/Footer/Footer"
+import JSPDF from "jspdf"
 
 const HomePage: NextPage = function () {
+	const downloadCV = () => {
+		const pdf = new JSPDF("portrait", "mm", "a4")
+		pdf.addImage(cv, "PNG", 15, 20, 180, 250)
+		pdf.save("Kallif Abrahão.pdf")
+	}
+
 	return (
 		<div>
 			<Header />
@@ -60,17 +67,18 @@ const HomePage: NextPage = function () {
 			<div className="flex flex-row sm:flex-col sm:items-center justify-center sm:space-x-0 space-x-8 mt-5">
 				<Button1 className="text-[18px] mb-5">Ver projetos</Button1>
 
-				<a href="/curriculo" target="_blank">
-					<Button7 className="flex flex-row justify-center items-center space-x-2">
-						<Icon
-							path={mdiDownload}
-							title="User Profile"
-							size="20px"
-							color="#fff"
-						/>
-						<Body1>Download CV</Body1>
-					</Button7>
-				</a>
+				<Button7
+					className="flex flex-row justify-center items-center space-x-2"
+					onClick={downloadCV}>
+					<Icon
+						path={mdiDownload}
+						title="User Profile"
+						size="20px"
+						color="#fff"
+					/>
+					<Body1>Download CV</Body1>
+				</Button7>
+
 				<h1 id="aboutMe" />
 			</div>
 
@@ -216,7 +224,7 @@ const HomePage: NextPage = function () {
 					/>
 				</Container>
 				<a
-					href="https://github.com/kallif003/APP-LISTANDO"
+					href="https://github.com/kallif003/App-listando"
 					target="_blank"
 					rel="noreferrer">
 					<div className="text-white sm:mt-[-10px] md:mt-[-30px] lg:mt-[-80px] pl-14 pb-16 sm:pl-6 ">
