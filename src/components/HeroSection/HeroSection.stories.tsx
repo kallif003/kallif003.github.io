@@ -1,6 +1,8 @@
 import React from "react"
 import { ComponentStory, ComponentMeta } from "@storybook/react"
 import img from "../../../assets/Image/sistema-delivery.png"
+import imgSite from "../../../assets/Image/site2.png"
+import list from "../../../assets/Image/listando1.png"
 import { H3Head } from "../Typography"
 import { HeroSection, Container, Imagem } from "./HeroSection"
 
@@ -38,9 +40,9 @@ Yellow.args = {
 export const Purple = Template.bind({})
 Purple.args = {
 	color: "#9000FF",
-	width: "500px",
-	height: "300px",
-	img: img,
+	width: "200px",
+	height: "200px",
+	img: list,
 }
 
 export const Red = Template.bind({})
@@ -48,5 +50,5 @@ Red.args = {
 	color: "#C2273A",
 	width: "500px",
 	height: "300px",
-	img: img,
+	img: imgSite,
 }
