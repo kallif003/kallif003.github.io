@@ -2,6 +2,7 @@ import React from "react"
 import { ComponentStory, ComponentMeta } from "@storybook/react"
 
 import Header from "./Header"
+import HeaderMobile from "./HeaderMobile"
 
 export default {
 	title: "Organismo/Header",
@@ -9,6 +10,16 @@ export default {
 } as ComponentMeta<typeof Header>
 
 // eslint-disable-next-line no-unused-vars
-const Template: ComponentStory<typeof Header> = (args) => <Header {...args} />
-export const Default = Template.bind({})
-export const Second = Template.bind({})
+const Template: ComponentStory<typeof Header> = () => (
+	<div>
+		<Header />
+	</div>
+)
+
+const TemplateMobile: ComponentStory<typeof HeaderMobile> = (args) => (
+	<div>
+		<HeaderMobile />
+	</div>
+)
+export const Desktop = Template.bind({})
+export const Mobile = TemplateMobile.bind({})
