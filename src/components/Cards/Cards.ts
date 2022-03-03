@@ -1,90 +1,105 @@
-import styled from "styled-components"
+import tw from "tailwind-styled-components"
 import Image from "next/image"
 
-export const ContainerCards = styled.div`
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	width: 1112px;
-	height: auto;
-	padding-bottom: 20px;
-	@media (max-width: 1050px) {
-		flex-direction: column;
-		align-items: center;
-		width: 200px;
-	}
+export const ContainerCards = tw.div`
+	flex
+	flex-row
+	justify-around
+	h-auto
+	pb-[20px]
+	pt-2
+	px-2
+	items-center
+	sm:flex-col 
+	md:flex-col 	
 `
-export const Cards = styled.div`
-	height: auto;
-	width: 354px;
-	left: 0px;
-	top: 0.04559326171875px;
-	border-radius: 8px;
-	padding: 10px 24px;
-	background: #1f1f21;
-	@media (max-width: 1050px) {
-		margin-bottom: 20px;
-		width: 200px;
-	}
+export const Cards = tw.div`
+	h-auto
+	w-[354px]
+	left-[0px]
+	top-[0.045px]
+	rounded-[8px]
+	py-[10px]
+	px-[24px]
+	bg-[#1f1f21]
+	mx-3
+	mini:w-auto
+	sm:mb-[10px]
+	md:mb-2
+	lg:mb-[20px] 
+	lg:w-[200px]
 `
+export const Logo = tw(Image)`
+	100%
+	inline-block
+`
+export const WorkTools = tw.div`
+	h-[363px]
+	w-[354px]
+	left-[16.5px]
+	top-[19px]
+	rounded-[8px]
+	border-solid
+	border
+	border-[#3d3d3d]
+	md: mg-[20px]
 
-export const Logo = styled(Image)`
-	background-size: 100%;
-	display: inline-block;
 `
+export const AreaAboutMe = tw.div`
+	h-[453.1620178222656px]
+	w-[967px]
+	left-[64px]
+	top-[216px]
+	rounded-[8px]
+	p-[24px]
+	bg-[#1f1f21]
+	flex
+	flex-row
 
-export const WorkTools = styled.div`
-	height: 363px;
-	width: 354px;
-	left: 16.5px;
-	top: 19px;
-	border-radius: 8px;
-	border: 1px solid #3d3d3d;
-	@media (max-width: 950px) {
-		margin-bottom: 20px;
-	}
+	md:flex-col
+	md:h-[993px]
+	md:w-[328px]
+	md:left-[0px]
+	md:top-[0px]
+	md:p-[16px]
+
+	sm:flex-col
+	sm:h-[993px]
+	sm:w-[328px]
+	sm:left-[0px]
+	sm:top-[0px]
+	sm:p-[16px]
+	
+	mini:w-[260px]
+	mini:flex-col
+	mini:h-[900px]
+	
 `
-export const AreaAboutMe = styled.div`
-	height: 453.1620178222656px;
-	width: 967px;
-	left: 64px;
-	top: 216px;
-	border-radius: 8px;
-	padding: 24px;
-	background: #1f1f21;
-	display: flex;
-	flex-direction: row;
-	@media (max-width: 950px) {
-		flex-direction: column;
-		height: 993px;
-		width: 328px;
-		left: 0px;
-		top: 0px;
-		border-radius: 8px;
-		padding: 16px;
-	}
-	@media (max-width: 300px) {
-		width: 260px;
-	}
+export const ImageAboutMe = tw(Image)`
+	h-[405px]
+	w-[326px]
+	left-[24px]
+	top-[24px]
+	rounded-[8px]
+	bg-yellow
 `
-export const ImageAboutMe = styled(Image)`
-	height: 405.1620178222656px;
-	width: 326.3250732421875px;
-	left: 24px;
-	top: 24px;
-	border-radius: 8px;
-	background: #f9b53a;
-`
-export const AreaTextAboutMe = styled.div`
-	height: 333px;
-	width: 560px;
-	left: 0px;
-	top: 0px;
-	border-radius: 0px;
-	padding-left: 3rem;
-	color: #fff;
-	@media (max-width: 950px) {
-		padding-left: 0px;
-		width: auto;
-	}
+export const AreaTextAboutMe = tw.div`
+	h-[333px]
+	w-[560px]
+	left-[0px]
+	top-[0px]
+	pl-12
+	text-white
+
+	md:pl-0
+	md:w-auto
+	mini:w-auto
+
+	mini:pl-0
+	mini:mt-4
+
+	sm:w-auto
+	sm:px-10
+	sm:mt-4
+	
 `

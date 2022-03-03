@@ -14,8 +14,16 @@
 		"isolatedModules": true,
 		"jsx": "preserve",
 		"incremental": true,
-		"types": ["node", "jest"],
+		"types": ["node", "jest"]
 	},
-	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/pages/index.tsx", "tests/Header.test.tsx", "src/pages/soma.js"],
+	"include": [
+		"next-env.d.ts",
+		"**/*.ts",
+		"**/*.tsx",
+		"src/pages/index.tsx",
+		"tests/Header.test.tsx",
+		"src/pages/soma.js",
+		"src/pages/HomePage/HomePage.spec.js"
+	],
 	"exclude": ["node_modules"]
 }

@@ -1,50 +1,44 @@
-import styled from "styled-components"
+import tw from "tailwind-styled-components"
 import Image from "next/image"
 
-export const HeroSection = styled.div`
-	width: 1155px;
-	margin-top: 16px;
-	margin-bottom: 16px;
-	border-radius: 20px;
-	background-color: ${({ color }) => color};
-	margin-left: auto;
-	margin-right: auto;
-	@media (max-width: 950px) {
-		width: auto;
-		margin: 10px;
-		height: 200px;
-	}
-	@media (max-width: 1050px) {
-		width: auto;
-		margin: 10px;
-		height: 300px;
-		padding-top: 2.5rem;
-	}
-	@media (max-width: 280px) {
-		padding-top: 5rem;
-	}
-`
-export const Container = styled.div`
-	margin-left: auto;
-	margin-right: auto;
-	width: 30rem;
-	position: relative;
+export const HeroSection = tw.div`
+	w-[1155px]
+	mt-[16px]
+	mb-[16px]
+	rounded-[20px]
+    mx-auto
 
-	@media (max-width: 950px) {
-		width: 200px;
-		height: 200px;
-	}
-	@media (max-width: 1050px) {
-		width: 300px;
-	}
-	@media (max-width: 280px) {
-		width: 200px;
-		height: 170px;
-	}
+	mini: pt-20
+
+	sm:w-auto
+	sm:m-[10px]
+	sm:h-200px
+
+	md:w-auto
+	md:m-[10px]
+	md:h-200px
+
+	lg:w-auto
+	lg:m-[10px]
+	lg:h-[300px]
+	lg:pt-10
 `
-export const Imagem = styled(Image)`
-	border-radius: 5px;
-	@media (max-width: 1050px) {
-		height: 200px;
-	}
+export const Container = tw.div`
+	mx-auto
+	w-[30rem]
+	
+	sm:w-[200px]
+	sm:h-[180px]
+
+	md:w-[350px]
+	md:h-[250px]
+
+	lg:w-[300px]
+
+	mini:w-[200px]
+	mini:h-[170px]
+`
+export const Imagem = tw(Image)`
+	rounded-[5px]
+	lg:h-[200px]
 `
