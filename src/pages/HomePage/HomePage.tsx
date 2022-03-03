@@ -1,9 +1,8 @@
-/* eslint-disable @next/next/no-html-link-for-pages */
-/* eslint-disable @next/next/link-passhref */
 import type { NextPage } from "next"
 import React from "react"
 import Header from "../../components/Header/Header"
 import { Button1, Button5, Button7, Button8 } from "../../components/Buttons"
+
 import Icon from "@mdi/react"
 import { mdiDownload } from "@mdi/js"
 import { mdiArrowRight } from "@mdi/js"
@@ -41,20 +40,20 @@ const HomePage: NextPage = function () {
 		<div>
 			<Header />
 
-			<div className="p-2 bg-gradient-to-r from-pink via-orange to-yellow w-screen sm:h-[250px] md:h-[300px] lg:h-[350px] xl:h-[400px] text-center items-center sm:pt-5 ">
+			<div className="p-2 bg-gradient-to-r from-pink via-orange to-yellow w-screen sm:h-[250px] md:h-[350px] lg:h-[350px] xl:h-[400px] text-center items-center sm:pt-5">
 				<h1
 					id="home"
-					className="sm:pt-12 pt-32 sm:text-[45px] md:text-[80px] lg:text-[90px] xl:text-[100px] text-white font-bold">
+					className="sm:pt-12 pt-32  sm:text-[45px] md:text-[80px] lg:text-[90px] xl:text-[100px] text-white font-bold">
 					KALLIF ABRAHÃO
 				</h1>
-				<h2 className="sm:text-[25px] md:text-[35px] lg:text-[40px] xl:text-[45px] font-bold text-hover sm:mt-[-5px] xl:mt-[-15px]">
+				<h2 className="sm:text-[25px] md:text-[35px] lg:text-[40px] xl:text-[45px] font-bold text-hover sm:mt-[-5px] xl:mt-[-15px] ">
 					Developer Front-End
 				</h2>
 			</div>
 
-			<div className="m-2">
+			<div className="m-2" data-cy="div-boas-vindas">
 				<h1 className="sm:text-[30px] text-[40px] text-white text-center pt-8 ">
-					Seja <span className="text-yellow ">Muito bem vindo</span>
+					Seja <span className="text-yellow ">muito bem vindo</span>
 				</h1>
 				<p className="text-white text-center">
 					Esse é o meu portifólio, ele foi criado com muito carinho
@@ -64,12 +63,13 @@ const HomePage: NextPage = function () {
 				</p>
 			</div>
 
-			<div className="flex flex-row sm:flex-col sm:items-center justify-center sm:space-x-0 space-x-8 mt-5">
+			<div className="flex flex-row sm:flex-col sm:items-center justify-center sm:space-x-0 space-x-8 mt-5 xl:ml-8">
 				<Button1 className="text-[18px] mb-5">Ver projetos</Button1>
 
 				<Button7
 					className="flex flex-row justify-center items-center space-x-2"
-					onClick={downloadCV}>
+					onClick={downloadCV}
+					data-cy="cy-downloadCv">
 					<Icon
 						path={mdiDownload}
 						title="User Profile"
@@ -82,7 +82,7 @@ const HomePage: NextPage = function () {
 				<h1 id="aboutMe" />
 			</div>
 
-			<AreaAboutMe className="mx-auto mt-24">
+			<AreaAboutMe className="mx-auto mt-24" data-cy="div-aboutMe">
 				<ImageAboutMe
 					src={foto}
 					alt="Me"
@@ -92,15 +92,15 @@ const HomePage: NextPage = function () {
 				/>
 				<AreaTextAboutMe>
 					<H2Head>Sobre Mim </H2Head>
-					<Body1 className="mb-24">
+					<Body1 className="mb-24 mini:mb-16">
 						Sou formado em análise e desenvolvimento de sistema
 						<br /> e sou apaixonado por Javascript. <br />
 						Tenho me aprofundado cada vez mais nesse universo <br />
 						do desenvolvimento web e mobile. <br />
-						Clica nesse botão abaixo <br /> se qusier saber mais <br />
-						sobre as minhas skills!!
+						Clica nesse botão abaixo <br /> se quiser saber mais <br />
+						sobre as minhas skills!
 					</Body1>
-					<Button8 className="sm:mt-28  flex flex-row justify-center items-center space-x-2">
+					<Button8 className="sm:mt-28 mini:mt-1 flex flex-row justify-center items-center space-x-2">
 						<Body1>Mais sobre mim</Body1>
 						<Icon
 							path={mdiArrowRight}
@@ -112,11 +112,13 @@ const HomePage: NextPage = function () {
 				</AreaTextAboutMe>
 			</AreaAboutMe>
 
-			<H3Head className="text-yellow text-center mt-24 sm:mt-8">
+			<H3Head className="text-yellow text-center mt-24 sm:mt-8 mini:mx-2">
 				Minhas Habilidades
 			</H3Head>
 
-			<ContainerCards className="mx-auto mt-24 sm:mt-10 text-white ">
+			<ContainerCards
+				className="mx-auto mt-24 sm:mt-10 text-white "
+				data-cy="div-minhas-habilidades">
 				<Cards>
 					<Logo
 						src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iNjQiIGhlaWdodD0iNjQiCnZpZXdCb3g9IjAgMCAxNzIgMTcyIgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxkZWZzPjxsaW5lYXJHcmFkaWVudCB4MT0iODYiIHkxPSIyNC4zMDMwNiIgeDI9Ijg2IiB5Mj0iMTQ3Ljg0MjA2IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgaWQ9ImNvbG9yLTFfVjZIU2hJencyMXg3X2dyMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZjliNTNhIj48L3N0b3A+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZmY1OWE4Ij48L3N0b3A+PC9saW5lYXJHcmFkaWVudD48bGluZWFyR3JhZGllbnQgeDE9IjEyMi40OTA4OCIgeTE9Ijk1Ljg5MjY5IiB4Mj0iMTIyLjQ5MDg4IiB5Mj0iMTM0Ljg4ODMxIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgaWQ9ImNvbG9yLTJfVjZIU2hJencyMXg3X2dyMiI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZmNkZWE3Ij48L3N0b3A+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZmZjOWUyIj48L3N0b3A+PC9saW5lYXJHcmFkaWVudD48bGluZWFyR3JhZGllbnQgeDE9IjkxLjU5MjY5IiB5MT0iOTUuODkyNjkiIHgyPSI5MS41OTI2OSIgeTI9IjEzNC44ODgzMSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIGlkPSJjb2xvci0zX1Y2SFNoSXp3MjF4N19ncjMiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2ZjZGVhNyI+PC9zdG9wPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2ZmYzllMiI+PC9zdG9wPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDE3MnYtMTcyaDE3MnYxNzJ6IiBmaWxsPSJub25lIj48L3BhdGg+PGcgaWQ9IkxheWVyXzEiPjxwYXRoIGQ9Ik0xMzcuMDYyNSwyMS41aC0xMDIuMTI1Yy03LjUyNSwwIC0xMy40Mzc1LDUuOTEyNSAtMTMuNDM3NSwxMy40Mzc1djEwMi4xMjVjMCw3LjUyNSA1LjkxMjUsMTMuNDM3NSAxMy40Mzc1LDEzLjQzNzVoMTAyLjEyNWM3LjUyNSwwIDEzLjQzNzUsLTUuOTEyNSAxMy40Mzc1LC0xMy40Mzc1di0xMDIuMTI1YzAsLTcuNTI1IC01LjkxMjUsLTEzLjQzNzUgLTEzLjQzNzUsLTEzLjQzNzV6TTE0NS4xMjUsMTM3LjA2MjVjMCw0LjU2ODc1IC0zLjQ5Mzc1LDguMDYyNSAtOC4wNjI1LDguMDYyNWgtMTAyLjEyNWMtNC41Njg3NSwwIC04LjA2MjUsLTMuNDkzNzUgLTguMDYyNSwtOC4wNjI1di0xMDIuMTI1YzAsLTQuNTY4NzUgMy40OTM3NSwtOC4wNjI1IDguMDYyNSwtOC4wNjI1aDEwMi4xMjVjNC41Njg3NSwwIDguMDYyNSwzLjQ5Mzc1IDguMDYyNSw4LjA2MjV6IiBmaWxsPSJ1cmwoI2NvbG9yLTFfVjZIU2hJencyMXg3X2dyMSkiPjwvcGF0aD48cGF0aCBkPSJNMTI1LjUwNjI1LDExMS41MzEyNWwtMi4xNSwtMC44MDYyNWMtMy43NjI1LC0xLjYxMjUgLTUuMzc1LC0yLjY4NzUgLTUuMzc1LC01LjM3NWMwLC0yLjE1IDEuNjEyNSwtMy43NjI1IDQuMDMxMjUsLTMuNzYyNWMyLjE1LDAgMy40OTM3NSwwLjgwNjI1IDQuODM3NSwyLjY4NzVjMC4yNjg3NSwwLjUzNzUgMS4wNzUsMC44MDYyNSAxLjg4MTI1LDAuMjY4NzVsNC41Njg3NSwtMi45NTYyNWMwLjUzNzUsLTAuMjY4NzUgMC44MDYyNSwtMS4zNDM3NSAwLjUzNzUsLTEuODgxMjVjLTIuNjg3NSwtNC4wMzEyNSAtNi40NSwtNS42NDM3NSAtMTEuNTU2MjUsLTUuNjQzNzVjLTcuNzkzNzUsMCAtMTIuNjMxMjUsNC44Mzc1IC0xMi42MzEyNSwxMS4yODc1YzAsNi45ODc1IDQuMDMxMjUsMTAuNDgxMjUgMTAuNDgxMjUsMTIuOWwyLjE1LDAuODA2MjVjNC4wMzEyNSwxLjYxMjUgNS45MTI1LDIuNjg3NSA1LjkxMjUsNS42NDM3NWMwLDIuNDE4NzUgLTEuODgxMjUsNC4zIC01LjM3NSw0LjNjLTMuNzYyNSwwIC01LjY0Mzc1LC0yLjE1IC03LjUyNSwtNC44Mzc1Yy0wLjUzNzUsLTAuNTM3NSAtMS4zNDM3NSwtMC44MDYyNSAtMS44ODEyNSwtMC4yNjg3NWwtNC41Njg3NSwyLjk1NjI1Yy0wLjUzNzUsMC4yNjg3NSAtMC44MDYyNSwxLjA3NSAtMC41Mzc1LDEuODgxMjVjMi42ODc1LDQuNTY4NzUgNi45ODc1LDguMDYyNSAxNC41MTI1LDguMDYyNWM4LjMzMTI1LDAgMTQuMjQzNzUsLTQuMyAxNC4yNDM3NSwtMTIuMDkzNzVjMCwtNi45ODc1IC00LjAzMTI1LC0xMC4yMTI1IC0xMS41NTYyNSwtMTMuMTY4NzV6IiBmaWxsPSJ1cmwoI2NvbG9yLTJfVjZIU2hJencyMXg3X2dyMikiPjwvcGF0aD48cGF0aCBkPSJNMTAzLjQ2ODc1LDk0LjA2MjVoLTYuMTgxMjVjLTAuODA2MjUsMCAtMS4zNDM3NSwwLjUzNzUgLTEuMzQzNzUsMS4zNDM3NXYyNy4xNDM3NWMwLDQuMyAtMS42MTI1LDUuMzc1IC00LjU2ODc1LDUuMzc1Yy0yLjQxODc1LDAgLTQuMywtMS4zNDM3NSAtNS42NDM3NSwtMy4yMjVjLTAuMjY4NzUsLTAuNTM3NSAtMS4wNzUsLTAuODA2MjUgLTEuODgxMjUsLTAuMjY4NzVsLTQuODM3NSwyLjk1NjI1Yy0wLjUzNzUsMC4yNjg3NSAtMC44MDYyNSwxLjM0Mzc1IC0wLjUzNzUsMS44ODEyNWMyLjQxODc1LDQuMDMxMjUgNi45ODc1LDcuNzkzNzUgMTMuNDM3NSw3Ljc5Mzc1YzcuNzkzNzUsMCAxMi45LC00LjAzMTI1IDEyLjksLTEzLjE2ODc1di0yOC40ODc1YzAsLTAuODA2MjUgLTAuNTM3NSwtMS4zNDM3NSAtMS4zNDM3NSwtMS4zNDM3NXoiIGZpbGw9InVybCgjY29sb3ItM19WNkhTaEl6dzIxeDdfZ3IzKSI+PC9wYXRoPjwvZz48L2c+PC9zdmc+"
@@ -159,19 +161,9 @@ const HomePage: NextPage = function () {
 				</Cards>
 			</ContainerCards>
 
-			<Button1 className="sm:hidden flex flex-row justify-center items-center space-x-2 mx-auto mt-24">
-				<Body1>Ver mais skills</Body1>
-				<Icon
-					path={mdiArrowRight}
-					title="User Profile"
-					size="20px"
-					color="#fff"
-				/>
-			</Button1>
-
 			<h1 id="projetos" />
 
-			<Button5 className="md:hidden lg:hidden xl:hidden flex flex-row justify-center items-center space-x-2 mx-auto mt-24 mb-40">
+			<Button5 className="flex flex-row justify-center items-center space-x-2 mx-auto mt-24 mb-40">
 				<Body1>Ver mais skills</Body1>
 				<Icon
 					path={mdiArrowRight}
@@ -183,10 +175,10 @@ const HomePage: NextPage = function () {
 
 			<H3Head className="text-yellow text-center mt-24">Meus projetos</H3Head>
 
-			<HeroSection color="#EFB72B" className="pt-20 ">
-				<Container className="sm:w-auto">
+			<HeroSection className="pt-16 bg-heroRed" data-cy="red-heroSection">
+				<Container>
 					<Imagem
-						src={img}
+						src={imgSite}
 						alt="pizza"
 						height={300}
 						width={500}
@@ -194,19 +186,21 @@ const HomePage: NextPage = function () {
 					/>
 				</Container>
 				<a
-					href="https://github.com/kallif003/Sistema-Delivery"
+					href="https://github.com/kallif003/kallif003.github.io"
 					target="_blank"
 					rel="noreferrer">
-					<div className="text-white sm:mt-[-10px] md:mt-[-30px] lg:mt-[-20px] pl-14 pb-16 sm:pl-6 ">
-						<h1 className="sm:text-[20px] text-[40px] ">Delivery</h1>
+					<div className="text-white sm:mt-[-10px] md:mt-[-30px] lg:mt-[-20px] pl-14 pb-16  sm:pl-6">
+						<h1 className="sm:text-[20px] text-[40px]">Portifólio</h1>
 						<p className="sm:text-[10px] text-xl sm:mt-[-10px] md:mt-[-10px] lg:mt-[-10px] hover:underline decoration-gray-100 underline-offset-8">
-							Sistema desktop para pizzarias
+							Site desenvolvido com Next, Type e Tailwind
 						</p>
 					</div>
 				</a>
 			</HeroSection>
 
-			<HeroSection color="#9000FF" className="w-auto ">
+			<HeroSection
+				className="w-auto bg-heroPurple"
+				data-cy="purple-heroSection">
 				<Container className="sm:w-auto flex flex-row lg:mt-[-50px] ">
 					<Imagem
 						src={list}
@@ -236,10 +230,10 @@ const HomePage: NextPage = function () {
 				</a>
 			</HeroSection>
 
-			<HeroSection color="#C2273A" className="pt-16">
-				<Container>
+			<HeroSection className="pt-20 bg-heroYellow" data-cy="yellow-heroSection">
+				<Container className="sm:w-auto">
 					<Imagem
-						src={imgSite}
+						src={img}
 						alt="pizza"
 						height={300}
 						width={500}
@@ -247,13 +241,13 @@ const HomePage: NextPage = function () {
 					/>
 				</Container>
 				<a
-					href="https://github.com/kallif003/kallif003.github.io"
+					href="https://github.com/kallif003/Sistema-Delivery"
 					target="_blank"
 					rel="noreferrer">
-					<div className="text-white sm:mt-[-10px] md:mt-[-30px] lg:mt-[-20px] pl-14 pb-16  sm:pl-6">
-						<h1 className="sm:text-[20px] text-[40px]">Portifólio</h1>
+					<div className="text-white sm:mt-[-10px] md:mt-[-30px] lg:mt-[-20px] pl-14 pb-16 sm:pl-6 ">
+						<h1 className="sm:text-[20px] text-[40px] ">Delivery</h1>
 						<p className="sm:text-[10px] text-xl sm:mt-[-10px] md:mt-[-10px] lg:mt-[-10px] hover:underline decoration-gray-100 underline-offset-8">
-							Site desenvolvido com Next, Type e Tailwind
+							Sistema desktop para pizzarias
 						</p>
 					</div>
 				</a>

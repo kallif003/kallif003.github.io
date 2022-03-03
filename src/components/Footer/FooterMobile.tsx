@@ -9,7 +9,7 @@ import { mdiGithub } from "@mdi/js"
 
 const FooterMobile: NextPage = () => {
 	return (
-		<footer className="bg-bg">
+		<footer className="bg-bg" data-cy="footer-mobile">
 			<h1
 				className="text-2xl text-white font-bold font-['sans'] text-center pt-5"
 				data-testid="logo-mobile">
@@ -23,13 +23,19 @@ const FooterMobile: NextPage = () => {
 				Inicio
 			</Subtittle>
 
-			<Ancora href="" className="text-white" data-testid="btnMobileSobreMim">
+			<Ancora
+				href="#aboutMe"
+				className="text-white"
+				data-testid="btnMobileSobreMim">
 				<Body2 className="pb-5 " style={{ textAlign: "center" }}>
 					Sobre mim
 				</Body2>
 			</Ancora>
 
-			<Ancora href="" className="text-white" data-testid="btnMobileProjetos">
+			<Ancora
+				href="#projetos"
+				className="text-white"
+				data-testid="btnMobileProjetos">
 				<Body2 className="pb-5 " style={{ textAlign: "center" }}>
 					Projetos
 				</Body2>

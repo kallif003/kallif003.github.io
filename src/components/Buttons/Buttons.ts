@@ -1,16 +1,96 @@
+import tw from "tailwind-styled-components"
 import styled from "styled-components"
 
-export const Button1 = styled.button`
-	//ver projeto, botão amarelo
-	height: 48px;
-	width: 169px;
-	left: 16px;
-	top: 16px;
-	border-radius: 8px;
-	padding: 16px, 20px, 16px, 20px;
-	background: #f9b53a;
-	color: #fff;
-	font-family: DM sans;
+export const Button1 = tw.button`
+	h-[48px]
+	w-[169px]
+	left-[16px]
+	top-[16px]
+	rounded-[8px]
+	py-[12px]
+	px-[16px]
+	bg-yellow
+	text-white
+	font-['sans']
+	
+`
+
+export const Button3 = tw.button`
+	h-[48px]
+	w-[218px]
+	left-[16px]
+	top-[16px]
+	rounded-[8px]
+	py-[12px]
+	px-[16px]
+	bg-yellow
+	text-white
+	font-['sans']	
+`
+
+export const Button5 = tw.button`
+	h-[48px]
+	w-[328px]
+	left-[16px]
+	top-[144px]
+	rounded-[8px]
+	py-[12px]
+	px-[16px]
+	bg-yellow
+	text-white
+	font-['sans']
+
+	md:w-[215px]
+	mini:w-[250px]
+
+`
+
+export const Button7 = tw.button`
+	h-[48px]
+	w-[172px]
+	left-[16px]
+	top-[16px]
+	rounded-[8px]
+	py-[12px]
+	px-[16px]
+	text-white
+	font-['sans']
+	border-solid
+	border
+	border-white
+`
+
+export const Button8 = tw.button`
+    h-[48px]
+	w-[198px]
+	left-[16px]
+	top-[16px]
+	rounded-[8px]
+	py-[12px]
+	px-[16px]
+	text-white
+	font-['sans']
+	border-solid
+	border
+	border-white
+
+`
+export const Ul = tw.ul`
+    grid
+	grid-flow-col
+	gap-2
+	text-white
+	font-['sans']
+	list-none
+`
+export const Li = tw.li`
+	pl-3
+	rounded-2
+`
+export const Ancora = tw.a`
+    no-underline
+	hover:underline decoration-yellow underline-offset-8
+		
 `
 export const Button2 = styled.button`
 	//ver projeto, botão gradiente
@@ -24,15 +104,15 @@ export const Button2 = styled.button`
 	color: #fff;
 	font-family: DM sans;
 `
-export const Button3 = styled.button`
-	//botão medio amarelo
+export const Button6 = styled.button`
+	//botão grande gradiente
 	height: 48px;
-	width: 218px;
+	width: 328px;
 	left: 16px;
-	top: 16px;
+	top: 208px;
 	border-radius: 8px;
 	padding: 16px, 20px, 16px, 20px;
-	background: #f9b53a;
+	background: linear-gradient(270deg, #f9b53a 10.81%, #ff59a8 100%);
 	color: #fff;
 	font-family: DM sans;
 `
@@ -47,77 +127,4 @@ export const Button4 = styled.button`
 	background: linear-gradient(270deg, #f9b53a 10.81%, #ff59a8 100%);
 	color: #fff;
 	font-family: DM sans;
-`
-export const Button5 = styled.button`
-	//botão grande amarelo
-	height: 48px;
-	width: 328px;
-	left: 16px;
-	top: 144px;
-	border-radius: 8px;
-	padding: 16px, 20px, 16px, 20px;
-	background: #f9b53a;
-	color: #fff;
-	font-family: DM sans;
-	@media (max-width: 950px) {
-		width: 200px;
-	}
-`
-export const Button6 = styled.button`
-	//botão grande gradiente
-	height: 48px;
-	width: 328px;
-	left: 16px;
-	top: 208px;
-	border-radius: 8px;
-	padding: 16px, 20px, 16px, 20px;
-	background: linear-gradient(270deg, #f9b53a 10.81%, #ff59a8 100%);
-	color: #fff;
-	font-family: DM sans;
-`
-export const Button7 = styled.button`
-	//botão download cv
-	height: 48px;
-	width: 172px;
-	left: 16px;
-	top: 16px;
-	border-radius: 8px;
-	padding: 16px, 20px, 16px, 20px;
-	border: 1px solid #ffffff;
-	box-sizing: border-box;
-	color: #fff;
-	font-family: DM sans;
-`
-export const Button8 = styled.button`
-	//botão "Sobre mim"
-	height: 48px;
-	width: 198px;
-	left: 16px;
-	top: 16px;
-	border-radius: 8px;
-	padding: 16px, 20px, 16px, 20px;
-	border: 1px solid #ffffff;
-	box-sizing: border-box;
-	color: #fff;
-	font-family: DM sans;
-`
-export const Ul = styled.ul`
-	display: grid;
-	grid-auto-flow: column;
-	column-gap: 0.5rem;
-	color: #fff;
-	font-family: DM sans;
-	list-style: none;
-`
-export const Li = styled.li`
-	padding-left: 0.75rem;
-	border-radius: 0.5rem;
-`
-export const Ancora = styled.a`
-	text-decoration-line: none;
-	&:hover {
-		text-decoration-line: underline;
-		text-decoration-color: #f9b53a;
-		text-underline-offset: 8px;
-	}
 `

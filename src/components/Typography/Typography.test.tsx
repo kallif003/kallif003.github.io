@@ -13,7 +13,7 @@ import {
 } from "./Typography"
 
 describe("Typography", () => {
-	it("renders H1Head properly", () => {
+	test("renders H1Head properly", () => {
 		const { container } = render(<H1Head>Test</H1Head>)
 
 		expect(container.firstChild).toMatchSnapshot()

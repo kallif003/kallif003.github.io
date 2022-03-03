@@ -2,7 +2,7 @@
 
 exports[`Buttons renders Ancora properly 1`] = `
 <a
-  class="sc-jrQzAO hLTNwg"
+  class="no-underline hover:underline decoration-yellow underline-offset-8"
 >
   Teste
 </a>
@@ -10,7 +10,7 @@ exports[`Buttons renders Ancora properly 1`] = `
 
 exports[`Buttons renders Button1 properly 1`] = `
 <button
-  class="sc-bdvvtL hQRTiU"
+  class="h-[48px] w-[169px] left-[16px] top-[16px] rounded-[8px] py-[12px] px-[16px] bg-yellow text-white font-['sans']"
 >
   Teste
 </button>
@@ -18,7 +18,7 @@ exports[`Buttons renders Button1 properly 1`] = `
 
 exports[`Buttons renders Button2 properly 1`] = `
 <button
-  class="sc-gsDKAQ dWvCyB"
+  class="sc-bdvvtL kBjrjk"
 >
   Teste
 </button>
@@ -26,7 +26,7 @@ exports[`Buttons renders Button2 properly 1`] = `
 
 exports[`Buttons renders Button3 properly 1`] = `
 <button
-  class="sc-dkPtRN EaVla"
+  class="h-[48px] w-[218px] left-[16px] top-[16px] rounded-[8px] py-[12px] px-[16px] bg-yellow text-white font-['sans']"
 >
   Teste
 </button>
@@ -34,7 +34,7 @@ exports[`Buttons renders Button3 properly 1`] = `
 
 exports[`Buttons renders Button4 properly 1`] = `
 <button
-  class="sc-hKwDye iThMGh"
+  class="sc-dkPtRN hwZMKS"
 >
   Teste
 </button>
@@ -42,7 +42,7 @@ exports[`Buttons renders Button4 properly 1`] = `
 
 exports[`Buttons renders Button5 properly 1`] = `
 <button
-  class="sc-eCImPb ezteKB"
+  class="h-[48px] w-[328px] left-[16px] top-[144px] rounded-[8px] py-[12px] px-[16px] bg-yellow text-white font-['sans'] md:w-[215px] mini:w-[250px]"
 >
   Teste
 </button>
@@ -50,7 +50,7 @@ exports[`Buttons renders Button5 properly 1`] = `
 
 exports[`Buttons renders Button6 properly 1`] = `
 <button
-  class="sc-jRQBWg fYwWpf"
+  class="sc-gsDKAQ duEQz"
 >
   Teste
 </button>
@@ -58,7 +58,7 @@ exports[`Buttons renders Button6 properly 1`] = `
 
 exports[`Buttons renders Button7 properly 1`] = `
 <button
-  class="sc-gKclnd dGTRWn"
+  class="h-[48px] w-[172px] left-[16px] top-[16px] rounded-[8px] py-[12px] px-[16px] text-white font-['sans'] border-solid border border-white"
 >
   Teste
 </button>
@@ -66,7 +66,7 @@ exports[`Buttons renders Button7 properly 1`] = `
 
 exports[`Buttons renders Button8 properly 1`] = `
 <button
-  class="sc-iCfMLu hvSlZD"
+  class="h-[48px] w-[198px] left-[16px] top-[16px] rounded-[8px] py-[12px] px-[16px] text-white font-['sans'] border-solid border border-white"
 >
   Teste
 </button>
@@ -74,7 +74,7 @@ exports[`Buttons renders Button8 properly 1`] = `
 
 exports[`Buttons renders Li properly 1`] = `
 <li
-  class="sc-pVTFL jFmDRA"
+  class="pl-3 rounded-2"
 >
   Teste
 </li>
@@ -82,7 +82,7 @@ exports[`Buttons renders Li properly 1`] = `
 
 exports[`Buttons renders Ul properly 1`] = `
 <ul
-  class="sc-furwcr hopZPv"
+  class="grid grid-flow-col gap-2 text-white font-['sans'] list-none"
 >
   Teste
 </ul>

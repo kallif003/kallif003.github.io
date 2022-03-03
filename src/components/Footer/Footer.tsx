@@ -10,8 +10,8 @@ import FooterMobile from "./FooterMobile"
 
 const Footer: NextPage = () => {
 	return (
-		<footer className="grid grid-rows-3 ">
-			<div className="sm:hidden col-span-4 flex md:gap-32 lg:gap-52 xl:gap-52 pl-20 items-center bg-bg">
+		<footer className="grid grid-rows-3" data-cy="footer">
+			<div className="sm:hidden col-span-4 flex md:gap-32 lg:gap-52 xl:gap-52 pl-20 md:pl-14 items-center bg-bg">
 				<h1
 					className="text-2xl text-white font-bold font-['sans']"
 					data-testid="logo">
@@ -28,19 +28,30 @@ const Footer: NextPage = () => {
 				</Subtittle>
 			</div>
 
-			<div className=" sm:hidden col-span-4 lg:gap-32 md:gap-12 xl:gap-32 bg-bg flex md:pl-[240px] pl-80">
+			<div
+				className=" sm:hidden col-span-4 lg:gap-32 md:gap-12 xl:gap-32 bg-bg flex md:pl-[220px] pl-80"
+				data-cy="anchor-footer">
 				<div>
-					<Ancora href="" className="text-white" data-testid="btnSobreMim">
+					<Ancora
+						href="#aboutMe"
+						className="text-white"
+						data-testid="btnSobreMim">
 						<Body2 className="pl-8 pb-6">Sobre mim</Body2>
 					</Ancora>
 
-					<Ancora href="" className="text-white" data-testid="btnProjetos">
+					<Ancora
+						href="#projetos"
+						className="text-white"
+						data-testid="btnProjetos">
 						<Body2 className="pl-8">Projetos</Body2>
 					</Ancora>
 				</div>
 
 				<div className="text-white pl-14">
-					<Ancora href="mailto:kallifabrahao@gmail.com" data-testid="btnEmail">
+					<Ancora
+						href="mailto:kallifabrahao@gmail.com"
+						data-testid="btnEmail"
+						data-cy="footer-email">
 						<Body2 className="pb-6">Email</Body2>
 					</Ancora>
 
@@ -48,7 +59,8 @@ const Footer: NextPage = () => {
 						href="https://api.whatsapp.com/send?1=pt_BR&phone=5512991116524"
 						target="_blank"
 						rel="noreferrer"
-						data-testid="btnWhatsapp">
+						data-testid="btnWhatsapp"
+						data-cy="footer-contact-me">
 						<Body2>Whatsapp</Body2>
 					</Ancora>
 				</div>
@@ -59,7 +71,8 @@ const Footer: NextPage = () => {
 							href="https://www.linkedin.com/in/kallifabrahao/"
 							target="_blank"
 							rel="noreferrer"
-							data-testid="btnLinkedin">
+							data-testid="btnLinkedin"
+							data-cy="footer-linkedin">
 							<Icon
 								path={mdiLinkedin}
 								title="User Profile"
@@ -71,7 +84,8 @@ const Footer: NextPage = () => {
 							href="https://github.com/kallif003"
 							target="_blank"
 							rel="noreferrer"
-							data-testid="btnGitHub">
+							data-testid="btnGitHub"
+							data-cy="footer-gitHub">
 							<Icon
 								path={mdiGithub}
 								title="User Profile"
@@ -84,16 +98,18 @@ const Footer: NextPage = () => {
 			</div>
 
 			<div className=" sm:hidden col-span-4 bg-bg ">
-				<hr className="border-bordes w-[90%] mt-8 ml-20" />
+				<hr className="border-bordes w-[90%] mt-8 ml-20 md:ml-10" />
 				<div className="flex items-center mt-3 pb-5">
 					<Icon
 						path={mdiAlphaCCircleOutline}
 						title="User Profile"
 						size="10px"
 						color="#fff"
-						className="ml-20"
+						className="ml-20 md:ml-10"
 					/>
-					<Body2 className="text-white pl-2 text-sm" data-testid="footer">
+					<Body2
+						className="text-white pl-2 text-sm md:pl-1"
+						data-testid="footer">
 						2022 K.A.A
 					</Body2>
 				</div>

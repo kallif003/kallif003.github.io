@@ -1,84 +1,84 @@
-import styled from "styled-components"
+import tw from "tailwind-styled-components"
 
-export const H1Head = styled.h1`
-	font-family: DM Sans;
-	font-size: 60px;
-	font-style: normal;
-	font-weight: 700;
-	line-height: 71px;
-	letter-spacing: -0.5px;
-`
-
-export const H2Head = styled.h2`
-	font-family: DM Sans;
-	font-size: 48px;
-	font-style: normal;
-	font-weight: 500;
-	line-height: 57px;
-	letter-spacing: 0em;
-	text-align: left;
+export const H1Head = tw.h1`
+    font-['sans']
+	text-[60px]
+	font-normal
+	font-[700]
+	leading-[71px]
+	tracking-[-0.5px]
 `
 
-export const H3Head = styled.h3`
-	font-family: DM Sans;
-	font-size: 34px;
-	font-style: normal;
-	font-weight: 500;
-	line-height: 40px;
-	letter-spacing: 0.25px;
-`
-export const H4Head = styled.h4`
-	font-family: DM Sans;
-	font-size: 24px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 32px;
-	letter-spacing: 0em;
-`
-export const H5Head = styled.h5`
-	font-family: DM Sans;
-	font-size: 20px;
-	font-style: normal;
-	font-weight: 500;
-	line-height: 24px;
-	letter-spacing: 0.15000000596046448px;
-	text-align: left;
-`
-export const Subtittle = styled.h2`
-	font-family: DM Sans;
-	font-size: 16px;
-	font-style: normal;
-	font-weight: 500;
-	line-height: 20px;
-	letter-spacing: 0.15000000596046448px;
-	text-align: left;
+export const H2Head = tw.h2`
+    font-['sans']
+	text-[48px]
+	font-normal
+	font-[500]
+	leading-[57px]
+	tracking-[0rem]
+	text-left
 `
 
-export const Subtittle2 = styled.h2`
-	font-family: DM Sans;
-	font-size: 14px;
-	font-style: normal;
-	font-weight: 500;
-	line-height: 24px;
-	letter-spacing: 0.10000000149011612px;
-	text-align: left;
+export const H3Head = tw.h3`
+	font-['sans']
+	text-[34px]
+	font-normal
+	font-[500]
+	leading-[40px]
+	tracking-[0.25px]
 `
-export const Body1 = styled.p`
-	font-family: DM Sans;
-	font-size: 16px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 28px;
-	letter-spacing: 0.4399999976158142px;
-	text-align: left;
+export const H4Head = tw.h4`
+	font-['sans']
+	text-[24px]
+	font-normal
+	font-[400]
+	leading-[32px]
+	tracking-[0rem]
+`
+export const H5Head = tw.h5`
+	font-['sans']
+	text-[20px]
+	font-normal
+	font-[500]
+	leading-[24px]
+	tracking-[0.15px]
+	text-left	
+`
+export const Subtittle = tw.h2`
+	font-['sans']
+	text-[16px]
+	font-normal
+	font-[500]
+	leading-[20px]
+	tracking-[0.15px]
+	text-left	
 `
 
-export const Body2 = styled.p`
-	font-family: DM Sans;
-	font-size: 14px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 20px;
-	letter-spacing: 0.25px;
-	text-align: left;
+export const Subtittle2 = tw.h2`
+    font-['sans']
+	text-[14px]
+	font-normal
+	font-[500]
+	leading-[24px]
+	tracking-[0.10px]
+	text-left	
+`
+export const Body1 = tw.p`
+	font-['sans']
+	text-[16px]
+	font-normal
+	font-[400]
+	leading-[28px]
+	tracking-[0.43px]
+	text-left	
+`
+
+export const Body2 = tw.p`
+	font-['sans']
+	text-[14px]
+	font-normal
+	font-[400]
+	leading-[20px]
+	tracking-[0.25px]
+	text-left	
 `
