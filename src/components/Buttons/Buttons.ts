@@ -10,7 +10,6 @@ export const Button1 = tw.button`
 	py-[12px]
 	px-[16px]
 	bg-yellow
-	text-white
 	font-['sans']
 	
 `
@@ -39,7 +38,6 @@ export const Button5 = tw.button`
 	bg-yellow
 	text-white
 	font-['sans']
-
 	md:w-[215px]
 	mini:w-[250px]
 
@@ -79,7 +77,6 @@ export const Ul = tw.ul`
     grid
 	grid-flow-col
 	gap-2
-	text-white
 	font-['sans']
 	list-none
 `

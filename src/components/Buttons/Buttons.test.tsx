@@ -56,7 +56,7 @@ describe("Buttons", () => {
 		const { container } = render(<Li>Teste</Li>)
 		expect(container.firstChild).toMatchSnapshot()
 	})
-	it("renders Ancora properly", () => {
+	it("renders Anchor properly", () => {
 		const { container } = render(<Ancora>Teste</Ancora>)
 		expect(container.firstChild).toMatchSnapshot()
 	})

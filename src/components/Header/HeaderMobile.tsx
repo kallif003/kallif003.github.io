@@ -4,6 +4,13 @@ import { Li, Ancora } from "../Buttons"
 import Icon from "@mdi/react"
 import { mdiMenu } from "@mdi/js"
 import { mdiClose } from "@mdi/js"
+import {
+	HiddenInMobile,
+	DivMobile,
+	HeaderH1,
+	UlMobile,
+	LiMobile,
+} from "./styles"
 
 const HeaderMobile: NextPage = () => {
 	const [active, setActive] = useState(true)
@@ -13,12 +20,10 @@ const HeaderMobile: NextPage = () => {
 	}
 
 	return (
-		<div className="md:hidden lg:hidden xl:hidden">
-			<div
-				className="text-white flex justify-between w-full px-5 md:hidden lg:hidden xl:hidden"
-				onClick={troca}>
+		<div className={HiddenInMobile}>
+			<div className={`${HiddenInMobile} ${DivMobile}`} onClick={troca}>
 				<h1
-					className="text-white font-bold mt-2 font-['sans']"
+					className={HeaderH1}
 					data-testid="mobile-text"
 					data-cy="cy-mobile-text">
 					K.A.A
@@ -38,8 +43,8 @@ const HeaderMobile: NextPage = () => {
 			</div>
 
 			<div className={active ? "hidden" : "w-screeb h-screen"} onClick={troca}>
-				<ul className="text-white pl-2">
-					<Li className="py-4">
+				<ul className={UlMobile}>
+					<Li className={LiMobile}>
 						<Ancora
 							href="#home"
 							data-testid="mobile-home"
@@ -47,7 +52,7 @@ const HeaderMobile: NextPage = () => {
 							Home
 						</Ancora>
 					</Li>
-					<Li className="py-4">
+					<Li className={LiMobile}>
 						<Ancora
 							href="#projetos"
 							data-testid="mobile-project"
@@ -55,7 +60,7 @@ const HeaderMobile: NextPage = () => {
 							Projetos
 						</Ancora>
 					</Li>
-					<Li className="py-4">
+					<Li className={LiMobile}>
 						<Ancora
 							href="#aboutMe"
 							data-testid="mobile-about-me"
@@ -63,7 +68,7 @@ const HeaderMobile: NextPage = () => {
 							Sobre
 						</Ancora>
 					</Li>
-					<Li className="py-4">
+					<Li className={LiMobile}>
 						<Ancora
 							href="https://api.whatsapp.com/send?l=pt_pt&phone=5512991116524"
 							target="_blank"

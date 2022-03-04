@@ -51,7 +51,7 @@ export const Subtittle = tw.h2`
 	font-[500]
 	leading-[20px]
 	tracking-[0.15px]
-	text-left	
+		
 `
 
 export const Subtittle2 = tw.h2`
@@ -80,5 +80,5 @@ export const Body2 = tw.p`
 	font-[400]
 	leading-[20px]
 	tracking-[0.25px]
-	text-left	
+	
 `

@@ -6,110 +6,87 @@ import Icon from "@mdi/react"
 import { mdiAlphaCCircleOutline } from "@mdi/js"
 import { mdiLinkedin } from "@mdi/js"
 import { mdiGithub } from "@mdi/js"
+import {
+	FooterDiv6,
+	FooterH1,
+	FooterMobileH1,
+	FooterSocialMedia,
+	FooterSubtitle,
+	HiddenInFooter,
+	HrMobile,
+	TextMobile,
+} from "./styles"
 
 const FooterMobile: NextPage = () => {
 	return (
-		<footer className="bg-bg" data-cy="footer-mobile">
-			<h1
-				className="text-2xl text-white font-bold font-['sans'] text-center pt-5"
-				data-testid="logo-mobile">
+		<footer className={HiddenInFooter} data-cy="footer-mobile">
+			<h1 className={`${FooterH1} ${FooterMobileH1}`} data-testid="logo-mobile">
 				K.A.A
 			</h1>
 
-			<Subtittle
-				className="text-yellow pt-5 pb-5"
-				style={{ textAlign: "center" }}
-				data-testid="start-mobile">
-				Inicio
-			</Subtittle>
+			<div className={FooterSubtitle}>
+				<Subtittle className="pb-5" data-testid="start-mobile">
+					Inicio
+				</Subtittle>
 
-			<Ancora
-				href="#aboutMe"
-				className="text-white"
-				data-testid="btnMobileSobreMim">
-				<Body2 className="pb-5 " style={{ textAlign: "center" }}>
-					Sobre mim
-				</Body2>
-			</Ancora>
+				<Ancora href="#aboutMe" data-testid="btnMobileSobreMim">
+					<Body2 className={TextMobile}>Sobre mim</Body2>
+				</Ancora>
 
-			<Ancora
-				href="#projetos"
-				className="text-white"
-				data-testid="btnMobileProjetos">
-				<Body2 className="pb-5 " style={{ textAlign: "center" }}>
-					Projetos
-				</Body2>
-			</Ancora>
+				<Ancora href="#projetos" data-testid="btnMobileProjetos">
+					<Body2 className={TextMobile}>Projetos</Body2>
+				</Ancora>
+			</div>
 
-			<Subtittle
-				className="text-yellow pb-5"
-				style={{ textAlign: "center" }}
-				data-testid="contact-mobile">
-				Contate-me
-			</Subtittle>
+			<div className={FooterSubtitle}>
+				<Subtittle className="pb-5" data-testid="contact-mobile">
+					Contate-me
+				</Subtittle>
 
-			<Ancora
-				href="mailto:kallifabrahao@gmail.com"
-				className="text-white"
-				data-testid="btnMobileEmail">
-				<Body2 className="pb-5 " style={{ textAlign: "center" }}>
-					Email
-				</Body2>
-			</Ancora>
+				<Ancora
+					href="mailto:kallifabrahao@gmail.com"
+					data-testid="btnMobileEmail">
+					<Body2 className={TextMobile}>Email</Body2>
+				</Ancora>
 
-			<Ancora
-				href="https://api.whatsapp.com/send?1=pt_BR&phone=5512991116524"
-				className="text-white"
-				data-testid="btnMobileWhatsapp">
-				<Body2 className="pb-5 " style={{ textAlign: "center" }}>
-					Whatsapp
-				</Body2>
-			</Ancora>
+				<Ancora
+					href="https://api.whatsapp.com/send?1=pt_BR&phone=5512991116524"
+					data-testid="btnMobileWhatsapp">
+					<Body2 className={TextMobile}>Whatsapp</Body2>
+				</Ancora>
+			</div>
 
-			<Subtittle
-				className="text-yellow pb-5"
-				style={{ textAlign: "center" }}
-				data-testid="social-mobile">
+			<Subtittle className={FooterSubtitle} data-testid="social-mobile">
 				Social
 			</Subtittle>
 
-			<div className="flex items-center space-x-2 justify-center pb-5">
+			<div className={FooterSocialMedia}>
 				<a
 					href="https://www.linkedin.com/in/kallifabrahao/"
 					target="_blank"
 					rel="noreferrer"
 					data-testid="btnMobileLinkedin">
-					<Icon
-						path={mdiLinkedin}
-						title="User Profile"
-						size="25px"
-						color="#fff"
-					/>
+					<Icon path={mdiLinkedin} title="User Profile" size="25px" />
 				</a>
 				<a
 					href="https://github.com/kallif003"
 					target="_blank"
 					rel="noreferrer"
 					data-testid="btnMobileGitHub">
-					<Icon
-						path={mdiGithub}
-						title="User Profile"
-						size="25px"
-						color="#fff"
-					/>
+					<Icon path={mdiGithub} title="User Profile" size="25px" />
 				</a>
 			</div>
 
-			<hr className="border-bordes w-[80%] mx-auto " />
+			<hr className={HrMobile} />
 
-			<div className="flex items-center mt-3 pb-5 justify-center">
+			<div className={FooterDiv6}>
 				<Icon
 					path={mdiAlphaCCircleOutline}
 					title="User Profile"
 					size="10px"
 					color="#fff"
 				/>
-				<Body2 className="text-white pl-2 text-sm" data-testid="footer-mobile">
+				<Body2 className="pl-2" data-testid="footer-mobile">
 					2022 K.A.A
 				</Body2>
 			</div>

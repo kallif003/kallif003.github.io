@@ -36,6 +36,9 @@ module.exports = {
 
 			mini: { min: "260px", max: "300px" },
 			// => @media (min-width: 260px and max-width: 300px) { ... }
+
+			M: { min: "500px", max: "720px" },
+			// => @media (min-width: 540px and max-width: 720px) { ... }
 		},
 
 		fontFamily: {
