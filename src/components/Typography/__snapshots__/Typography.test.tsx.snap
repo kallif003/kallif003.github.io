@@ -10,7 +10,7 @@ exports[`Typography renders Body 1 properly 1`] = `
 
 exports[`Typography renders Body 2 properly 1`] = `
 <p
-  class="font-['sans'] text-[14px] font-normal font-[400] leading-[20px] tracking-[0.25px] text-left"
+  class="font-['sans'] text-[14px] font-normal font-[400] leading-[20px] tracking-[0.25px]"
 >
   Test
 </p>
@@ -66,7 +66,7 @@ exports[`Typography renders Subtittle 2 properly 1`] = `
 
 exports[`Typography renders Subtittle properly 1`] = `
 <h2
-  class="font-['sans'] text-[16px] font-normal font-[500] leading-[20px] tracking-[0.15px] text-left"
+  class="font-['sans'] text-[16px] font-normal font-[500] leading-[20px] tracking-[0.15px]"
 >
   Test
 </h2>

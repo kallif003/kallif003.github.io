@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Buttons renders Ancora properly 1`] = `
+exports[`Buttons renders Anchor properly 1`] = `
 <a
   class="no-underline hover:underline decoration-yellow underline-offset-8"
 >
@@ -10,7 +10,7 @@ exports[`Buttons renders Ancora properly 1`] = `
 
 exports[`Buttons renders Button1 properly 1`] = `
 <button
-  class="h-[48px] w-[169px] left-[16px] top-[16px] rounded-[8px] py-[12px] px-[16px] bg-yellow text-white font-['sans']"
+  class="h-[48px] w-[169px] left-[16px] top-[16px] rounded-[8px] py-[12px] px-[16px] bg-yellow font-['sans']"
 >
   Teste
 </button>
@@ -82,7 +82,7 @@ exports[`Buttons renders Li properly 1`] = `
 
 exports[`Buttons renders Ul properly 1`] = `
 <ul
-  class="grid grid-flow-col gap-2 text-white font-['sans'] list-none"
+  class="grid grid-flow-col gap-2 font-['sans'] list-none"
 >
   Teste
 </ul>
