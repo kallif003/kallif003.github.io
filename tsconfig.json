@@ -22,7 +22,6 @@
 		"**/*.tsx",
 		"src/pages/index.tsx",
 		"tests/Header.test.tsx",
-		"src/pages/soma.js",
 		"src/pages/HomePage/HomePage.spec.js"
 	],
 	"exclude": ["node_modules"]

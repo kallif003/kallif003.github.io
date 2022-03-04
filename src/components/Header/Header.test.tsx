@@ -9,26 +9,26 @@ describe("Header", () => {
 		const text = screen.getByTestId("text")
 		expect(text.innerHTML).toEqual("K.A.A")
 	})
-	it("teste button ancoras", () => {
+	it("test anchor button ", () => {
 		render(<Header />)
 
 		const button = screen.getByTestId("contact-me")
 		userEvent.click(button)
 	})
 
-	it("teste button ancoras", () => {
+	it("test anchor button ", () => {
 		render(<Header />)
 
 		const button = screen.getByTestId("about-me")
 		userEvent.click(button)
 	})
-	it("teste button ancoras", () => {
+	it("test anchor button ", () => {
 		render(<Header />)
 
 		const button = screen.getByTestId("project")
 		userEvent.click(button)
 	})
-	it("teste button ancoras", () => {
+	it("test anchor button ", () => {
 		render(<Header />)
 
 		const button = screen.getByTestId("btnHome")

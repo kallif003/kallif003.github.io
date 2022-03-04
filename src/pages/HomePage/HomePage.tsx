@@ -28,6 +28,22 @@ import {
 } from "../../components/HeroSection/HeroSection"
 import Footer from "../../components/Footer/Footer"
 import JSPDF from "jspdf"
+import {
+	GradientDiv,
+	Subtitle,
+	Title,
+	ContainerHome,
+	WelcomeDiv,
+	WelcomeH1,
+	DivButtons,
+	ItemAlignment,
+	WidthAuto,
+	TextH3,
+	DivHeroSection,
+	H1HeroSection,
+	PHeroSection,
+	ContainerHeroSection,
+} from "./styles"
 
 const HomePage: NextPage = function () {
 	const downloadCV = () => {
@@ -37,25 +53,21 @@ const HomePage: NextPage = function () {
 	}
 
 	return (
-		<div>
+		<div className={ContainerHome}>
 			<Header />
 
-			<div className="p-2 bg-gradient-to-r from-pink via-orange to-yellow w-screen sm:h-[250px] md:h-[350px] lg:h-[350px] xl:h-[400px] text-center items-center sm:pt-5">
-				<h1
-					id="home"
-					className="sm:pt-12 pt-32  sm:text-[45px] md:text-[80px] lg:text-[90px] xl:text-[100px] text-white font-bold">
+			<div className={GradientDiv}>
+				<h1 id="home" className={Title}>
 					KALLIF ABRAHÃO
 				</h1>
-				<h2 className="sm:text-[25px] md:text-[35px] lg:text-[40px] xl:text-[45px] font-bold text-hover sm:mt-[-5px] xl:mt-[-15px] ">
-					Developer Front-End
-				</h2>
+				<h2 className={Subtitle}>Developer Front-End</h2>
 			</div>
 
-			<div className="m-2" data-cy="div-boas-vindas">
-				<h1 className="sm:text-[30px] text-[40px] text-white text-center pt-8 ">
+			<div className={WelcomeDiv} data-cy="div-boas-vindas">
+				<h1 className={WelcomeH1}>
 					Seja <span className="text-yellow ">muito bem vindo</span>
 				</h1>
-				<p className="text-white text-center">
+				<p>
 					Esse é o meu portifólio, ele foi criado com muito carinho
 					<br /> para que você possa conhecer mais sobre mim e minhas
 					habilidades.
@@ -63,11 +75,11 @@ const HomePage: NextPage = function () {
 				</p>
 			</div>
 
-			<div className="flex flex-row sm:flex-col sm:items-center justify-center sm:space-x-0 space-x-8 mt-5 xl:ml-8">
+			<div className={DivButtons}>
 				<Button1 className="text-[18px] mb-5">Ver projetos</Button1>
 
 				<Button7
-					className="flex flex-row justify-center items-center space-x-2"
+					className={ItemAlignment}
 					onClick={downloadCV}
 					data-cy="cy-downloadCv">
 					<Icon
@@ -82,7 +94,7 @@ const HomePage: NextPage = function () {
 				<h1 id="aboutMe" />
 			</div>
 
-			<AreaAboutMe className="mx-auto mt-24" data-cy="div-aboutMe">
+			<AreaAboutMe className={WidthAuto} data-cy="div-aboutMe">
 				<ImageAboutMe
 					src={foto}
 					alt="Me"
@@ -100,24 +112,19 @@ const HomePage: NextPage = function () {
 						Clica nesse botão abaixo <br /> se quiser saber mais <br />
 						sobre as minhas skills!
 					</Body1>
-					<Button8 className="sm:mt-28 mini:mt-1 flex flex-row justify-center items-center space-x-2">
+					<Button8 className={`${ItemAlignment} sm:mt-28 mini:mt-1`}>
 						<Body1>Mais sobre mim</Body1>
-						<Icon
-							path={mdiArrowRight}
-							title="User Profile"
-							size="20px"
-							color="#fff"
-						/>
+						<Icon path={mdiArrowRight} title="User Profile" size="20px" />
 					</Button8>
 				</AreaTextAboutMe>
 			</AreaAboutMe>
 
-			<H3Head className="text-yellow text-center mt-24 sm:mt-8 mini:mx-2">
+			<H3Head className={`${TextH3} sm:mt-8 mini:mx-2`}>
 				Minhas Habilidades
 			</H3Head>
 
 			<ContainerCards
-				className="mx-auto mt-24 sm:mt-10 text-white "
+				className={`${WidthAuto} sm:mt-10 `}
 				data-cy="div-minhas-habilidades">
 				<Cards>
 					<Logo
@@ -163,7 +170,7 @@ const HomePage: NextPage = function () {
 
 			<h1 id="projetos" />
 
-			<Button5 className="flex flex-row justify-center items-center space-x-2 mx-auto mt-24 mb-40">
+			<Button5 className={`${ItemAlignment} ${WidthAuto} mb-40`}>
 				<Body1>Ver mais skills</Body1>
 				<Icon
 					path={mdiArrowRight}
@@ -173,7 +180,7 @@ const HomePage: NextPage = function () {
 				/>
 			</Button5>
 
-			<H3Head className="text-yellow text-center mt-24">Meus projetos</H3Head>
+			<H3Head className={TextH3}>Meus projetos</H3Head>
 
 			<HeroSection className="pt-16 bg-heroRed" data-cy="red-heroSection">
 				<Container>
@@ -189,9 +196,9 @@ const HomePage: NextPage = function () {
 					href="https://github.com/kallif003/kallif003.github.io"
 					target="_blank"
 					rel="noreferrer">
-					<div className="text-white sm:mt-[-10px] md:mt-[-30px] lg:mt-[-20px] pl-14 pb-16  sm:pl-6">
-						<h1 className="sm:text-[20px] text-[40px]">Portifólio</h1>
-						<p className="sm:text-[10px] text-xl sm:mt-[-10px] md:mt-[-10px] lg:mt-[-10px] hover:underline decoration-gray-100 underline-offset-8">
+					<div className={`${DivHeroSection} lg:mt-[-20px]`}>
+						<h1 className={H1HeroSection}>Portifólio</h1>
+						<p className={PHeroSection}>
 							Site desenvolvido com Next, Type e Tailwind
 						</p>
 					</div>
@@ -201,7 +208,7 @@ const HomePage: NextPage = function () {
 			<HeroSection
 				className="w-auto bg-heroPurple"
 				data-cy="purple-heroSection">
-				<Container className="sm:w-auto flex flex-row lg:mt-[-50px] ">
+				<Container className={ContainerHeroSection}>
 					<Imagem
 						src={list}
 						alt="pizza"
@@ -221,9 +228,9 @@ const HomePage: NextPage = function () {
 					href="https://github.com/kallif003/App-listando"
 					target="_blank"
 					rel="noreferrer">
-					<div className="text-white sm:mt-[-10px] md:mt-[-30px] lg:mt-[-80px] pl-14 pb-16 sm:pl-6 ">
-						<h1 className="sm:text-[20px] text-[40px]">App. Listando</h1>
-						<p className="sm:text-[10px] text-xl sm:mt-[-10px] md:mt-[-10px] lg:mt-[-10px] hover:underline decoration-gray-100 underline-offset-8">
+					<div className={`${DivHeroSection} lg:mt-[-80px]`}>
+						<h1 className={H1HeroSection}>App. Listando</h1>
+						<p className={PHeroSection}>
 							Desenvolvido para criar listas de afazeres
 						</p>
 					</div>
@@ -244,16 +251,14 @@ const HomePage: NextPage = function () {
 					href="https://github.com/kallif003/Sistema-Delivery"
 					target="_blank"
 					rel="noreferrer">
-					<div className="text-white sm:mt-[-10px] md:mt-[-30px] lg:mt-[-20px] pl-14 pb-16 sm:pl-6 ">
-						<h1 className="sm:text-[20px] text-[40px] ">Delivery</h1>
-						<p className="sm:text-[10px] text-xl sm:mt-[-10px] md:mt-[-10px] lg:mt-[-10px] hover:underline decoration-gray-100 underline-offset-8">
-							Sistema desktop para pizzarias
-						</p>
+					<div className={DivHeroSection}>
+						<h1 className={H1HeroSection}>Delivery</h1>
+						<p className={PHeroSection}>Sistema desktop para pizzarias</p>
 					</div>
 				</a>
 			</HeroSection>
 
-			<Button5 className="flex flex-row justify-center items-center space-x-2 mx-auto mt-24 mb-40">
+			<Button5 className={`${ItemAlignment} ${WidthAuto} mb-32 sm:mb-28`}>
 				<Body1>Ver mais dos projetos</Body1>
 
 				<Icon
