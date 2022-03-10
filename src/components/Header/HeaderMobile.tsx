@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import type { NextPage } from "next"
+
 import { Li, Ancora } from "../Buttons"
 import Icon from "@mdi/react"
 import { mdiMenu } from "@mdi/js"
@@ -12,7 +12,7 @@ import {
 	LiMobile,
 } from "./styles"
 
-const HeaderMobile: NextPage = () => {
+const HeaderMobile = (data: any) => {
 	const [active, setActive] = useState(true)
 
 	const troca = () => {
@@ -46,7 +46,7 @@ const HeaderMobile: NextPage = () => {
 				<ul className={UlMobile}>
 					<Li className={LiMobile}>
 						<Ancora
-							href="#home"
+							href={data.homeMobile}
 							data-testid="mobile-home"
 							data-cy="cy-mobile-home">
 							Home
@@ -54,7 +54,7 @@ const HeaderMobile: NextPage = () => {
 					</Li>
 					<Li className={LiMobile}>
 						<Ancora
-							href="#projetos"
+							href={data.projectMobile}
 							data-testid="mobile-project"
 							data-cy="cy-mobile-project">
 							Projetos
@@ -62,7 +62,7 @@ const HeaderMobile: NextPage = () => {
 					</Li>
 					<Li className={LiMobile}>
 						<Ancora
-							href="#aboutMe"
+							href={data.aboutMeMobile}
 							data-testid="mobile-about-me"
 							data-cy="cy-mobile-aboutMe">
 							Sobre

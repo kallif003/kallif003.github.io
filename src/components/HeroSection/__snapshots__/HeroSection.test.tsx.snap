@@ -10,7 +10,7 @@ exports[`Hero Section Components renders Container properly 1`] = `
 
 exports[`Hero Section Components renders HeroSection properly 1`] = `
 <div
-  class="w-[1155px] mt-[16px] mb-[16px] rounded-[20px] mx-auto mini: pt-20 sm:w-auto sm:m-[10px] sm:h-200px md:w-auto md:m-[10px] md:h-200px lg:w-auto lg:m-[10px] lg:h-[300px] lg:pt-10"
+  class="w-[1155px] mt-[16px] rounded-[20px] mx-auto mini: pt-20 sm:w-auto sm:m-[10px] sm:h-200px md:w-auto md:m-[10px] md:h-200px lg:w-auto lg:m-[10px] lg:h-[300px] lg:pt-10"
 >
   Teste
 </div>

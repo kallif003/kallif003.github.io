@@ -20,7 +20,7 @@ export default {
 } as ComponentMeta<typeof H1Head>
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
-const Template: ComponentStory<typeof H1Head> = () => (
+const Template: ComponentStory<typeof H1Head> = (args) => (
 	<div>
 		<H1Head>H1Head</H1Head>
 		<H2Head>H2Head</H2Head>

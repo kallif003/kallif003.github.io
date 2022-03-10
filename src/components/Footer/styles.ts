@@ -3,6 +3,7 @@ grid
 grid-rows-3
 text-white
 sm:hidden 
+pb-8
 `
 export const FooterDiv1 = `
 col-span-4 
@@ -52,6 +53,7 @@ md:ml-10
 `
 export const FlexItemCenter = `
 flex 
+flex-row
 items-center 
 `
 export const HiddenInFooter = `
@@ -94,7 +96,7 @@ export const FooterDiv6 = `
 flex 
 items-center 
 mt-3 
-pb-5 
+pb-8
 justify-center
 text-sm
 `
