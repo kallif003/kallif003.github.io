@@ -11,44 +11,31 @@ export default {
 	component: HeroSection,
 } as ComponentMeta<typeof HeroSection>
 
-const Template: ComponentStory<typeof HeroSection> = (args) => (
+const Template: ComponentStory<typeof HeroSection> = () => (
 	<div>
-		<HeroSection color={args.color}>
+		<HeroSection className="bg-heroYellow ">
 			<Container>
-				<Imagem
-					src={args.img}
-					alt="Sistema Delivery"
-					width={args.width}
-					height={args.height}
-				/>
+				<Imagem src={img} alt="Sistema Delivery" width={500} height={300} />
 			</Container>
 			<H3Head className="text-white pl-10 pt-10">
-				Sistema Delivery - Pizzarias & Esfiharias
+				Sistema Delivery - Pizzarias e Esfiharias
 			</H3Head>
+		</HeroSection>
+
+		<HeroSection className="bg-heroPurple">
+			<Container>
+				<Imagem src={list} alt="Sistema Delivery" width={200} height={300} />
+			</Container>
+			<H3Head className="text-white pl-10 pt-10">App-listando</H3Head>
+		</HeroSection>
+
+		<HeroSection className="bg-heroRed">
+			<Container>
+				<Imagem src={imgSite} alt="Sistema Delivery" width={500} height={300} />
+			</Container>
+			<H3Head className="text-white pl-10 pt-10">Portifólio</H3Head>
 		</HeroSection>
 	</div>
 )
 
-export const Yellow = Template.bind({})
-Yellow.args = {
-	color: "#EFB72B",
-	width: "500px",
-	height: "300px",
-	img: img,
-}
-
-export const Purple = Template.bind({})
-Purple.args = {
-	color: "#9000FF",
-	width: "200px",
-	height: "200px",
-	img: list,
-}
-
-export const Red = Template.bind({})
-Red.args = {
-	color: "#C2273A",
-	width: "500px",
-	height: "300px",
-	img: imgSite,
-}
+export const Default = Template.bind({})

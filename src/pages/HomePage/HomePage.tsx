@@ -2,10 +2,18 @@ import type { NextPage } from "next"
 import React from "react"
 import Header from "../../components/Header/Header"
 import { Button1, Button5, Button7, Button8 } from "../../components/Buttons"
-
+import img from "../../../assets/Image/sistema-delivery.png"
+import foto from "../../../assets/Image/kallif.png"
+import imgSite from "../../../assets/Image/site2.png"
+import list from "../../../assets/Image/listando1.png"
+import list2 from "../../../assets/Image/listando2.png"
+import { cv } from "../../../assets/cv"
+import Footer from "../../components/Footer/Footer"
+import JSPDF from "jspdf"
 import Icon from "@mdi/react"
 import { mdiDownload } from "@mdi/js"
 import { mdiArrowRight } from "@mdi/js"
+import Link from "next/link"
 import { Body1, H2Head, H3Head } from "../../components/Typography"
 import {
 	AreaAboutMe,
@@ -15,19 +23,12 @@ import {
 	Cards,
 	Logo,
 } from "../../components/Cards/Cards"
-import img from "../../../assets/Image/sistema-delivery.png"
-import foto from "../../../assets/Image/kallif.png"
-import imgSite from "../../../assets/Image/site2.png"
-import list from "../../../assets/Image/listando1.png"
-import list2 from "../../../assets/Image/listando2.png"
-import { cv } from "../../../assets/cv"
 import {
 	HeroSection,
 	Imagem,
 	Container,
 } from "../../components/HeroSection/HeroSection"
-import Footer from "../../components/Footer/Footer"
-import JSPDF from "jspdf"
+
 import {
 	GradientDiv,
 	Subtitle,
@@ -43,7 +44,7 @@ import {
 	H1HeroSection,
 	PHeroSection,
 	ContainerHeroSection,
-} from "./styles"
+} from "../styles"
 
 const HomePage: NextPage = function () {
 	const downloadCV = () => {
@@ -54,7 +55,7 @@ const HomePage: NextPage = function () {
 
 	return (
 		<div className={ContainerHome}>
-			<Header />
+			<Header home="HomePage#home" project="#projetos" aboutMe="/AboutMe" />
 
 			<div className={GradientDiv}>
 				<h1 id="home" className={Title}>
@@ -112,10 +113,12 @@ const HomePage: NextPage = function () {
 						Clica nesse botão abaixo <br /> se quiser saber mais <br />
 						sobre as minhas skills!
 					</Body1>
-					<Button8 className={`${ItemAlignment} sm:mt-28 mini:mt-1`}>
-						<Body1>Mais sobre mim</Body1>
-						<Icon path={mdiArrowRight} title="User Profile" size="20px" />
-					</Button8>
+					<Link href="/AboutMe" passHref>
+						<Button8 className={`${ItemAlignment} sm:mt-28 mini:mt-1`}>
+							<Body1>Mais sobre mim</Body1>
+							<Icon path={mdiArrowRight} title="User Profile" size="20px" />
+						</Button8>
+					</Link>
 				</AreaTextAboutMe>
 			</AreaAboutMe>
 
@@ -170,19 +173,20 @@ const HomePage: NextPage = function () {
 
 			<h1 id="projetos" />
 
-			<Button5 className={`${ItemAlignment} ${WidthAuto} mb-40`}>
-				<Body1>Ver mais skills</Body1>
-				<Icon
-					path={mdiArrowRight}
-					title="User Profile"
-					size="20px"
-					color="#fff"
-				/>
-			</Button5>
-
+			<Link href="/AboutMe#skills" passHref>
+				<Button5 className={`${ItemAlignment} ${WidthAuto} mb-40`}>
+					<Body1>Ver mais skills</Body1>
+					<Icon
+						path={mdiArrowRight}
+						title="User Profile"
+						size="20px"
+						color="#fff"
+					/>
+				</Button5>
+			</Link>
 			<H3Head className={TextH3}>Meus projetos</H3Head>
 
-			<HeroSection className="pt-16 bg-heroRed" data-cy="red-heroSection">
+			<HeroSection className="pt-16  bg-heroRed" data-cy="red-heroSection">
 				<Container>
 					<Imagem
 						src={imgSite}
@@ -206,7 +210,7 @@ const HomePage: NextPage = function () {
 			</HeroSection>
 
 			<HeroSection
-				className="w-auto bg-heroPurple"
+				className="w-auto  bg-heroPurple"
 				data-cy="purple-heroSection">
 				<Container className={ContainerHeroSection}>
 					<Imagem
@@ -237,7 +241,9 @@ const HomePage: NextPage = function () {
 				</a>
 			</HeroSection>
 
-			<HeroSection className="pt-20 bg-heroYellow" data-cy="yellow-heroSection">
+			<HeroSection
+				className="bg-heroYellow sm:mb-20 mb-44"
+				data-cy="yellow-heroSection">
 				<Container className="sm:w-auto">
 					<Imagem
 						src={img}
@@ -258,18 +264,7 @@ const HomePage: NextPage = function () {
 				</a>
 			</HeroSection>
 
-			<Button5 className={`${ItemAlignment} ${WidthAuto} mb-32 sm:mb-28`}>
-				<Body1>Ver mais dos projetos</Body1>
-
-				<Icon
-					path={mdiArrowRight}
-					title="User Profile"
-					size="20px"
-					color="#fff"
-				/>
-			</Button5>
-
-			<Footer />
+			<Footer aboutMe="/AboutMe" />
 		</div>
 	)
 }

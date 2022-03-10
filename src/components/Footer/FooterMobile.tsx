@@ -1,5 +1,5 @@
-import React from "react"
-import type { NextPage } from "next"
+/* eslint-disable no-unused-vars */
+import React, { useState } from "react"
 import { Subtittle, Body2 } from "../Typography"
 import { Ancora } from "../Buttons"
 import Icon from "@mdi/react"
@@ -17,7 +17,9 @@ import {
 	TextMobile,
 } from "./styles"
 
-const FooterMobile: NextPage = () => {
+const FooterMobile = (data: any) => {
+	const [type, setType] = useState(data.aboutMeMobile)
+
 	return (
 		<footer className={HiddenInFooter} data-cy="footer-mobile">
 			<h1 className={`${FooterH1} ${FooterMobileH1}`} data-testid="logo-mobile">
@@ -29,11 +31,13 @@ const FooterMobile: NextPage = () => {
 					Inicio
 				</Subtittle>
 
-				<Ancora href="#aboutMe" data-testid="btnMobileSobreMim">
-					<Body2 className={TextMobile}>Sobre mim</Body2>
+				<Ancora
+					href={type ? "/AboutMe" : "/HomePage"}
+					data-testid="btnMobileSobreMim">
+					<Body2 className={TextMobile}>{type ? "Sobre mim" : "Home"}</Body2>
 				</Ancora>
 
-				<Ancora href="#projetos" data-testid="btnMobileProjetos">
+				<Ancora href="HomePage#projetos" data-testid="btnMobileProjetos">
 					<Body2 className={TextMobile}>Projetos</Body2>
 				</Ancora>
 			</div>
@@ -51,7 +55,8 @@ const FooterMobile: NextPage = () => {
 
 				<Ancora
 					href="https://api.whatsapp.com/send?1=pt_BR&phone=5512991116524"
-					data-testid="btnMobileWhatsapp">
+					data-testid="btnMobileWhatsapp"
+					data-cy="footer-contact-me">
 					<Body2 className={TextMobile}>Whatsapp</Body2>
 				</Ancora>
 			</div>

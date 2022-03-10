@@ -1,32 +1,42 @@
 import React from "react"
-import type { NextPage } from "next"
+// import type { NextPage } from "next"
 import { Button1, Ul, Li, Ancora } from "../Buttons"
 import HeaderMobile from "./HeaderMobile"
 import { Container, HeaderH1, Hidden, HeaderUl, HeaderNav } from "./styles"
 
-const Header: NextPage = () => {
+const Header = (data: any) => {
 	return (
 		<header className={Container}>
 			<h1 className={`${HeaderH1} ${Hidden}`} data-testid="text">
 				K.A.A
 			</h1>
 
-			<HeaderMobile />
+			<HeaderMobile
+				homeMobile={data.home}
+				projectMobile={data.project}
+				aboutMeMobile={data.aboutMe}
+			/>
 
 			<nav className={HeaderNav} data-cy="div-anchor">
 				<Ul className={HeaderUl} data-cy="nav">
 					<Li className={Hidden}>
-						<Ancora href="#home" data-testid="btnHome" data-cy="cy-home">
+						<Ancora href={data.home} data-testid="btnHome" data-cy="cy-home">
 							Home
 						</Ancora>
 					</Li>
 					<Li className={Hidden}>
-						<Ancora href="#projetos" data-testid="project" data-cy="cy-project">
+						<Ancora
+							href={data.project}
+							data-testid="project"
+							data-cy="cy-project">
 							Projetos
 						</Ancora>
 					</Li>
 					<Li className={Hidden}>
-						<Ancora href="#aboutMe" data-testid="about-me" data-cy="cy-aboutMe">
+						<Ancora
+							href={data.aboutMe}
+							data-testid="about-me"
+							data-cy="cy-aboutMe">
 							Sobre
 						</Ancora>
 					</Li>

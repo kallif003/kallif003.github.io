@@ -8,7 +8,7 @@ md:flex
 lg:flex
 xl:flex
 justify-around
-fixed 
+fixed
 z-10
 text-white 
 `

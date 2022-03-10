@@ -1,5 +1,5 @@
-import React from "react"
-import type { NextPage } from "next"
+/* eslint-disable no-unused-vars */
+import React, { useState } from "react"
 import { Subtittle, Body2 } from "../Typography"
 import { Ancora } from "../Buttons"
 import Icon from "@mdi/react"
@@ -21,7 +21,8 @@ import {
 	Text,
 } from "./styles"
 
-const Footer: NextPage = () => {
+const Footer = (data: any) => {
+	const [type, setType] = useState(data.aboutMe)
 	return (
 		<div>
 			<footer className={Container} data-cy="footer">
@@ -36,20 +37,27 @@ const Footer: NextPage = () => {
 
 				<div className={FooterDiv2} data-cy="anchor-footer">
 					<div>
-						<Ancora href="#aboutMe" data-testid="btnSobreMim">
-							<Body2 className="pl-8 pb-6">Sobre mim</Body2>
+						<Ancora
+							href={type ? "/AboutMe" : "/HomePage"}
+							data-testid="btnSobreMim"
+							data-cy="cy-footer-home">
+							<Body2 className="pl-8 pb-6">
+								{type ? "Sobre mim" : "Home Page"}
+							</Body2>
 						</Ancora>
 
-						<Ancora href="#projetos" data-testid="btnProjetos">
+						<Ancora
+							href="/HomePage#projetos"
+							data-testid="btnProjetos"
+							data-cy="cy-footer-project">
 							<Body2 className="pl-8">Projetos</Body2>
 						</Ancora>
 					</div>
 
-					<div className="pl-14">
+					<div className="pl-14" data-cy="div-whatsapp">
 						<Ancora
 							href="mailto:kallifabrahao@gmail.com"
-							data-testid="btnEmail"
-							data-cy="footer-email">
+							data-testid="btnEmail">
 							<Body2 className="pb-6">Email</Body2>
 						</Ancora>
 
@@ -99,7 +107,7 @@ const Footer: NextPage = () => {
 				</div>
 			</footer>
 
-			<FooterMobile />
+			<FooterMobile aboutMeMobile={data.aboutMe} />
 		</div>
 	)
 }

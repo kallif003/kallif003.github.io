@@ -4,7 +4,6 @@ import Image from "next/image"
 export const HeroSection = tw.div`
 	w-[1155px]
 	mt-[16px]
-	mb-[16px]
 	rounded-[20px]
     mx-auto
 
@@ -22,6 +21,7 @@ export const HeroSection = tw.div`
 	lg:m-[10px]
 	lg:h-[300px]
 	lg:pt-10
+
 `
 export const Container = tw.div`
 	mx-auto

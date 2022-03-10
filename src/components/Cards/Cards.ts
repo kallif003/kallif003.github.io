@@ -14,16 +14,15 @@ export const ContainerCards = tw.div`
 	md:flex-col 	
 `
 export const Cards = tw.div`
-	h-auto
+	h-[300px]
 	w-[354px]
-	left-[0px]
 	top-[0.045px]
 	rounded-[8px]
 	py-[10px]
 	px-[24px]
 	bg-[#1f1f21]
 	mx-3
-	mini:w-auto
+	mini:w-[250px]
 	sm:mb-[10px]
 	md:mb-2
 	lg:mb-[20px] 
@@ -43,10 +42,11 @@ export const WorkTools = tw.div`
 	border
 	border-[#3d3d3d]
 	md: mg-[20px]
+	mini:w-[250px]
 
 `
 export const AreaAboutMe = tw.div`
-	h-[453.1620178222656px]
+	h-[453px]
 	w-[967px]
 	left-[64px]
 	top-[216px]
@@ -55,7 +55,7 @@ export const AreaAboutMe = tw.div`
 	bg-[#1f1f21]
 	flex
 	flex-row
-
+	mini:h-[980px]
 	md:flex-col
 	md:h-[993px]
 	md:w-[328px]
