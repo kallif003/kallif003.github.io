@@ -1,17 +1,17 @@
 import React from "react"
 import { ComponentStory, ComponentMeta } from "@storybook/react"
 
-import AboutMe from "./AboutMe"
+import HomePage from "../../pages/HomePage"
 
 export default {
-	title: "Prototipo/AboutMePage",
-	component: AboutMe,
-} as ComponentMeta<typeof AboutMe>
+	title: "Prototipo/HomePage",
+	component: HomePage,
+} as ComponentMeta<typeof HomePage>
 
 // eslint-disable-next-line no-unused-vars
-const Template: ComponentStory<typeof AboutMe> = () => (
+const Template: ComponentStory<typeof HomePage> = () => (
 	<div>
-		<AboutMe />
+		<HomePage />
 	</div>
 )
 

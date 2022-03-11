@@ -12,7 +12,7 @@ import {
 	TextH3,
 	WorkToolsStyle,
 	H3HeadStyle,
-} from "../styles"
+} from "../../components/PageStyles/styles"
 import {
 	AreaAboutMe,
 	ImageAboutMe,

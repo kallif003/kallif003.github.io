@@ -44,7 +44,7 @@ import {
 	H1HeroSection,
 	PHeroSection,
 	ContainerHeroSection,
-} from "../styles"
+} from "../../components/PageStyles/styles"
 
 const HomePage: NextPage = function () {
 	const downloadCV = () => {
