@@ -26,7 +26,7 @@ exports[`Typography renders H1Head properly 1`] = `
 
 exports[`Typography renders H2Head properly 1`] = `
 <h2
-  class="font-['sans'] text-[48px] font-normal font-[500] leading-[57px] tracking-[0rem] text-left"
+  class="font-['sans'] text-[48px] font-normal font-[500] leading-[57px] text-left sm:text-[40px] mb-5"
 >
   Test
 </h2>

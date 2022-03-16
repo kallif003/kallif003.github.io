@@ -39,16 +39,16 @@ const AboutMe: NextPage = () => {
 					/>
 					<AreaTextAboutMe>
 						<H2Head>Sobre Mim </H2Head>
-						<Body1 className="mb-24 mini:mb-16 mt-5">
+						<Body1>
 							Me chamo Kallif Abdon Abrahão, tenho 32 anos,
-							<br /> sou pai de uma menina linda e atuo profissionalmente como
-							desenvolvedor front-end. <br /> Aqui nesse portfólio você pode
-							conhecer mais sobre mim,
+							<br /> sou pai de uma menina linda e atuo profissionalmente <br />
+							como desenvolvedor front-end. <br /> Aqui nesse portfólio você
+							pode conhecer mais sobre mim,
 							<br /> sobre as tecnologias que domino, sobre meus projetos e
 							experiências.
 							<br />
 							Você pode entrar em contato comigo pelo Whatsaap, email ou
-							Linkedin e pode aproveitar também pra conhecer meu Github.
+							Linkedin <br /> e pode aproveitar também pra conhecer meu Github.
 						</Body1>
 					</AreaTextAboutMe>
 				</AreaAboutMe>
@@ -127,18 +127,15 @@ const AboutMe: NextPage = () => {
 								className="pb-5"
 							/>
 							<H3Head className="pt-2 text-yellow">Lipe.Dev</H3Head>
-							<Body1 className=" px-5 pt-2 mini:px-0">
-								<span className="ml-10 mini:ml-0">
-									{" "}
-									Tralhando como front-end
-								</span>
-								, desenvolvendo projeto web e mobile
+							<Body1 className="pt-2 text-center">
+								<span>Tralhando como front-end</span>,
+								<br /> desenvolvendo projetos web e mobile
 							</Body1>
 						</Cards>
 					</ContainerCards>
 				</div>
 
-				<H3Head className={`${TextH3} mb-20 ${H3HeadStyle}`}>
+				<H3Head className={`${TextH3} ${H3HeadStyle}`}>
 					Ferramentas de Trabalho
 				</H3Head>
 

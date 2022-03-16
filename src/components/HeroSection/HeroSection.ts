@@ -21,6 +21,7 @@ export const HeroSection = tw.div`
 	lg:m-[10px]
 	lg:h-[300px]
 	lg:pt-10
+    
 
 `
 export const Container = tw.div`

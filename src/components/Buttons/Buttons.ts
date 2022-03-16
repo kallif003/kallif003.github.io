@@ -38,6 +38,7 @@ export const Button5 = tw.button`
 	bg-yellow
 	text-white
 	font-['sans']
+	
 	md:w-[215px]
 	mini:w-[250px]
 
