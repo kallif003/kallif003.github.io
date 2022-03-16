@@ -88,5 +88,6 @@ export const AreaTextAboutMe = tw.div`
 	w-auto
 	my-5
 	xl:pl-5
+	lg:pl-5
 	
 `
