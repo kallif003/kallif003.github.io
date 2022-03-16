@@ -11,7 +11,8 @@ export const ContainerCards = tw.div`
 	px-2
 	items-center
 	sm:flex-col 
-	md:flex-col 	
+	md:flex-col 
+	
 `
 export const Cards = tw.div`
 	h-[300px]
@@ -27,6 +28,7 @@ export const Cards = tw.div`
 	md:mb-2
 	lg:mb-[20px] 
 	lg:w-[200px]
+	
 `
 export const Logo = tw(Image)`
 	100%
@@ -41,7 +43,7 @@ export const WorkTools = tw.div`
 	border-solid
 	border
 	border-[#3d3d3d]
-	md: mg-[20px]
+	md: mb-[20px]
 	mini:w-[250px]
 
 `
@@ -55,20 +57,18 @@ export const AreaAboutMe = tw.div`
 	bg-[#1f1f21]
 	flex
 	flex-row
+	
 	mini:h-[980px]
 	md:flex-col
 	md:h-[993px]
 	md:w-[328px]
-	md:left-[0px]
-	md:top-[0px]
 	md:p-[16px]
 
 	sm:flex-col
 	sm:h-[993px]
 	sm:w-[328px]
-	sm:left-[0px]
-	sm:top-[0px]
 	sm:p-[16px]
+	
 	
 	mini:w-[260px]
 	mini:flex-col
@@ -85,21 +85,8 @@ export const ImageAboutMe = tw(Image)`
 `
 export const AreaTextAboutMe = tw.div`
 	h-[333px]
-	w-[560px]
-	left-[0px]
-	top-[0px]
-	pl-12
-	text-white
-
-	md:pl-0
-	md:w-auto
-	mini:w-auto
-
-	mini:pl-0
-	mini:mt-4
-
-	sm:w-auto
-	sm:px-10
-	sm:mt-4
+	w-auto
+	my-5
+	xl:pl-5
 	
 `

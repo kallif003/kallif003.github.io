@@ -67,12 +67,13 @@ mt-24
 export const TextH3 = `
 text-yellow 
 text-center 
-mt-24 
+my-24 
 `
 export const DivHeroSection = `
 sm:mt-[-10px] 
 md:mt-[-30px] 
-pl-14 pb-16  
+pl-14 
+pb-16  
 sm:pl-6
 `
 export const H1HeroSection = `
@@ -101,6 +102,6 @@ sm:mb-2
 md:mb-2
 `
 export const H3HeadStyle = `
-sm:mt-8 
 mini:mx-2
+sm:text-[28px]
 `

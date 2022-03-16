@@ -19,8 +19,8 @@ module.exports = {
 			},
 		},
 		screens: {
-			sm: { min: "260px", max: "767px" },
-			// => @media (min-width: 640px and max-width: 767px) { ... }
+			sm: { min: "200px", max: "767px" },
+			// => @media (min-width: 200px and max-width: 767px) { ... }
 
 			md: { min: "768px", max: "1023px" },
 			// => @media (min-width: 768px and max-width: 1023px) { ... }
@@ -37,8 +37,8 @@ module.exports = {
 			mini: { min: "260px", max: "300px" },
 			// => @media (min-width: 260px and max-width: 300px) { ... }
 
-			M: { min: "500px", max: "720px" },
-			// => @media (min-width: 540px and max-width: 720px) { ... }
+			M: { min: "400px", max: "720px" },
+			// => @media (min-width: 500px and max-width: 720px) { ... }
 		},
 
 		fontFamily: {

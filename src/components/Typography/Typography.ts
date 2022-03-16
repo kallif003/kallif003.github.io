@@ -15,8 +15,9 @@ export const H2Head = tw.h2`
 	font-normal
 	font-[500]
 	leading-[57px]
-	tracking-[0rem]
-	text-left
+    text-left
+	sm:text-[40px] 
+	mb-5
 `
 
 export const H3Head = tw.h3`
@@ -70,7 +71,7 @@ export const Body1 = tw.p`
 	font-[400]
 	leading-[28px]
 	tracking-[0.43px]
-	text-left	
+	text-left
 `
 
 export const Body2 = tw.p`

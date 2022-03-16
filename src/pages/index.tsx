@@ -11,6 +11,7 @@ const Home: NextPage = function () {
 				<title>Kallif - Dev</title>
 			</Head>
 			<meta httpEquiv="Content-Type" content="text/html;charset=UTF-8" />
+			<link rel="icon" href="/favicon.ico" />
 			<HomePage />
 		</div>
 	)
