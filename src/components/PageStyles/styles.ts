@@ -2,29 +2,29 @@ export const ContainerHome = `
 text-white 
 `
 export const GradientDiv = `
-p-2 
 bg-gradient-to-r from-pink via-orange to-yellow 
 w-screen 
 sm:h-[250px] 
 md:h-[350px] 
 lg:h-[350px] 
 xl:h-[400px] 
-text-center 
-items-center 
-sm:pt-5
+text-center
 font-bold
 `
 export const Title = `
-sm:pt-12 
-pt-32  
-sm:text-[45px] 
+M:pt-28
+sm:pt-28
+md:pt-32
+lg:pt-28
+xl:pt-32
+sm:text-[34px] 
 md:text-[80px] 
 lg:text-[90px] 
 xl:text-[100px] 
-M:pt-24
+
 `
 export const Subtitle = `
-sm:text-[25px] 
+sm:text-[20px] 
 md:text-[35px] 
 lg:text-[40px] 
 xl:text-[45px] 
