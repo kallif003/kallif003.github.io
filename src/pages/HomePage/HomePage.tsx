@@ -64,16 +64,17 @@ const HomePage: NextPage = function () {
 				<h2 className={Subtitle}>Developer Front-End</h2>
 			</div>
 
-			<div className={WelcomeDiv} data-cy="div-boas-vindas">
-				<h1 className={WelcomeH1}>
-					Seja <span className="text-yellow ">muito bem vindo</span>
-				</h1>
-				<p>
-					Esse é o meu portifólio, ele foi criado com muito carinho
-					<br /> para que você possa conhecer mais sobre mim e minhas
-					habilidades.
-					<br /> Sinta-se a vontade!
-				</p>
+			<div className="flex flex-col items-center w-auto">
+				<div className={WelcomeDiv} data-cy="div-boas-vindas">
+					<h1 className={WelcomeH1}>
+						Seja <span className="text-yellow ">muito bem vindo</span>
+					</h1>
+					<p>
+						Esse é o meu portifólio, ele foi criado com muito carinho para que
+						você possa conhecer mais sobre mim e minhas habilidades.
+					</p>
+					<p>Sinta-se a vontade!</p>
+				</div>
 			</div>
 
 			<div className={DivButtons}>

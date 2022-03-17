@@ -1,5 +1,6 @@
 export const ContainerHome = `
 text-white 
+
 `
 export const GradientDiv = `
 bg-gradient-to-r from-pink via-orange to-yellow 
@@ -35,11 +36,13 @@ export const WelcomeDiv = `
 m-2 
 text-center 
 pt-8
+w-[300px]
+
 `
 
 export const WelcomeH1 = `
-sm:text-[30px] 
-text-[40px]
+text-[30px]
+md:text-[25px]
 `
 export const ItemAlignment = `
 flex 
