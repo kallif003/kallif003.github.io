@@ -19,7 +19,7 @@ module.exports = {
 			},
 		},
 		screens: {
-			sm: { min: "200px", max: "767px" },
+			sm: { min: "0px", max: "767px" },
 			// => @media (min-width: 200px and max-width: 767px) { ... }
 
 			md: { min: "768px", max: "1023px" },
@@ -28,17 +28,8 @@ module.exports = {
 			lg: { min: "1024px", max: "1279px" },
 			// => @media (min-width: 1024px) { ... }
 
-			xl: { min: "1280px", max: "1535px" },
+			xl: { min: "1280px" },
 			// => @media (min-width: 1280px) { ... }
-
-			"2xl": { min: "1536px" },
-			// => @media (min-width: 1536px) { ... }
-
-			mini: { min: "260px", max: "300px" },
-			// => @media (min-width: 260px and max-width: 300px) { ... }
-
-			M: { min: "600px", max: "720px" },
-			// => @media (min-width: 500px and max-width: 720px) { ... }
 		},
 
 		fontFamily: {

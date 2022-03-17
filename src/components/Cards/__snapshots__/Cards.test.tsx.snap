@@ -10,7 +10,7 @@ exports[`Cards Components renders AreaAboutMe properly 1`] = `
 
 exports[`Cards Components renders AreaTextAboutMe properly 1`] = `
 <div
-  class="h-[333px] w-auto my-5 xl:pl-5 lg:pl-5"
+  class="h-[333px] sm:w-auto md:w-auto w-[400px] my-5 xl:pl-5 lg:pl-5"
 >
   Teste
 </div>
