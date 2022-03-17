@@ -12,7 +12,6 @@ text-center
 font-bold
 `
 export const Title = `
-M:pt-28
 sm:pt-28
 md:pt-32
 lg:pt-28

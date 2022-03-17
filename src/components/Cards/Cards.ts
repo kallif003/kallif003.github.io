@@ -85,7 +85,9 @@ export const ImageAboutMe = tw(Image)`
 `
 export const AreaTextAboutMe = tw.div`
 	h-[333px]
-	w-auto
+	sm:w-auto
+	md:w-auto
+	w-[400px]
 	my-5
 	xl:pl-5
 	lg:pl-5

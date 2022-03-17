@@ -107,15 +107,19 @@ const HomePage: NextPage = function () {
 				<AreaTextAboutMe>
 					<H2Head>Sobre Mim </H2Head>
 					<Body1>
-						Sou formado em análise e desenvolvimento de sistema
-						<br /> e sou apaixonado por Javascript. <br />
-						Tenho me aprofundado cada vez mais nesse universo <br />
-						do desenvolvimento web e mobile. <br />
-						Clica nesse botão abaixo <br /> se quiser saber mais <br />
-						sobre as minhas skills!
+						Sou formado em análise e desenvolvimento de sistema e sou apaixonado
+						por Javascript.
+					</Body1>
+					<Body1>
+						Tenho me aprofundado cada vez mais nesse universo do desenvolvimento
+						web e mobile.
+					</Body1>
+					<Body1>
+						Clica nesse botão abaixo se quiser saber mais sobre as minhas
+						skills!
 					</Body1>
 					<Link href="/AboutMe" passHref>
-						<Button8 className={`${ItemAlignment} mt-16 sm:mt-28 mini:mt-1`}>
+						<Button8 className={`${ItemAlignment} mt-16 sm:mt-28 `}>
 							<Body1>Mais sobre mim</Body1>
 							<Icon path={mdiArrowRight} title="User Profile" size="20px" />
 						</Button8>
@@ -123,7 +127,7 @@ const HomePage: NextPage = function () {
 				</AreaTextAboutMe>
 			</AreaAboutMe>
 
-			<H3Head className={`${TextH3} sm:my-20 mini:mx-2`}>
+			<H3Head className={`${TextH3} sm:my-20 sm:mx-2`}>
 				Minhas Habilidades
 			</H3Head>
 			<ContainerCards className={`${WidthAuto} sm:mt-10 mt-20`}>

@@ -40,15 +40,17 @@ const AboutMe: NextPage = () => {
 					<AreaTextAboutMe>
 						<H2Head>Sobre Mim </H2Head>
 						<Body1>
-							Me chamo Kallif Abdon Abrahão, tenho 32 anos,
-							<br /> sou pai de uma menina linda e atuo profissionalmente <br />
-							como desenvolvedor front-end. <br /> Aqui nesse portfólio você
-							pode conhecer mais sobre mim,
-							<br /> sobre as tecnologias que domino, sobre meus projetos e
-							experiências.
-							<br />
+							Me chamo Kallif Abdon Abrahão, tenho 32 anos, sou pai de uma
+							menina linda e atuo profissionalmente como desenvolvedor
+							front-end.
+						</Body1>
+						<Body1>
+							Aqui nesse portfólio você pode conhecer mais sobre mim, sobre as
+							tecnologias que domino, sobre meus projetos e experiências.
+						</Body1>
+						<Body1>
 							Você pode entrar em contato comigo pelo Whatsaap, email ou
-							Linkedin <br /> e pode aproveitar também pra conhecer meu Github.
+							Linkedin e pode aproveitar também pra conhecer meu Github.
 						</Body1>
 					</AreaTextAboutMe>
 				</AreaAboutMe>
@@ -128,8 +130,7 @@ const AboutMe: NextPage = () => {
 							/>
 							<H3Head className="pt-2 text-yellow">Lipe.Dev</H3Head>
 							<Body1 className="pt-2 text-center">
-								<span>Tralhando como front-end</span>,
-								<br /> desenvolvendo projetos web e mobile
+								Tralhando como front-end, desenvolvendo projetos web e mobile
 							</Body1>
 						</Cards>
 					</ContainerCards>
@@ -140,7 +141,7 @@ const AboutMe: NextPage = () => {
 				</H3Head>
 
 				<ContainerCards
-					className={`${WidthAuto} sm:mt-10 mt-20 mb-44 mini:mb-20 sm:mb-20`}
+					className={`${WidthAuto} sm:mt-10 mt-20 mb-44 sm:mb-20`}
 					data-cy="div-workTools">
 					<WorkTools className={`${ItemAlignment} ${WorkToolsStyle}`}>
 						<Logo
