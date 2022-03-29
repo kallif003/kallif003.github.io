@@ -4,13 +4,12 @@ import {
 	ContainerCards,
 	Cards,
 	Logo,
-	WorkTools,
 	AreaAboutMe,
 	ImageAboutMe,
 	AreaTextAboutMe,
 } from "."
 import { Body1, H2Head, H3Head } from "../../components/Typography/Typography"
-import { Button8 } from "../Buttons/Buttons"
+import { Button4 } from "../Buttons/index"
 import img from "../../../assets/Image/sistema-delivery.png"
 
 export default {
@@ -35,10 +34,6 @@ const Template: ComponentStory<typeof ContainerCards> = () => (
 			</Cards>
 		</ContainerCards>
 
-		<ContainerCards>
-			<WorkTools></WorkTools>
-		</ContainerCards>
-
 		<AreaAboutMe>
 			<ImageAboutMe src={img} alt="Me" width={300} height={326} />
 			<AreaTextAboutMe>
@@ -50,7 +45,7 @@ const Template: ComponentStory<typeof ContainerCards> = () => (
 					with duplication style that apply to the common elements such as
 					button, images, form and so on.
 				</Body1>
-				<Button8 className="sm:mt-28 mt-40">Mais Sobre mim</Button8>
+				<Button4 className="sm:mt-28 mt-40">Mais Sobre mim</Button4>
 			</AreaTextAboutMe>
 		</AreaAboutMe>
 	</div>
