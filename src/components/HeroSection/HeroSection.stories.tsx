@@ -4,7 +4,7 @@ import img from "../../../assets/Image/sistema-delivery.png"
 import imgSite from "../../../assets/Image/site2.png"
 import list from "../../../assets/Image/listando1.png"
 import { H3Head } from "../Typography"
-import { HeroSection, Container, Imagem } from "./HeroSection"
+import { HeroSection, Imagem } from "./HeroSection"
 
 export default {
 	title: "Moleculas/HeroSection",
@@ -14,25 +14,25 @@ export default {
 const Template: ComponentStory<typeof HeroSection> = () => (
 	<div>
 		<HeroSection className="bg-heroYellow ">
-			<Container>
+			<div>
 				<Imagem src={img} alt="Sistema Delivery" width={500} height={300} />
-			</Container>
+			</div>
 			<H3Head className="text-white pl-10 pt-10">
 				Sistema Delivery - Pizzarias e Esfiharias
 			</H3Head>
 		</HeroSection>
 
 		<HeroSection className="bg-heroPurple">
-			<Container>
+			<div>
 				<Imagem src={list} alt="Sistema Delivery" width={200} height={300} />
-			</Container>
+			</div>
 			<H3Head className="text-white pl-10 pt-10">App-listando</H3Head>
 		</HeroSection>
 
 		<HeroSection className="bg-heroRed">
-			<Container>
+			<div>
 				<Imagem src={imgSite} alt="Sistema Delivery" width={500} height={300} />
-			</Container>
+			</div>
 			<H3Head className="text-white pl-10 pt-10">Portifólio</H3Head>
 		</HeroSection>
 	</div>
