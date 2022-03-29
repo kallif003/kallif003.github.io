@@ -12,7 +12,6 @@ import {
 	ItemAlignment,
 	WidthAuto,
 	TextH3,
-	H3HeadStyle,
 } from "../../components/PageStyles/styles"
 import {
 	AreaAboutMe,
@@ -57,9 +56,8 @@ const AboutMe: NextPage = () => {
 					</AreaTextAboutMe>
 				</AreaAboutMe>
 				<h1 id="skills" />
-				<H3Head className={`${TextH3} ${H3HeadStyle} `}>
-					Minhas Habilidades
-				</H3Head>
+
+				<H3Head className={`${TextH3} `}>Minhas Habilidades</H3Head>
 
 				<div data-cy="div-minhas-habilidades">
 					<ContainerCards>
@@ -137,7 +135,7 @@ const AboutMe: NextPage = () => {
 								height={72}
 							/>
 							<H3Head>Jest +</H3Head>
-							<H3Head className="text-[20.5px]">Testing Library React</H3Head>
+							<h2 className="text-[20.5px]">Testing Library React</h2>
 						</Cards>
 						<Cards className={`${ItemAlignment} flex-col`}>
 							<div className="w-20 mt-1">
@@ -181,7 +179,7 @@ const AboutMe: NextPage = () => {
 								height={72}
 							/>
 							<H3Head>Deploy</H3Head>
-							<H3Head className="text-[20.5px]">Vercel, GitHub Pages</H3Head>
+							<h2 className="text-[20.5px]">Vercel, GitHub Pages</h2>
 						</Cards>
 					</ContainerCards>
 
@@ -194,7 +192,7 @@ const AboutMe: NextPage = () => {
 						</Cards>
 					</ContainerCards>
 
-					<H3Head className={`${TextH3} mb-20 ${H3HeadStyle}`}>
+					<H3Head className={`${TextH3} mb-20 `}>
 						Experiência de Trabalho
 					</H3Head>
 
