@@ -2,7 +2,7 @@
 
 exports[`Typography renders Body 1 properly 1`] = `
 <p
-  class="text-[16px] font-normal font-[400] leading-[28px] tracking-[0.43px] text-left"
+  class="text-[16px] font-[400] leading-[28px] tracking-[0.43px] text-left"
 >
   Test
 </p>
@@ -10,7 +10,7 @@ exports[`Typography renders Body 1 properly 1`] = `
 
 exports[`Typography renders Body 2 properly 1`] = `
 <p
-  class="text-[14px] font-normal font-[400] leading-[20px] tracking-[0.25px]"
+  class="text-[14px] font-[400] leading-[20px] tracking-[0.25px]"
 >
   Test
 </p>
@@ -18,7 +18,7 @@ exports[`Typography renders Body 2 properly 1`] = `
 
 exports[`Typography renders H1Head properly 1`] = `
 <h1
-  class="text-[60px] font-normal font-[700] leading-[71px] tracking-[-0.5px]"
+  class="text-[60px] font-[700] leading-[71px] tracking-[-0.5px]"
 >
   Test
 </h1>
@@ -26,7 +26,7 @@ exports[`Typography renders H1Head properly 1`] = `
 
 exports[`Typography renders H2Head properly 1`] = `
 <h2
-  class="text-[48px] font-normal font-[500] leading-[57px] text-left sm:text-[40px] mb-5"
+  class="text-[48px] font-[500] leading-[57px] text-left sm:text-[40px] mb-5"
 >
   Test
 </h2>
@@ -34,7 +34,7 @@ exports[`Typography renders H2Head properly 1`] = `
 
 exports[`Typography renders H3Head properly 1`] = `
 <h3
-  class="text-[34px] font-normal font-[500] leading-[40px] tracking-[0.25px]"
+  class="text-[35px] sm:text-[25px] md:text-[30px] font-[500] leading-[40px] tracking-[0.25px]"
 >
   Test
 </h3>
@@ -42,7 +42,7 @@ exports[`Typography renders H3Head properly 1`] = `
 
 exports[`Typography renders H4Head properly 1`] = `
 <h4
-  class="text-[24px] font-normal font-[400] leading-[32px] tracking-[0rem]"
+  class="text-[24px] font-[400] leading-[32px] tracking-[0rem]"
 >
   Test
 </h4>
@@ -50,7 +50,7 @@ exports[`Typography renders H4Head properly 1`] = `
 
 exports[`Typography renders H5Head properly 1`] = `
 <h5
-  class="text-[20px] font-normal font-[500] leading-[24px] tracking-[0.15px] text-left"
+  class="text-[20px] font-[500] leading-[24px] tracking-[0.15px] text-left"
 >
   Test
 </h5>
@@ -58,7 +58,7 @@ exports[`Typography renders H5Head properly 1`] = `
 
 exports[`Typography renders Subtittle 2 properly 1`] = `
 <h2
-  class="text-[14px] font-normal font-[500] leading-[24px] tracking-[0.10px] text-left"
+  class="text-[14px] font-[500] leading-[24px] tracking-[0.10px] text-left"
 >
   Test
 </h2>
@@ -66,7 +66,7 @@ exports[`Typography renders Subtittle 2 properly 1`] = `
 
 exports[`Typography renders Subtittle properly 1`] = `
 <h2
-  class="text-[16px] font-normal font-[500] leading-[20px] tracking-[0.15px]"
+  class="text-[16px] font-[500] leading-[20px] tracking-[0.15px]"
 >
   Test
 </h2>

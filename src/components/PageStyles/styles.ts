@@ -70,7 +70,7 @@ export const TextH3 = `
 text-yellow 
 text-center 
 my-24 
-sm:text-[25px]
+
 `
 export const DivHeroSection = ` 
 rounded 
@@ -86,8 +86,4 @@ export const WorkToolsStyle = `
 flex-col 
 sm:mb-2 
 md:mb-2
-`
-export const H3HeadStyle = `
-mini:mx-2
-sm:text-[28px]
 `
