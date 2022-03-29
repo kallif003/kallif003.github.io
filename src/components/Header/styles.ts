@@ -16,6 +16,7 @@ export const HeaderH1 = `
 font-bold 
 mt-2 
 font-['sans']
+pl-1
 `
 export const Hidden = `
 sm:hidden
@@ -30,6 +31,7 @@ flex
 justify-between 
 w-full 
 px-5
+
 `
 export const HeaderUl = `
 md:space-x-10 

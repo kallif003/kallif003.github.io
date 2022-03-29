@@ -1,77 +1,67 @@
 import tw from "tailwind-styled-components"
-import styled from "styled-components"
 
 export const Button1 = tw.button`
-	h-[48px]
+	relative
 	w-[169px]
-	left-[16px]
-	top-[16px]
-	rounded-[8px]
-	py-[12px]
-	px-[16px]
-	bg-yellow
-	font-['sans']
-	
-`
-
-export const Button3 = tw.button`
 	h-[48px]
-	w-[218px]
-	left-[16px]
-	top-[16px]
-	rounded-[8px]
-	py-[12px]
-	px-[16px]
+	py-[10px]
+	px-[20px]
 	bg-yellow
-	text-white
-	font-['sans']	
+	rounded-tr
+	rounded-bl
+	duration-500
+	active:scale-95
+	hover:border-white
+	hover:border-solid
+	hover:border
 `
 
-export const Button5 = tw.button`
+export const Button2 = tw.button`
 	h-[48px]
 	w-[328px]
-	left-[16px]
-	top-[144px]
-	rounded-[8px]
+	rounded-tr
+	rounded-bl
 	py-[12px]
 	px-[16px]
 	bg-yellow
-	text-white
-	font-['sans']
-	
 	md:w-[215px]
-	mini:w-[250px]
+	duration-500
+	active:scale-95
+	hover:border-white
+	hover:border-solid
+	hover:border
+	sm:w-[300px]
+	md:w-[340px]
+	
 
 `
-
-export const Button7 = tw.button`
+export const Button3 = tw.button`
 	h-[48px]
 	w-[172px]
-	left-[16px]
-	top-[16px]
-	rounded-[8px]
+	rounded-tr
+	rounded-bl
 	py-[12px]
 	px-[16px]
-	text-white
-	font-['sans']
 	border-solid
 	border
 	border-white
-`
+	hover:border-yellow
+	active:scale-95
+	duration-700
+	
 
-export const Button8 = tw.button`
-    h-[48px]
-	w-[198px]
-	left-[16px]
-	top-[16px]
-	rounded-[8px]
+`
+export const Button4 = tw.button`
 	py-[12px]
 	px-[16px]
-	text-white
-	font-['sans']
+	rounded-tr
+	rounded-bl
+	duration-500
 	border-solid
 	border
 	border-white
+	hover:border-yellow
+	active:scale-95
 
 `
 export const Ul = tw.ul`
@@ -89,40 +79,4 @@ export const Ancora = tw.a`
     no-underline
 	hover:underline decoration-yellow underline-offset-8
 		
-`
-export const Button2 = styled.button`
-	//ver projeto, botão gradiente
-	height: 48px;
-	width: 169px;
-	left: 16px;
-	top: 80px;
-	border-radius: 8px;
-	padding: 16px, 20px, 16px, 20px;
-	background: linear-gradient(270deg, #f9b53a 10.81%, #ff59a8 100%);
-	color: #fff;
-	font-family: DM sans;
-`
-export const Button6 = styled.button`
-	//botão grande gradiente
-	height: 48px;
-	width: 328px;
-	left: 16px;
-	top: 208px;
-	border-radius: 8px;
-	padding: 16px, 20px, 16px, 20px;
-	background: linear-gradient(270deg, #f9b53a 10.81%, #ff59a8 100%);
-	color: #fff;
-	font-family: DM sans;
-`
-export const Button4 = styled.button`
-	//botão medio gradiente
-	height: 48px;
-	width: 218px;
-	left: 16px;
-	top: 80px;
-	border-radius: 8px;
-	padding: 16px, 20px, 16px, 20px;
-	background: linear-gradient(270deg, #f9b53a 10.81%, #ff59a8 100%);
-	color: #fff;
-	font-family: DM sans;
 `

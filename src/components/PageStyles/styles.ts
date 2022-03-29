@@ -13,6 +13,7 @@ text-center
 font-bold
 `
 export const Title = `
+font-["sans"]
 sm:pt-28
 md:pt-32
 lg:pt-28
@@ -24,6 +25,7 @@ xl:text-[100px]
 
 `
 export const Subtitle = `
+font-["sans"]
 sm:text-[20px] 
 md:text-[35px] 
 lg:text-[40px] 
@@ -36,8 +38,7 @@ export const WelcomeDiv = `
 m-2 
 text-center 
 pt-8
-w-[300px]
-
+w-[320px]
 `
 
 export const WelcomeH1 = `
@@ -64,40 +65,23 @@ xl:ml-8
 `
 export const WidthAuto = `
 mx-auto 
-mt-24
 `
 export const TextH3 = `
 text-yellow 
 text-center 
 my-24 
+sm:text-[25px]
 `
-export const DivHeroSection = `
-sm:mt-[-10px] 
-md:mt-[-30px] 
-pl-14 
-pb-16  
-sm:pl-6
-`
-export const H1HeroSection = `
-sm:text-[20px] 
-text-[40px]
-`
-export const PHeroSection = `
-sm:text-[10px] 
-text-xl 
-sm:mt-[-10px] 
-md:mt-[-10px] 
-lg:mt-[-10px] 
-hover:underline 
-decoration-gray-100 
-underline-offset-8
-`
-export const ContainerHeroSection = `
-sm:w-auto 
+export const DivHeroSection = ` 
+rounded 
 flex 
-flex-row 
-lg:mt-[-50px]
+flex-col 
+items-center 
+py-2 
+px-2
+
 `
+
 export const WorkToolsStyle = `
 flex-col 
 sm:mb-2 

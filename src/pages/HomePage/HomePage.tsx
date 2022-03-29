@@ -1,7 +1,7 @@
 import type { NextPage } from "next"
 import React from "react"
 import Header from "../../components/Header/Header"
-import { Button1, Button5, Button7, Button8 } from "../../components/Buttons"
+import { Button1, Button2, Button3, Button4 } from "../../components/Buttons"
 import img from "../../../assets/Image/sistema-delivery.png"
 import foto from "../../../assets/Image/kallif.png"
 import imgSite from "../../../assets/Image/site2.png"
@@ -23,11 +23,7 @@ import {
 	Cards,
 	Logo,
 } from "../../components/Cards/Cards"
-import {
-	HeroSection,
-	Imagem,
-	Container,
-} from "../../components/HeroSection/HeroSection"
+import { HeroSection, Imagem } from "../../components/HeroSection/HeroSection"
 
 import {
 	GradientDiv,
@@ -41,9 +37,6 @@ import {
 	WidthAuto,
 	TextH3,
 	DivHeroSection,
-	H1HeroSection,
-	PHeroSection,
-	ContainerHeroSection,
 } from "../../components/PageStyles/styles"
 
 const HomePage: NextPage = function () {
@@ -81,7 +74,7 @@ const HomePage: NextPage = function () {
 				<Link href="#projetos" passHref>
 					<Button1 className="text-[18px] mb-5">Ver projetos</Button1>
 				</Link>
-				<Button7
+				<Button3
 					className={ItemAlignment}
 					onClick={downloadCV}
 					data-cy="cy-downloadCv">
@@ -92,19 +85,21 @@ const HomePage: NextPage = function () {
 						color="#fff"
 					/>
 					<Body1>Download CV</Body1>
-				</Button7>
+				</Button3>
 
 				<h1 id="aboutMe" />
 			</div>
 
-			<AreaAboutMe className={WidthAuto} data-cy="div-aboutMe">
-				<ImageAboutMe
-					src={foto}
-					alt="Me"
-					width={300}
-					height={326}
-					id="imgData"
-				/>
+			<AreaAboutMe className={`${WidthAuto} mt-20`} data-cy="div-aboutMe">
+				<div className="w-[300px] sm:w-[265px] pt-1">
+					<ImageAboutMe
+						src={foto}
+						alt="Me"
+						width={1200}
+						height={1600}
+						id="imgData"
+					/>
+				</div>
 				<AreaTextAboutMe>
 					<H2Head>Sobre Mim </H2Head>
 					<Body1>
@@ -120,10 +115,10 @@ const HomePage: NextPage = function () {
 						skills!
 					</Body1>
 					<Link href="/AboutMe" passHref>
-						<Button8 className={`${ItemAlignment} mt-16 sm:mt-28 `}>
+						<Button4 className={`${ItemAlignment} mt-16 sm:mt-28 `} id="btn2">
 							<Body1>Mais sobre mim</Body1>
 							<Icon path={mdiArrowRight} title="User Profile" size="20px" />
-						</Button8>
+						</Button4>
 					</Link>
 				</AreaTextAboutMe>
 			</AreaAboutMe>
@@ -131,7 +126,8 @@ const HomePage: NextPage = function () {
 			<H3Head className={`${TextH3} sm:my-20 sm:mx-2`}>
 				Minhas Habilidades
 			</H3Head>
-			<ContainerCards className={`${WidthAuto} sm:mt-10 mt-20`}>
+
+			<ContainerCards className="sm:mt-10 mt-20">
 				<Cards className={`${ItemAlignment} flex-col`}>
 					<Logo
 						src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iNjQiIGhlaWdodD0iNjQiCnZpZXdCb3g9IjAgMCAxNzIgMTcyIgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxkZWZzPjxsaW5lYXJHcmFkaWVudCB4MT0iODYiIHkxPSIyNC4zMDMwNiIgeDI9Ijg2IiB5Mj0iMTQ3Ljg0MjA2IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgaWQ9ImNvbG9yLTFfVjZIU2hJencyMXg3X2dyMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZjliNTNhIj48L3N0b3A+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZmY1OWE4Ij48L3N0b3A+PC9saW5lYXJHcmFkaWVudD48bGluZWFyR3JhZGllbnQgeDE9IjEyMi40OTA4OCIgeTE9Ijk1Ljg5MjY5IiB4Mj0iMTIyLjQ5MDg4IiB5Mj0iMTM0Ljg4ODMxIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgaWQ9ImNvbG9yLTJfVjZIU2hJencyMXg3X2dyMiI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZmNkZWE3Ij48L3N0b3A+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZmZjOWUyIj48L3N0b3A+PC9saW5lYXJHcmFkaWVudD48bGluZWFyR3JhZGllbnQgeDE9IjkxLjU5MjY5IiB5MT0iOTUuODkyNjkiIHgyPSI5MS41OTI2OSIgeTI9IjEzNC44ODgzMSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIGlkPSJjb2xvci0zX1Y2SFNoSXp3MjF4N19ncjMiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2ZjZGVhNyI+PC9zdG9wPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2ZmYzllMiI+PC9zdG9wPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDE3MnYtMTcyaDE3MnYxNzJ6IiBmaWxsPSJub25lIj48L3BhdGg+PGcgaWQ9IkxheWVyXzEiPjxwYXRoIGQ9Ik0xMzcuMDYyNSwyMS41aC0xMDIuMTI1Yy03LjUyNSwwIC0xMy40Mzc1LDUuOTEyNSAtMTMuNDM3NSwxMy40Mzc1djEwMi4xMjVjMCw3LjUyNSA1LjkxMjUsMTMuNDM3NSAxMy40Mzc1LDEzLjQzNzVoMTAyLjEyNWM3LjUyNSwwIDEzLjQzNzUsLTUuOTEyNSAxMy40Mzc1LC0xMy40Mzc1di0xMDIuMTI1YzAsLTcuNTI1IC01LjkxMjUsLTEzLjQzNzUgLTEzLjQzNzUsLTEzLjQzNzV6TTE0NS4xMjUsMTM3LjA2MjVjMCw0LjU2ODc1IC0zLjQ5Mzc1LDguMDYyNSAtOC4wNjI1LDguMDYyNWgtMTAyLjEyNWMtNC41Njg3NSwwIC04LjA2MjUsLTMuNDkzNzUgLTguMDYyNSwtOC4wNjI1di0xMDIuMTI1YzAsLTQuNTY4NzUgMy40OTM3NSwtOC4wNjI1IDguMDYyNSwtOC4wNjI1aDEwMi4xMjVjNC41Njg3NSwwIDguMDYyNSwzLjQ5Mzc1IDguMDYyNSw4LjA2MjV6IiBmaWxsPSJ1cmwoI2NvbG9yLTFfVjZIU2hJencyMXg3X2dyMSkiPjwvcGF0aD48cGF0aCBkPSJNMTI1LjUwNjI1LDExMS41MzEyNWwtMi4xNSwtMC44MDYyNWMtMy43NjI1LC0xLjYxMjUgLTUuMzc1LC0yLjY4NzUgLTUuMzc1LC01LjM3NWMwLC0yLjE1IDEuNjEyNSwtMy43NjI1IDQuMDMxMjUsLTMuNzYyNWMyLjE1LDAgMy40OTM3NSwwLjgwNjI1IDQuODM3NSwyLjY4NzVjMC4yNjg3NSwwLjUzNzUgMS4wNzUsMC44MDYyNSAxLjg4MTI1LDAuMjY4NzVsNC41Njg3NSwtMi45NTYyNWMwLjUzNzUsLTAuMjY4NzUgMC44MDYyNSwtMS4zNDM3NSAwLjUzNzUsLTEuODgxMjVjLTIuNjg3NSwtNC4wMzEyNSAtNi40NSwtNS42NDM3NSAtMTEuNTU2MjUsLTUuNjQzNzVjLTcuNzkzNzUsMCAtMTIuNjMxMjUsNC44Mzc1IC0xMi42MzEyNSwxMS4yODc1YzAsNi45ODc1IDQuMDMxMjUsMTAuNDgxMjUgMTAuNDgxMjUsMTIuOWwyLjE1LDAuODA2MjVjNC4wMzEyNSwxLjYxMjUgNS45MTI1LDIuNjg3NSA1LjkxMjUsNS42NDM3NWMwLDIuNDE4NzUgLTEuODgxMjUsNC4zIC01LjM3NSw0LjNjLTMuNzYyNSwwIC01LjY0Mzc1LC0yLjE1IC03LjUyNSwtNC44Mzc1Yy0wLjUzNzUsLTAuNTM3NSAtMS4zNDM3NSwtMC44MDYyNSAtMS44ODEyNSwtMC4yNjg3NWwtNC41Njg3NSwyLjk1NjI1Yy0wLjUzNzUsMC4yNjg3NSAtMC44MDYyNSwxLjA3NSAtMC41Mzc1LDEuODgxMjVjMi42ODc1LDQuNTY4NzUgNi45ODc1LDguMDYyNSAxNC41MTI1LDguMDYyNWM4LjMzMTI1LDAgMTQuMjQzNzUsLTQuMyAxNC4yNDM3NSwtMTIuMDkzNzVjMCwtNi45ODc1IC00LjAzMTI1LC0xMC4yMTI1IC0xMS41NTYyNSwtMTMuMTY4NzV6IiBmaWxsPSJ1cmwoI2NvbG9yLTJfVjZIU2hJencyMXg3X2dyMikiPjwvcGF0aD48cGF0aCBkPSJNMTAzLjQ2ODc1LDk0LjA2MjVoLTYuMTgxMjVjLTAuODA2MjUsMCAtMS4zNDM3NSwwLjUzNzUgLTEuMzQzNzUsMS4zNDM3NXYyNy4xNDM3NWMwLDQuMyAtMS42MTI1LDUuMzc1IC00LjU2ODc1LDUuMzc1Yy0yLjQxODc1LDAgLTQuMywtMS4zNDM3NSAtNS42NDM3NSwtMy4yMjVjLTAuMjY4NzUsLTAuNTM3NSAtMS4wNzUsLTAuODA2MjUgLTEuODgxMjUsLTAuMjY4NzVsLTQuODM3NSwyLjk1NjI1Yy0wLjUzNzUsMC4yNjg3NSAtMC44MDYyNSwxLjM0Mzc1IC0wLjUzNzUsMS44ODEyNWMyLjQxODc1LDQuMDMxMjUgNi45ODc1LDcuNzkzNzUgMTMuNDM3NSw3Ljc5Mzc1YzcuNzkzNzUsMCAxMi45LC00LjAzMTI1IDEyLjksLTEzLjE2ODc1di0yOC40ODc1YzAsLTAuODA2MjUgLTAuNTM3NSwtMS4zNDM3NSAtMS4zNDM3NSwtMS4zNDM3NXoiIGZpbGw9InVybCgjY29sb3ItM19WNkhTaEl6dzIxeDdfZ3IzKSI+PC9wYXRoPjwvZz48L2c+PC9zdmc+"
@@ -164,7 +160,7 @@ const HomePage: NextPage = function () {
 			<h1 id="projetos" />
 
 			<Link href="/AboutMe#skills" passHref>
-				<Button5 className={`${ItemAlignment} ${WidthAuto} mb-40`}>
+				<Button2 className={`${ItemAlignment} ${WidthAuto} mb-40 mt-24`}>
 					<Body1>Ver mais skills</Body1>
 					<Icon
 						path={mdiArrowRight}
@@ -172,89 +168,96 @@ const HomePage: NextPage = function () {
 						size="20px"
 						color="#fff"
 					/>
-				</Button5>
+				</Button2>
 			</Link>
 			<H3Head className={`${TextH3} mb-20`}>Meus projetos</H3Head>
 
-			<HeroSection className="pt-16  bg-heroRed" data-cy="red-heroSection">
-				<Container>
-					<Imagem
-						src={imgSite}
-						alt="pizza"
-						height={300}
-						width={500}
-						quality={100}
-					/>
-				</Container>
-				<a
-					href="https://github.com/kallif003/kallif003.github.io"
-					target="_blank"
-					rel="noreferrer">
-					<div className={`${DivHeroSection} lg:mt-[-20px]`}>
-						<h1 className={H1HeroSection}>Portifólio</h1>
-						<p className={PHeroSection}>
-							Site desenvolvido com Next, Type e Tailwind
-						</p>
+			<div className="flex flex-col items-center py-5 mb-20">
+				<HeroSection className="bg-heroRed" data-cy="red-heroSection">
+					<div className="w-[500px] sm:w-[220px] md:w-[250px] mb-2">
+						<Imagem
+							src={imgSite}
+							alt="pizza"
+							height={387}
+							width={1129}
+							quality={100}
+						/>
 					</div>
-				</a>
-			</HeroSection>
+					<a
+						href="https://github.com/kallif003/kallif003.github.io"
+						target="_blank"
+						rel="noreferrer">
+						<div className={`hover:bg-[#ae2334] ${DivHeroSection}`}>
+							<h1 className="text-xl">Portifólio</h1>
+							<p className="sm:text-[12px] md:text-[15px]">
+								Site desenvolvido com Next, Type e Tailwind
+							</p>
+						</div>
+					</a>
+				</HeroSection>
 
-			<HeroSection
-				className="w-auto  bg-heroPurple"
-				data-cy="purple-heroSection">
-				<Container className={ContainerHeroSection}>
-					<Imagem
-						src={list}
-						alt="pizza"
-						height={800}
-						width={400}
-						quality={100}
-					/>
-					<Imagem
-						src={list2}
-						alt="pizza"
-						height={600}
-						width={400}
-						quality={100}
-					/>
-				</Container>
-				<a
-					href="https://github.com/kallif003/App-listando"
-					target="_blank"
-					rel="noreferrer">
-					<div className={`${DivHeroSection} lg:mt-[-80px]`}>
-						<h1 className={H1HeroSection}>App. Listando</h1>
-						<p className={PHeroSection}>
-							Desenvolvido para criar listas de afazeres
-						</p>
+				<HeroSection className="bg-heroPurple" data-cy="purple-heroSection">
+					<div className="flex flex-row justify-center sm:pl-6 w-full pl-16 md:pl-8 lg:pl-10">
+						<div className="w-[150px] sm:w-[60px] md:w-[70px]">
+							<Imagem
+								className=""
+								src={list}
+								alt="pizza"
+								width={400}
+								quality={100}
+							/>
+						</div>
+						<div className="w-[190px] sm:w-[76px] md:w-[90px] ">
+							<Imagem
+								className=""
+								src={list2}
+								alt="pizza"
+								width={500}
+								quality={100}
+							/>
+						</div>
 					</div>
-				</a>
-			</HeroSection>
+					<a
+						href="https://github.com/kallif003/App-listando"
+						target="_blank"
+						rel="noreferrer">
+						<div
+							className={`hover:bg-[#8100E5] mx-auto sm:mr-0 md:mx-auto ${DivHeroSection}`}>
+							<h1 className="text-xl">App. Listando</h1>
+							<p className="sm:text-[12px] md:text-[15px]">
+								Desenvolvido para criar listas de afazeres
+							</p>
+						</div>
+					</a>
+				</HeroSection>
 
-			<HeroSection
-				className="bg-heroYellow sm:mb-20 mb-44"
-				data-cy="yellow-heroSection">
-				<Container className="sm:w-auto">
-					<Imagem
-						src={img}
-						alt="pizza"
-						height={300}
-						width={500}
-						quality={100}
-					/>
-				</Container>
-				<a
-					href="https://github.com/kallif003/Sistema-Delivery"
-					target="_blank"
-					rel="noreferrer">
-					<div className={DivHeroSection}>
-						<h1 className={H1HeroSection}>Delivery</h1>
-						<p className={PHeroSection}>Sistema desktop para pizzarias</p>
+				<HeroSection className="bg-heroYellow " data-cy="yellow-heroSection">
+					<div className="w-[450px] sm:w-[200px] md:w-[250px] mb-2">
+						<Imagem
+							src={img}
+							alt="pizza"
+							height={687}
+							width={1366}
+							quality={100}
+						/>
 					</div>
-				</a>
-			</HeroSection>
+					<a
+						href="https://github.com/kallif003/Sistema-Delivery"
+						target="_blank"
+						rel="noreferrer">
+						<div className={`${DivHeroSection} hover:bg-[#d7a426]`}>
+							<h1 className="text-xl">Delivery</h1>
+							<p className="sm:text-sm md:text-[15px]">
+								Sistema desktop para pizzarias
+							</p>
+						</div>
+					</a>
+				</HeroSection>
+			</div>
 
-			<Footer aboutMe="/AboutMe" />
+			<div className="flex flex-col items-center">
+				<Footer aboutMe="/AboutMe" />
+			</div>
 		</div>
 	)
 }

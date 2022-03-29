@@ -20,7 +20,11 @@ const Header = (data: any) => {
 			<nav className={HeaderNav} data-cy="div-anchor">
 				<Ul className={HeaderUl} data-cy="nav">
 					<Li className={Hidden}>
-						<Ancora href={data.home} data-testid="btnHome" data-cy="cy-home">
+						<Ancora
+							href={data.home}
+							data-testid="btnHome"
+							data-cy="cy-home"
+							id="a1">
 							Home
 						</Ancora>
 					</Li>
@@ -42,16 +46,15 @@ const Header = (data: any) => {
 					</Li>
 				</Ul>
 			</nav>
-			<Button1 className={Hidden}>
-				<a
-					href="https://api.whatsapp.com/send?l=pt_pt&phone=5512991116524"
-					target="_blank"
-					data-testid="contact-me"
-					data-cy="cy-contact-me"
-					rel="noreferrer">
-					Contate-me
-				</a>
-			</Button1>
+
+			<a
+				href="https://api.whatsapp.com/send?l=pt_pt&phone=5512991116524"
+				target="_blank"
+				data-testid="contact-me"
+				data-cy="cy-contact-me"
+				rel="noreferrer">
+				<Button1 className={Hidden}>Contate-me</Button1>
+			</a>
 		</header>
 	)
 }

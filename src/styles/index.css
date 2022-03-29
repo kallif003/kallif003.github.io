@@ -4,4 +4,66 @@
 
 body {
 	background-color: #171718;
+	font-family: "DM Sans", sans-serif;
+	font-size: 16px;
+}
+
+html {
+	font-family: "DM Sans", sans-serif;
+}
+
+#style-li,
+#style-a {
+	display: block;
+	width: 99%;
+	padding: 5px 0 5px 8px;
+	border-left: 5px solid;
+	position: relative;
+	z-index: 2;
+	text-decoration: none;
+	color: #fff;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+#style-a:hover {
+	border-bottom: 0px;
+	color: #eee;
+}
+#style-li,
+#style-a {
+	border-left: 0px;
+}
+
+#style-li:after,
+#style-a:after {
+	content: "";
+	height: 100%;
+	left: 0;
+	top: 0;
+	width: 0px;
+	border-radius: 5px;
+	position: absolute;
+	transition: all 0.9s ease 10s;
+	-webkit-transition: all 0.2s ease 0s;
+	z-index: -1;
+}
+
+#style-li:hover:after,
+#style-a:hover:after {
+	width: 90%;
+}
+
+#style-li:first-child #style-a:after {
+	background: #f9b53a;
+}
+#style-li:nth-child(2) #style-a:after {
+	background: #c2273a;
+}
+#style-li:nth-child(3) #style-a:after {
+	background: #9000ff;
+}
+#style-li:last-child #style-a:after {
+	background: #fc8771;
 }

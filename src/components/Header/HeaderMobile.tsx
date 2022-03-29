@@ -21,7 +21,7 @@ const HeaderMobile = (data: any) => {
 
 	return (
 		<div className={HiddenInMobile}>
-			<div className={`${HiddenInMobile} ${DivMobile}`} onClick={troca}>
+			<div className={DivMobile} onClick={troca}>
 				<h1
 					className={HeaderH1}
 					data-testid="mobile-text"
@@ -42,43 +42,47 @@ const HeaderMobile = (data: any) => {
 				/>
 			</div>
 
-			<div className={active ? "hidden" : "w-screeb h-screen"} onClick={troca}>
+			<nav className={active ? "hidden" : "w-screeb h-screen"} onClick={troca}>
 				<ul className={UlMobile}>
-					<Li className={LiMobile}>
+					<Li className={LiMobile} id="style-li">
 						<Ancora
 							href={data.homeMobile}
 							data-testid="mobile-home"
-							data-cy="cy-mobile-home">
+							data-cy="cy-mobile-home"
+							id="style-a">
 							Home
 						</Ancora>
 					</Li>
-					<Li className={LiMobile}>
+					<Li className={LiMobile} id="style-li">
 						<Ancora
 							href={data.projectMobile}
 							data-testid="mobile-project"
-							data-cy="cy-mobile-project">
+							data-cy="cy-mobile-project"
+							id="style-a">
 							Projetos
 						</Ancora>
 					</Li>
-					<Li className={LiMobile}>
+					<Li className={LiMobile} id="style-li">
 						<Ancora
 							href={data.aboutMeMobile}
 							data-testid="mobile-about-me"
-							data-cy="cy-mobile-aboutMe">
+							data-cy="cy-mobile-aboutMe"
+							id="style-a">
 							Sobre
 						</Ancora>
 					</Li>
-					<Li className={LiMobile}>
+					<Li className={LiMobile} id="style-li">
 						<Ancora
 							href="https://api.whatsapp.com/send?l=pt_pt&phone=5512991116524"
 							target="_blank"
 							data-testid="mobile-contact-me"
-							data-cy="cy-mobile-contact-me">
+							data-cy="cy-mobile-contact-me"
+							id="style-a">
 							Contate-me
 						</Ancora>
 					</Li>
 				</ul>
-			</div>
+			</nav>
 		</div>
 	)
 }

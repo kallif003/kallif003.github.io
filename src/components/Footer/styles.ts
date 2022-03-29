@@ -3,28 +3,27 @@ grid
 grid-rows-3
 text-white
 sm:hidden 
+md:hidden
 pb-8
 `
 export const FooterDiv1 = `
-col-span-4 
-md:gap-32 
-gap-52 
-pl-20 
-md:pl-14 
+gap-[265px]
+lg:gap-[195px]
 text-yellow
 `
 export const FooterDiv2 = `
 col-span-4 
-md:gap-12 
-gap-32 
+gap-[232px]
+lg:gap-[165px]
 flex 
-md:pl-[220px] 
-pl-80
+pl-[298px]
+lg:pl-[228px]
 `
 export const FooterDiv3 = `
-ml-24
 space-x-2
 mt-[-60px]
+pl-14
+lg:pl-12
 `
 export const FooterDiv4 = `
 col-span-4
@@ -32,6 +31,7 @@ col-span-4
 export const FooterDiv5 = `
 mt-3 
 pb-5
+
 `
 export const FooterH1 = `
 text-2xl 
@@ -46,10 +46,12 @@ pb-5
 `
 export const Hr = `
 border-bordes 
-w-[90%] 
+w-[100%] 
 mt-8
-ml-20 
+
 md:ml-10
+
+
 `
 export const FlexItemCenter = `
 flex 
@@ -59,12 +61,11 @@ items-center
 export const HiddenInFooter = `
 xl:hidden 
 lg:hidden 
-md:hidden
+
 text-white
 `
 export const FooterIcon = `
-ml-20 
-md:ml-10
+
 `
 export const Text = `
 pl-2 
