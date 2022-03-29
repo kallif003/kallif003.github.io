@@ -10,7 +10,7 @@ exports[`Buttons renders Anchor properly 1`] = `
 
 exports[`Buttons renders Button1 properly 1`] = `
 <button
-  class="h-[48px] w-[169px] left-[16px] top-[16px] rounded-[8px] py-[12px] px-[16px] bg-yellow font-['sans']"
+  class="relative w-[169px] h-[48px] py-[10px] px-[20px] bg-yellow rounded-tr rounded-bl duration-500 active:scale-95 hover:border-white hover:border-solid hover:border"
 >
   Teste
 </button>
@@ -18,7 +18,7 @@ exports[`Buttons renders Button1 properly 1`] = `
 
 exports[`Buttons renders Button2 properly 1`] = `
 <button
-  class="sc-bdvvtL kBjrjk"
+  class="h-[48px] w-[328px] rounded-tr rounded-bl py-[12px] px-[16px] bg-yellow md:w-[215px] duration-500 active:scale-95 hover:border-white hover:border-solid hover:border sm:w-[300px] md:w-[340px]"
 >
   Teste
 </button>
@@ -26,7 +26,7 @@ exports[`Buttons renders Button2 properly 1`] = `
 
 exports[`Buttons renders Button3 properly 1`] = `
 <button
-  class="h-[48px] w-[218px] left-[16px] top-[16px] rounded-[8px] py-[12px] px-[16px] bg-yellow text-white font-['sans']"
+  class="h-[48px] w-[172px] rounded-tr rounded-bl py-[12px] px-[16px] border-solid border border-white hover:border-yellow active:scale-95 duration-700"
 >
   Teste
 </button>
@@ -34,39 +34,7 @@ exports[`Buttons renders Button3 properly 1`] = `
 
 exports[`Buttons renders Button4 properly 1`] = `
 <button
-  class="sc-dkPtRN hwZMKS"
->
-  Teste
-</button>
-`;
-
-exports[`Buttons renders Button5 properly 1`] = `
-<button
-  class="h-[48px] w-[328px] left-[16px] top-[144px] rounded-[8px] py-[12px] px-[16px] bg-yellow text-white font-['sans'] md:w-[215px] mini:w-[250px]"
->
-  Teste
-</button>
-`;
-
-exports[`Buttons renders Button6 properly 1`] = `
-<button
-  class="sc-gsDKAQ duEQz"
->
-  Teste
-</button>
-`;
-
-exports[`Buttons renders Button7 properly 1`] = `
-<button
-  class="h-[48px] w-[172px] left-[16px] top-[16px] rounded-[8px] py-[12px] px-[16px] text-white font-['sans'] border-solid border border-white"
->
-  Teste
-</button>
-`;
-
-exports[`Buttons renders Button8 properly 1`] = `
-<button
-  class="h-[48px] w-[198px] left-[16px] top-[16px] rounded-[8px] py-[12px] px-[16px] text-white font-['sans'] border-solid border border-white"
+  class="py-[12px] px-[16px] rounded-tr rounded-bl duration-500 border-solid border border-white hover:border-yellow active:scale-95"
 >
   Teste
 </button>

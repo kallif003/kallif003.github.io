@@ -1,12 +1,6 @@
 import * as React from "react"
 import { render } from "@testing-library/react"
-import {
-	ContainerCards,
-	Cards,
-	WorkTools,
-	AreaAboutMe,
-	AreaTextAboutMe,
-} from "."
+import { ContainerCards, Cards, AreaAboutMe, AreaTextAboutMe } from "."
 
 describe("Cards Components", () => {
 	it("renders ContainerCards properly", () => {
@@ -18,10 +12,6 @@ describe("Cards Components", () => {
 		expect(container.firstChild).toMatchSnapshot()
 	})
 
-	it("renders WorkTools properly", () => {
-		const { container } = render(<WorkTools>Teste</WorkTools>)
-		expect(container.firstChild).toMatchSnapshot()
-	})
 	it("renders AreaAboutMe properly", () => {
 		const { container } = render(<AreaAboutMe>Teste</AreaAboutMe>)
 		expect(container.firstChild).toMatchSnapshot()

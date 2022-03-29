@@ -1,16 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Hero Section Components renders Container properly 1`] = `
-<div
-  class="mx-auto w-[30rem] sm:w-[200px] sm:h-[180px] md:w-[350px] md:h-[250px] lg:w-[300px] mini:w-[200px] mini:h-[170px]"
->
-  Teste
-</div>
-`;
-
 exports[`Hero Section Components renders HeroSection properly 1`] = `
 <div
-  class="w-[1155px] mt-[16px] rounded-[20px] mx-auto mini: pt-20 sm:w-auto sm:m-[10px] sm:h-200px md:w-auto md:m-[10px] md:h-200px lg:w-auto lg:m-[10px] lg:h-[300px] lg:pt-10"
+  class="xl:w-[1055px] mt-[16px] rounded-[20px] py-10 sm:w-[300px] lg:w-[850px] md:w-[350px] flex flex-col items-center"
 >
   Teste
 </div>

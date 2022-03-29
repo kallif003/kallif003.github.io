@@ -5,4 +5,7 @@ module.exports = {
 		loader: "akamai",
 		path: "/",
 	},
+	compiler: {
+		styledComponents: true,
+	},
 }

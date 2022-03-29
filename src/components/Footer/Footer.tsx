@@ -54,7 +54,7 @@ const Footer = (data: any) => {
 						</Ancora>
 					</div>
 
-					<div className="pl-14" data-cy="div-whatsapp">
+					<div className="" data-cy="div-whatsapp">
 						<Ancora
 							href="mailto:kallifabrahao@gmail.com"
 							data-testid="btnEmail">
@@ -71,14 +71,20 @@ const Footer = (data: any) => {
 						</Ancora>
 					</div>
 
-					<div className={`${FooterDiv3} ${FlexItemCenter}`}>
+					<div className={`${FooterDiv3} ${FlexItemCenter} `}>
 						<a
 							href="https://www.linkedin.com/in/kallifabrahao/"
 							target="_blank"
 							rel="noreferrer"
 							data-testid="btnLinkedin"
-							data-cy="footer-linkedin">
-							<Icon path={mdiLinkedin} title="User Profile" size="25px" />
+							data-cy="footer-linkedin"
+							id="social">
+							<Icon
+								path={mdiLinkedin}
+								title="User Profile"
+								size="25px"
+								className="hover:text-yellow active:scale-95"
+							/>
 						</a>
 						<a
 							href="https://github.com/kallif003"
@@ -86,7 +92,13 @@ const Footer = (data: any) => {
 							rel="noreferrer"
 							data-testid="btnGitHub"
 							data-cy="footer-gitHub">
-							<Icon path={mdiGithub} title="User Profile" size="25px" />
+							<Icon
+								path={mdiGithub}
+								title="User Profile"
+								size="25px"
+								id="icon"
+								className="hover:text-yellow active:scale-95"
+							/>
 						</a>
 					</div>
 				</div>

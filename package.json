@@ -15,6 +15,7 @@
 		"lint": "next lint"
 	},
 	"dependencies": {
+		"@fontsource/dm-sans": "^4.5.3",
 		"@mdi/js": "^6.5.95",
 		"@mdi/react": "^1.5.0",
 		"@storybook/addon-postcss": "^2.0.0",
@@ -82,5 +83,8 @@
 		"commitizen": {
 			"path": "./node_modules/cz-conventional-changelog"
 		}
+	},
+	"resolutions": {
+		"styled-components": "^5"
 	}
 }
