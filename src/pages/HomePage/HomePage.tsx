@@ -42,7 +42,7 @@ import {
 const HomePage: NextPage = function () {
 	const downloadCV = () => {
 		const pdf = new JSPDF("portrait", "mm", "a4")
-		pdf.addImage(cv, "PNG", 15, 20, 180, 250)
+		pdf.addImage(cv, "PNG", 0, 0, 190, 300)
 		pdf.save("Kallif Abrahão.pdf")
 	}
 
