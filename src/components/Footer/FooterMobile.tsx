@@ -71,14 +71,24 @@ const FooterMobile = (data: any) => {
 					target="_blank"
 					rel="noreferrer"
 					data-testid="btnMobileLinkedin">
-					<Icon path={mdiLinkedin} title="User Profile" size="25px" />
+					<Icon
+						path={mdiLinkedin}
+						title="User Profile"
+						size="25px"
+						className="hover:text-yellow active:scale-95"
+					/>
 				</a>
 				<a
 					href="https://github.com/kallif003"
 					target="_blank"
 					rel="noreferrer"
 					data-testid="btnMobileGitHub">
-					<Icon path={mdiGithub} title="User Profile" size="25px" />
+					<Icon
+						path={mdiGithub}
+						title="User Profile"
+						size="25px"
+						className="hover:text-yellow active:scale-95"
+					/>
 				</a>
 			</div>
 
