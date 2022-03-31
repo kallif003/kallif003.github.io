@@ -66,7 +66,7 @@ const HomePage: NextPage = function () {
 						Esse é o meu portifólio, ele foi criado com muito carinho para que
 						você possa conhecer mais sobre mim e minhas habilidades.
 					</p>
-					<p>Sinta-se a vontade!</p>
+					<p>Sinta-se à vontade!</p>
 				</div>
 			</div>
 
@@ -176,7 +176,7 @@ const HomePage: NextPage = function () {
 					<div className="w-[500px] sm:w-[220px] md:w-[250px] mb-2">
 						<Imagem
 							src={imgSite}
-							alt="pizza"
+							alt="portifolio"
 							height={387}
 							width={1129}
 							quality={100}
@@ -201,7 +201,7 @@ const HomePage: NextPage = function () {
 							<Imagem
 								className=""
 								src={list}
-								alt="pizza"
+								alt="app"
 								width={400}
 								quality={100}
 							/>
