@@ -16,7 +16,10 @@ const Home: NextPage = function () {
 				/>
 				<meta property="og:url" content="https://kallif003.github.io/" />
 				<meta property="og:type" content="website" />
-				<meta property="og:image" content="/portifolio.png" />
+				<meta
+					property="og:image"
+					content="https://kallif003.github.io/_next/static/media/kallif.d37e3c3c.png?imwidth=3840"
+				/>
 			</Head>
 			<meta httpEquiv="Content-Type" content="text/html;charset=UTF-8" />
 			<link rel="icon" href="/favicon.ico" />
