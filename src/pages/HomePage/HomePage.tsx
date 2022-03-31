@@ -111,8 +111,7 @@ const HomePage: NextPage = function () {
 						web e mobile.
 					</Body1>
 					<Body1>
-						Clica nesse botão abaixo se quiser saber mais sobre as minhas
-						skills!
+						Clique no botão abaixo se quiser saber mais sobre as minhas skills!
 					</Body1>
 					<Link href="/AboutMe" passHref>
 						<Button4 className={`${ItemAlignment} mt-16 sm:mt-28 `} id="btn2">
