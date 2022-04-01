@@ -20,8 +20,8 @@ const Home: NextPage = function () {
 					property="og:image"
 					content="https://kallif003.github.io/_next/static/media/site2.8efbfafb.png"
 				/>
-				<meta property="og:image:width" content="400" />
-				<meta property="og:image:height" content="300" />
+				<meta property="og:image:width" content="100" />
+				<meta property="og:image:height" content="100" />
 			</Head>
 			<meta httpEquiv="Content-Type" content="text/html;charset=UTF-8" />
 			<link rel="icon" href="/favicon.ico" />
