@@ -18,7 +18,7 @@ const Home: NextPage = function () {
 				<meta property="og:type" content="website" />
 				<meta
 					property="og:image"
-					content="https://kallif003.github.io/_next/static/media/site2.8efbfafb.png"
+					content="https://kallif003.github.io/_next/static/media/kallif.d37e3c3c.png"
 				/>
 				<meta property="og:image:width" content="100" />
 				<meta property="og:image:height" content="100" />

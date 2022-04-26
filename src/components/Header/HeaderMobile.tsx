@@ -42,7 +42,7 @@ const HeaderMobile = (data: any) => {
 				/>
 			</div>
 
-			<nav className={active ? "hidden" : "w-screeb h-screen"} onClick={troca}>
+			<nav className={active ? "hidden" : "w-screen h-screen"} onClick={troca}>
 				<ul className={UlMobile}>
 					<Li className={LiMobile} id="style-li">
 						<Ancora
