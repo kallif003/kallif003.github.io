@@ -2,8 +2,8 @@
 module.exports = {
 	reactStrictMode: true,
 	images: {
-		loader: "akamai",
-		path: "/",
+		domains: ["images.prismic.io"],
+		formats: ["image/webp"],
 	},
 	compiler: {
 		styledComponents: true,

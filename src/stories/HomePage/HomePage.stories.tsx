@@ -1,7 +1,7 @@
 import React from "react"
 import { ComponentStory, ComponentMeta } from "@storybook/react"
 
-import HomePage from "../../pages/HomePage"
+import HomePage from "../../pages/HomePage/HomePage"
 
 export default {
 	title: "Prototipo/HomePage",

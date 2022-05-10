@@ -22,7 +22,9 @@
 		"**/*.tsx",
 		"src/pages/index.tsx",
 		"tests/Header.test.tsx",
-		"src/pages/HomePage/HomePage.spec.js"
+		"src/pages/HomePage/HomePage.spec.js",
+		"src/pages/Slice/Slice-simulator.tsx",
+		"src/pages/MyBlog/[uid]/[uid].tsx"
 	],
 	"exclude": ["node_modules"]
 }
