@@ -1,5 +1,4 @@
-import type { NextPage } from "next"
-import React from "react"
+import React, { useContext } from "react"
 import Header from "../../components/Header/Header"
 import { Button1, Button2, Button3, Button4 } from "../../components/Buttons"
 import img from "../../../assets/Image/sistema-delivery.png"
@@ -22,9 +21,10 @@ import {
 	ContainerCards,
 	Cards,
 	Logo,
+	CardsMyBlog,
 } from "../../components/Cards/Cards"
 import { HeroSection, Imagem } from "../../components/HeroSection/HeroSection"
-
+import { AuthContext } from "../../context/index"
 import {
 	GradientDiv,
 	Subtitle,
@@ -39,7 +39,20 @@ import {
 	DivHeroSection,
 } from "../../components/PageStyles/styles"
 
-const HomePage: NextPage = function () {
+interface IPosts {
+	slug: string
+	title: string
+	description: string
+	image: string
+}
+
+interface HomePosts {
+	posts: IPosts[]
+}
+
+function HomePage({ posts }: HomePosts) {
+	const { getPost }: any = useContext(AuthContext)
+
 	const downloadCV = () => {
 		const pdf = new JSPDF("portrait", "mm", "a4")
 		pdf.addImage(cv, "PNG", 0, 0, 190, 300)
@@ -48,7 +61,7 @@ const HomePage: NextPage = function () {
 
 	return (
 		<div className={ContainerHome}>
-			<Header home="HomePage#home" project="#projetos" aboutMe="/AboutMe" />
+			<Header home="./" project="#projetos" aboutMe="/AboutMe" />
 
 			<div className={GradientDiv}>
 				<h1 id="home" className={Title}>
@@ -254,6 +267,46 @@ const HomePage: NextPage = function () {
 				</HeroSection>
 			</div>
 
+			<H3Head className={`${TextH3} sm:my-20 sm:mx-2`}>Meu Blog</H3Head>
+
+			<ContainerCards className="sm:mt-10 mt-20 mb-20">
+				{posts.slice(0, 2).map((post) => (
+					<CardsMyBlog className="flex-col" key={post.slug}>
+						<H3Head className=" absolute z-20 pl-4 pt-4 font-bold">
+							{post.title}
+						</H3Head>
+						<h2 className="text-yellow absolute z-20 pl-4 pt-14 font-bold">
+							{post.description}
+						</h2>
+						<div className="w-[510px]  ">
+							<Imagem
+								src={post.image}
+								alt="pizza"
+								height={300}
+								width={510}
+								quality={100}
+								className="opacity-20"
+							/>
+						</div>
+						<Button1
+							className="text-[18px] mb-5 absolute z-20 top-[-90px] left-[20.5rem]"
+							onClick={() => getPost(post.slug, "./Posts")}>
+							Ler
+						</Button1>
+					</CardsMyBlog>
+				))}
+			</ContainerCards>
+			<Link href={"./MyBlog"} passHref>
+				<Button2 className={`${ItemAlignment} ${WidthAuto} mb-40 mt-24`}>
+					<Body1>Conheça meu Blog</Body1>
+					<Icon
+						path={mdiArrowRight}
+						title="User Profile"
+						size="20px"
+						color="#fff"
+					/>
+				</Button2>
+			</Link>
 			<div className="flex flex-col items-center">
 				<Footer aboutMe="/AboutMe" />
 			</div>

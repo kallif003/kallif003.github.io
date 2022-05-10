@@ -5,4 +5,6 @@ export {
 	AreaAboutMe,
 	ImageAboutMe,
 	AreaTextAboutMe,
+	CardsMyBlog,
+	DivMyBlog,
 } from "./Cards"

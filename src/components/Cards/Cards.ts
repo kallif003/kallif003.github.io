@@ -18,7 +18,6 @@ export const ContainerCards = tw.div`
 export const Cards = tw.div`
 	h-[300px]
 	w-[330px]
-	top-[0.045px]
 	rounded-[8px]
 	py-[10px]
 	px-[24px]
@@ -35,6 +34,44 @@ export const Cards = tw.div`
 	
 	
 	
+`
+export const CardsMyBlog = tw.div`
+	h-[300px]
+	w-[510px]
+	rounded-[8px]
+
+	bg-[#1f1f21]
+	
+	lg:mx-2
+	xl:mx-4
+	sm:mb-[10px]
+	sm:w-[300px]
+	sm:h-[200px]
+	md:w-[330px]
+    mb-2
+	lg:w-[410px]
+	lg:h-[210px]
+		
+`
+export const DivMyBlog = tw.div`
+	h-[300px]
+	w-[425px]
+
+	rounded-[8px]
+	
+	
+	bg-[#1f1f21]
+	mb-10
+	
+	lg:mx-2
+	xl:mx-4
+	sm:mb-[10px]
+	sm:w-[300px]
+	sm:h-[200px]
+	md:w-[330px]
+  
+	lg:w-[410px]
+	lg:h-[210px]
 `
 export const Logo = tw(Image)`
 	100%

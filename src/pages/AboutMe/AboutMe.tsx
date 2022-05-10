@@ -25,7 +25,7 @@ import {
 const AboutMe: NextPage = () => {
 	return (
 		<div className="text-white">
-			<Header home="/HomePage" project="/HomePage#projetos" />
+			<Header home="./" project="./#projetos" />
 
 			<div className="pt-40 ">
 				<AreaAboutMe className="mx-auto" data-cy="div-aboutMe">

@@ -1,10 +1,21 @@
 /* eslint-disable @next/next/no-img-element */
-import type { NextPage } from "next"
+
 import React from "react"
 import Head from "next/head"
-import HomePage from "../pages/HomePage/HomePage"
+import HomePage from "./HomePage/HomePage"
+import { createClient } from "../../prismicio"
 
-const Home: NextPage = function () {
+interface IPosts {
+	slug: string
+	title: string
+	description: string
+	image: string
+}
+
+interface HomePosts {
+	posts: IPosts[]
+}
+function Home({ posts }: HomePosts) {
 	return (
 		<div>
 			<Head>
@@ -25,9 +36,32 @@ const Home: NextPage = function () {
 			</Head>
 			<meta httpEquiv="Content-Type" content="text/html;charset=UTF-8" />
 			<link rel="icon" href="/favicon.ico" />
-			<HomePage />
+			<HomePage posts={posts} />
 		</div>
 	)
 }
 
 export default Home
+
+export async function getStaticProps({ previewData }: any) {
+	const client = createClient({ previewData })
+
+	const home = await client.getAllByType("my-blog", {
+		orderings: [
+			{ field: "document.first_publication_date", direction: "desc" },
+		],
+	})
+
+	const posts = home.map((e) => ({
+		slug: e.uid,
+		title: e.data.title,
+		description: e.data.description,
+		image: e.data.image.url,
+	}))
+
+	return {
+		props: {
+			posts,
+		},
+	}
+}

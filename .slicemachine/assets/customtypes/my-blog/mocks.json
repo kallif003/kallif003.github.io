@@ -1,0 +1,23 @@
+{
+	"id": "2ec89fd1-68a6-42e1-8738-db39434ddd04",
+	"uid": "facere-ea-ullam",
+	"type": "my-blog",
+	"data": {
+		"title": "grow strategic deliverables",
+		"description": "productize robust communities",
+		"image": {
+			"dimensions": {
+				"width": 900,
+				"height": 500
+			},
+			"alt": "Placeholder image",
+			"copyright": null,
+			"url": "https://images.unsplash.com/photo-1537498425277-c283d32ef9db?w=900&h=500&fit=crop"
+		},
+		"content": "deliver B2C relationships",
+		"link": {
+			"link_type": "Web",
+			"url": "https://slicemachine.dev"
+		}
+	}
+}
