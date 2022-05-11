@@ -288,13 +288,13 @@ function HomePage() {
 
 			<H3Head className={`${TextH3} sm:my-20 sm:mx-2`}>Meu Blog</H3Head>
 
-			<ContainerCards className="sm:mt-10 mt-20 mb-20">
+			<ContainerCards className="sm:mt-10 mt-20 mb-20 relative">
 				{posts.slice(0, 2).map((post) => (
 					<CardsMyBlog className="flex-col" key={post.slug}>
-						<H3Head className=" absolute z-20 pl-4 pt-4 font-bold">
+						<H3Head className=" absolute  pl-4 pt-4 font-bold">
 							{post.title}
 						</H3Head>
-						<h2 className="text-yellow absolute z-20 pl-4 pt-14 font-bold">
+						<h2 className="text-yellow absolute  pl-4 pt-14 font-bold sm:text-[12px]">
 							{post.description}
 						</h2>
 						<div className="w-[510px] sm:w-[300px] md:w-[350px] lg:w-[410px]">
@@ -304,7 +304,7 @@ function HomePage() {
 								height={300}
 								width={510}
 								quality={100}
-								className="opacity-20"
+								className="opacity-10"
 							/>
 						</div>
 						<Link

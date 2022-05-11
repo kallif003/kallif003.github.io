@@ -47,7 +47,7 @@ export default function MyBlog({ post }: Posts) {
 							height={315}
 							width={450}
 							quality={100}
-							className="opacity-20"
+							className="opacity-10"
 						/>
 						<Link
 							href={{

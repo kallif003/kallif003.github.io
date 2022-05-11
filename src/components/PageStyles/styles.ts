@@ -91,7 +91,7 @@ export const ButtonMyBlog = `
 text-[18px] 
 mb-5 
 absolute 
-z-20 
+
 top-[-90px] 
 left-[20.5rem]
 sm:top-[-70px] 
