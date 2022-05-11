@@ -26,7 +26,7 @@ exports[`Cards Components renders Cards properly 1`] = `
 
 exports[`Cards Components renders ContainerCards properly 1`] = `
 <div
-  class="flex flex-row justify-center pb-[10px] pt-2 sm:py-0 md:py-0 items-center sm:flex-col md:flex-col"
+  class="flex justify-center xl:justify-start pb-[10px] pt-2 sm:py-0 md:py-0 items-center sm:flex-col md:flex-col"
 >
   Teste
 </div>

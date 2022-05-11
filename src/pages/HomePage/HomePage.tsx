@@ -37,6 +37,7 @@ import {
 	WidthAuto,
 	TextH3,
 	DivHeroSection,
+	ButtonMyBlog,
 } from "../../components/PageStyles/styles"
 import { createClient } from "../../../prismicio"
 
@@ -296,7 +297,7 @@ function HomePage() {
 						<h2 className="text-yellow absolute z-20 pl-4 pt-14 font-bold">
 							{post.description}
 						</h2>
-						<div className="w-[510px]  ">
+						<div className="w-[510px] sm:w-[300px] md:w-[350px] lg:w-[410px]">
 							<Imagem
 								src={post.image}
 								alt="pizza"
@@ -312,9 +313,7 @@ function HomePage() {
 								query: { slug: post.slug },
 							}}
 							passHref>
-							<Button1 className="text-[18px] mb-5 absolute z-20 top-[-90px] left-[20.5rem]">
-								Ler
-							</Button1>
+							<Button1 className={`${ButtonMyBlog}`}>Ler</Button1>
 						</Link>
 					</CardsMyBlog>
 				))}

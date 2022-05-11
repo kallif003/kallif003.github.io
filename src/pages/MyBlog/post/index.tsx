@@ -49,7 +49,11 @@ export default function MyBlog() {
 						quality={100}
 						className="opacity-20 "
 					/>
-					<p className="pt-5 break-words">{p.content}</p>
+					<div className="pr-20">
+						<p className="pt-5 break-words tracking-[2px] leading-10">
+							{p.content}
+						</p>
+					</div>
 				</div>
 			))}
 		</section>

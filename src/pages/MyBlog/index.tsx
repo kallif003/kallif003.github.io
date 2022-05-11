@@ -30,7 +30,7 @@ export default function MyBlog({ post }: Posts) {
 			<h2 className="text-white pb-10 px-10 text-center xl:text-left">
 				Tudo sobre tecnlogia front end
 			</h2>
-			<ContainerCards className="flex-wrap text-white ">
+			<ContainerCards className="flex-wrap text-white xl:justify-start px-5">
 				{post.map((post) => (
 					<DivMyBlog key={post.slug}>
 						<H3Head className=" absolute z-20 pl-4 pt-4 font-bold ">
