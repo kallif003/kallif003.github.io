@@ -63,15 +63,14 @@ export const DivMyBlog = tw.div`
 	bg-[#1f1f21]
 	mb-10
 	
-	lg:mx-2
 	xl:mx-4
-	sm:mb-[10px]
+	sm:mb-[20px]
 	sm:w-[300px]
-	sm:h-[200px]
-	md:w-[330px]
-  
+	sm:h-[210px]
+	
+	lg:mx-2
 	lg:w-[410px]
-	lg:h-[210px]
+	lg:h-[285px]
 `
 export const Logo = tw(Image)`
 	100%

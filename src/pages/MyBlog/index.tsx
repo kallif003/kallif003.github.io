@@ -23,21 +23,23 @@ export default function MyBlog({ post }: Posts) {
 	// const { getPost }: any = useContext(AuthContext)
 
 	return (
-		<section className="items-center">
-			<H1Head className="text-yellow text-[50px] px-10 pt-10">
+		<section className="items-center ">
+			<H1Head className="text-yellow text-[50px] px-10 pt-10 sm:text-[30px] sm:leading-9 pb-2 text-center xl:text-left">
 				Confira os Posts Semanais
 			</H1Head>
-			<h2 className="text-white pb-10 px-10">Tudo sobre tecnlogia front end</h2>
-			<ContainerCards className="flex-wrap text-white">
+			<h2 className="text-white pb-10 px-10 text-center xl:text-left">
+				Tudo sobre tecnlogia front end
+			</h2>
+			<ContainerCards className="flex-wrap text-white ">
 				{post.map((post) => (
 					<DivMyBlog key={post.slug}>
-						<H3Head className=" absolute z-20 pl-4 pt-4 font-bold">
+						<H3Head className=" absolute z-20 pl-4 pt-4 font-bold ">
 							{post.title}
 						</H3Head>
 
-						<h2 className="text-yellow absolute z-20 pl-4 pt-14 font-bold ">
+						<p className="text-yellow absolute z-20 pl-4 pt-14 font-bold sm:text-[12px]">
 							{post.description}
-						</h2>
+						</p>
 
 						<Imagem
 							src={post.image}
@@ -49,11 +51,11 @@ export default function MyBlog({ post }: Posts) {
 						/>
 						<Link
 							href={{
-								pathname: "/MyBlog/uid",
-								query: { post: post.slug },
+								pathname: "/MyBlog/post",
+								query: { slug: post.slug },
 							}}
 							passHref>
-							<Button1 className="text-[18px] mb-5 absolute z-20 top-[-80px] left-60">
+							<Button1 className="text-[18px] mb-5 absolute z-20 top-[-80px] left-60 sm:left-40 sm:w-[120px] lg:left-56">
 								Ler
 							</Button1>
 						</Link>
@@ -67,7 +69,11 @@ export default function MyBlog({ post }: Posts) {
 export async function getStaticProps() {
 	const client = createClient()
 
-	const home = await client.getAllByType("my-blog")
+	const home = await client.getAllByType("my-blog", {
+		orderings: [
+			{ field: "document.first_publication_date", direction: "desc" },
+		],
+	})
 
 	const post = home.map((e) => ({
 		slug: e.uid,
