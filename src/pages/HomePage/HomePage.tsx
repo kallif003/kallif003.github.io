@@ -1,4 +1,4 @@
-import React, { useContext } from "react"
+import React from "react"
 import Header from "../../components/Header/Header"
 import { Button1, Button2, Button3, Button4 } from "../../components/Buttons"
 import img from "../../../assets/Image/sistema-delivery.png"
@@ -24,7 +24,7 @@ import {
 	CardsMyBlog,
 } from "../../components/Cards/Cards"
 import { HeroSection, Imagem } from "../../components/HeroSection/HeroSection"
-import { AuthContext } from "../../context/index"
+
 import {
 	GradientDiv,
 	Subtitle,
@@ -51,8 +51,6 @@ interface HomePosts {
 }
 
 function HomePage({ posts }: HomePosts) {
-	const { getPost }: any = useContext(AuthContext)
-
 	const downloadCV = () => {
 		const pdf = new JSPDF("portrait", "mm", "a4")
 		pdf.addImage(cv, "PNG", 0, 0, 190, 300)
@@ -288,11 +286,16 @@ function HomePage({ posts }: HomePosts) {
 								className="opacity-20"
 							/>
 						</div>
-						<Button1
-							className="text-[18px] mb-5 absolute z-20 top-[-90px] left-[20.5rem]"
-							onClick={() => getPost(post.slug, "./Posts")}>
-							Ler
-						</Button1>
+						<Link
+							href={{
+								pathname: "/MyBlog/post",
+								query: { slug: post.slug },
+							}}
+							passHref>
+							<Button1 className="text-[18px] mb-5 absolute z-20 top-[-90px] left-[20.5rem]">
+								Ler
+							</Button1>
+						</Link>
 					</CardsMyBlog>
 				))}
 			</ContainerCards>
