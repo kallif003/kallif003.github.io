@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import Header from "../../components/Header/Header"
 import { Button1, Button2, Button3, Button4 } from "../../components/Buttons"
 import img from "../../../assets/Image/sistema-delivery.png"
@@ -38,19 +38,39 @@ import {
 	TextH3,
 	DivHeroSection,
 } from "../../components/PageStyles/styles"
+import { createClient } from "../../../prismicio"
 
-interface IPosts {
+interface List {
 	slug: string
 	title: string
 	description: string
 	image: string
 }
 
-interface HomePosts {
-	posts: IPosts[]
-}
+function HomePage() {
+	const [posts, setPost] = useState<List[]>([])
 
-function HomePage({ posts }: HomePosts) {
+	useEffect(() => {
+		async function getProps() {
+			const client = createClient()
+			const home = await client.getAllByType("my-blog", {
+				orderings: [
+					{ field: "document.first_publication_date", direction: "desc" },
+				],
+			})
+
+			const data = home.map((e: any) => ({
+				slug: e.uid,
+				title: e.data.title,
+				description: e.data.description,
+				image: e.data.image.url,
+			}))
+			setPost(data)
+		}
+
+		getProps()
+	})
+
 	const downloadCV = () => {
 		const pdf = new JSPDF("portrait", "mm", "a4")
 		pdf.addImage(cv, "PNG", 0, 0, 190, 300)
@@ -59,7 +79,7 @@ function HomePage({ posts }: HomePosts) {
 
 	return (
 		<div className={ContainerHome}>
-			<Header home="./" project="#projetos" aboutMe="/AboutMe" />
+			<Header home="/" project="#projetos" aboutMe="/AboutMe" />
 
 			<div className={GradientDiv}>
 				<h1 id="home" className={Title}>
