@@ -6,23 +6,20 @@ import Link from "next/link"
 import { PrismicProvider } from "@prismicio/react"
 import { PrismicPreview } from "@prismicio/next"
 import { linkResolver, repositoryName } from "../../prismicio"
-import AuthProvider from "../context/index"
 
 const MyApp = function ({ Component, pageProps }: AppProps) {
 	return (
-		<AuthProvider>
-			<PrismicProvider
-				linkResolver={linkResolver}
-				internalLinkComponent={({ href, children, ...props }) => (
-					<Link href={href}>
-						<a {...props}>{children}</a>
-					</Link>
-				)}>
-				<PrismicPreview repositoryName={repositoryName}>
-					<Component {...pageProps} />
-				</PrismicPreview>
-			</PrismicProvider>
-		</AuthProvider>
+		<PrismicProvider
+			linkResolver={linkResolver}
+			internalLinkComponent={({ href, children, ...props }) => (
+				<Link href={href}>
+					<a {...props}>{children}</a>
+				</Link>
+			)}>
+			<PrismicPreview repositoryName={repositoryName}>
+				<Component {...pageProps} />
+			</PrismicPreview>
+		</PrismicProvider>
 	)
 }
 
