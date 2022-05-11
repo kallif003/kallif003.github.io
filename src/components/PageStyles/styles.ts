@@ -87,3 +87,18 @@ flex-col
 sm:mb-2 
 md:mb-2
 `
+export const ButtonMyBlog = `
+text-[18px] 
+mb-5 
+absolute 
+z-20 
+top-[-90px] 
+left-[20.5rem]
+sm:top-[-70px] 
+sm:left-[10rem] 
+sm:w-[120px] 
+md:top-[-70px] 
+md:left-[10rem]
+lg:top-[-80px] 
+lg:left-[14rem]
+`

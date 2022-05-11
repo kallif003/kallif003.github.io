@@ -3,8 +3,9 @@ import Image from "next/image"
 
 export const ContainerCards = tw.div`
 	flex
-	flex-row
+	
 	justify-center
+	
 	pb-[10px]
 	pt-2
 	sm:py-0
@@ -12,6 +13,7 @@ export const ContainerCards = tw.div`
 	items-center
 	sm:flex-col 
 	md:flex-col 
+	
 	
 	
 `
@@ -46,11 +48,12 @@ export const CardsMyBlog = tw.div`
 	xl:mx-4
 	sm:mb-[10px]
 	sm:w-[300px]
-	sm:h-[200px]
-	md:w-[330px]
+	sm:h-[175px]
+	md:w-[350px]
+	md:h-[210px]
     mb-2
 	lg:w-[410px]
-	lg:h-[210px]
+	lg:h-[240px]
 		
 `
 export const DivMyBlog = tw.div`
