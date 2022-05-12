@@ -11,19 +11,19 @@ interface List {
 	description: string
 	content: string
 	image: string
-	richText: string
+	richText: []
 }
 
 export default function MyBlog() {
 	const router = useRouter()
 	const [post, setPost] = useState<List[]>([])
+
 	const { slug } = router.query
 
 	useEffect(() => {
 		async function getProps() {
 			const client = createClient()
 			const response = [await client.getByUID("my-blog", String(slug))]
-			console.log(response)
 			const data = response.map((p) => ({
 				id: p.id,
 				title: p.data.title,
@@ -32,6 +32,7 @@ export default function MyBlog() {
 				image: p.data.image.url,
 				richText: p.data.richText,
 			}))
+
 			setPost(data)
 		}
 		if (slug !== undefined) {
