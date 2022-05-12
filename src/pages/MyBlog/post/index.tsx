@@ -55,7 +55,7 @@ export default function MyBlog() {
 						className="opacity-20 "
 					/>
 					<div className="pr-20 ">
-						<PrismicRichText field={p.richText} />
+						<PrismicRichText field={undefined} />
 					</div>
 				</div>
 			))}
