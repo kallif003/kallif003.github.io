@@ -1,10 +1,10 @@
 {
-	"id": "2ec89fd1-68a6-42e1-8738-db39434ddd04",
-	"uid": "facere-ea-ullam",
+	"id": "05d0b0e2-d603-422f-ad71-417ef95b0f8d",
+	"uid": "nesciunt-vel-nisi",
 	"type": "my-blog",
 	"data": {
-		"title": "grow strategic deliverables",
-		"description": "productize robust communities",
+		"title": "iterate back-end eyeballs",
+		"description": "whiteboard bricks-and-clicks functionalities",
 		"image": {
 			"dimensions": {
 				"width": 900,
@@ -12,12 +12,250 @@
 			},
 			"alt": "Placeholder image",
 			"copyright": null,
-			"url": "https://images.unsplash.com/photo-1537498425277-c283d32ef9db?w=900&h=500&fit=crop"
+			"url": "https://images.unsplash.com/photo-1600804931749-2da4ce26c869?w=900&h=500&fit=crop"
 		},
-		"content": "deliver B2C relationships",
-		"link": {
-			"link_type": "Web",
-			"url": "https://slicemachine.dev"
-		}
+		"content": "strategize customized niches",
+		"richText": [
+			{
+				"type": "heading1",
+				"text": "Incubate strategic users",
+				"spans": []
+			},
+			{
+				"type": "image",
+				"dimensions": {
+					"width": 900,
+					"height": 500
+				},
+				"alt": "Placeholder image",
+				"copyright": null,
+				"url": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=900&h=500&fit=crop"
+			},
+			{
+				"type": "paragraph",
+				"text": "Laborum reprehenderit ad fugiat qui occaecat enim labore ea enim et. In ad ad tempor ullamco est non est velit minim sint incididunt sit in quis enim. Aliquip proident id sit in eu officia anim incididunt deserunt eiusmod velit.",
+				"spans": []
+			},
+			{
+				"type": "heading1",
+				"text": "Scale visionary action-items",
+				"spans": []
+			},
+			{
+				"type": "image",
+				"dimensions": {
+					"width": 900,
+					"height": 500
+				},
+				"alt": "Placeholder image",
+				"copyright": null,
+				"url": "https://images.unsplash.com/photo-1587905069134-008460d7a636?w=900&h=500&fit=crop"
+			},
+			{
+				"type": "paragraph",
+				"text": "Deserunt reprehenderit non mollit. Ullamco dolore dolor occaecat laboris veniam duis.",
+				"spans": []
+			},
+			{
+				"type": "heading1",
+				"text": "Optimize scalable deliverables",
+				"spans": []
+			},
+			{
+				"type": "image",
+				"dimensions": {
+					"width": 900,
+					"height": 500
+				},
+				"alt": "Placeholder image",
+				"copyright": null,
+				"url": "https://images.unsplash.com/photo-1448932223592-d1fc686e76ea?w=900&h=500&fit=crop"
+			},
+			{
+				"type": "paragraph",
+				"text": "Quis dolor tempor irure dolor irure consectetur quis. Incididunt officia pariatur aliqua sit pariatur sunt adipisicing sit aliquip qui deserunt. Proident est ut cupidatat dolore ad ut Lorem.",
+				"spans": []
+			},
+			{
+				"type": "heading1",
+				"text": "Scale world-class infrastructures",
+				"spans": []
+			},
+			{
+				"type": "image",
+				"dimensions": {
+					"width": 900,
+					"height": 500
+				},
+				"alt": "Placeholder image",
+				"copyright": null,
+				"url": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=900&h=500&fit=crop"
+			},
+			{
+				"type": "paragraph",
+				"text": "Dolore sunt elit dolore cillum officia occaecat fugiat. Magna consectetur adipisicing occaecat.",
+				"spans": []
+			},
+			{
+				"type": "heading1",
+				"text": "Optimize collaborative systems",
+				"spans": []
+			},
+			{
+				"type": "image",
+				"dimensions": {
+					"width": 900,
+					"height": 500
+				},
+				"alt": "Placeholder image",
+				"copyright": null,
+				"url": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?w=900&h=500&fit=crop"
+			},
+			{
+				"type": "paragraph",
+				"text": "Dolor ipsum pariatur amet cillum ea duis anim excepteur nulla. Ut id eiusmod aliquip amet cupidatat deserunt ex minim est aliquip veniam velit esse incididunt.",
+				"spans": []
+			},
+			{
+				"type": "heading1",
+				"text": "Synergize seamless synergies",
+				"spans": []
+			},
+			{
+				"type": "image",
+				"dimensions": {
+					"width": 900,
+					"height": 500
+				},
+				"alt": "Placeholder image",
+				"copyright": null,
+				"url": "https://images.unsplash.com/photo-1607582278043-57198ac8da43?w=900&h=500&fit=crop"
+			},
+			{
+				"type": "paragraph",
+				"text": "Dolore incididunt id est Lorem culpa esse cupidatat enim ullamco nulla eiusmod cillum do dolore nisi.",
+				"spans": []
+			},
+			{
+				"type": "heading1",
+				"text": "Brand frictionless mindshare",
+				"spans": []
+			},
+			{
+				"type": "image",
+				"dimensions": {
+					"width": 900,
+					"height": 500
+				},
+				"alt": "Placeholder image",
+				"copyright": null,
+				"url": "https://images.unsplash.com/photo-1544731612-de7f96afe55f?w=900&h=500&fit=crop"
+			},
+			{
+				"type": "paragraph",
+				"text": "Laboris ullamco occaecat culpa pariatur elit dolore enim. Do non adipisicing dolore eu voluptate non laboris aliquip excepteur.",
+				"spans": []
+			},
+			{
+				"type": "heading1",
+				"text": "Deploy cutting-edge mindshare",
+				"spans": []
+			},
+			{
+				"type": "image",
+				"dimensions": {
+					"width": 900,
+					"height": 500
+				},
+				"alt": "Placeholder image",
+				"copyright": null,
+				"url": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=900&h=500&fit=crop"
+			},
+			{
+				"type": "paragraph",
+				"text": "Consequat sunt fugiat cillum voluptate ea dolore aute et est tempor ullamco. Aliquip ut deserunt ex sint duis irure incididunt excepteur ex mollit ex eiusmod aute.",
+				"spans": []
+			},
+			{
+				"type": "heading1",
+				"text": "Productize rich paradigms",
+				"spans": []
+			},
+			{
+				"type": "image",
+				"dimensions": {
+					"width": 900,
+					"height": 500
+				},
+				"alt": "Placeholder image",
+				"copyright": null,
+				"url": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=900&h=500&fit=crop"
+			},
+			{
+				"type": "paragraph",
+				"text": "Proident laboris veniam ad velit non tempor.",
+				"spans": []
+			},
+			{
+				"type": "heading1",
+				"text": "Grow revolutionary interfaces",
+				"spans": []
+			},
+			{
+				"type": "image",
+				"dimensions": {
+					"width": 900,
+					"height": 500
+				},
+				"alt": "Placeholder image",
+				"copyright": null,
+				"url": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=900&h=500&fit=crop"
+			},
+			{
+				"type": "paragraph",
+				"text": "Cupidatat esse amet dolor veniam irure nisi aute tempor consectetur dolor adipisicing ad aliquip incididunt dolor.",
+				"spans": []
+			},
+			{
+				"type": "heading1",
+				"text": "Visualize dot-com markets",
+				"spans": []
+			},
+			{
+				"type": "image",
+				"dimensions": {
+					"width": 900,
+					"height": 500
+				},
+				"alt": "Placeholder image",
+				"copyright": null,
+				"url": "https://images.unsplash.com/photo-1471897488648-5eae4ac6686b?w=900&h=500&fit=crop"
+			},
+			{
+				"type": "paragraph",
+				"text": "Velit incididunt laborum deserunt id aliqua culpa excepteur nostrud est anim deserunt est. Do est in dolore esse do esse adipisicing laboris duis qui exercitation. Eiusmod cillum non quis Lorem incididunt eu in sint.",
+				"spans": []
+			},
+			{
+				"type": "heading1",
+				"text": "Disintermediate open-source systems",
+				"spans": []
+			},
+			{
+				"type": "image",
+				"dimensions": {
+					"width": 900,
+					"height": 500
+				},
+				"alt": "Placeholder image",
+				"copyright": null,
+				"url": "https://images.unsplash.com/photo-1587614295999-6c1c13675117?w=900&h=500&fit=crop"
+			},
+			{
+				"type": "paragraph",
+				"text": "Minim consequat aute sit.",
+				"spans": []
+			}
+		]
 	}
 }

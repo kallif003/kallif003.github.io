@@ -1,8 +1,19 @@
 {
 	"_cts": {
-		"my-blog": {}
+		"my-blog": {
+			"richText": {
+				"config": {
+					"patternType": "STORY",
+					"blocks": 12
+				}
+			}
+		}
 	},
 	"slices": {
-		"MySlice": {}
+		"MySlice": {
+			"default": {
+				"primary": {}
+			}
+		}
 	}
 }

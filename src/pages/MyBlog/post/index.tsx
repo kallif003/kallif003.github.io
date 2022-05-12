@@ -3,6 +3,7 @@ import { H1Head } from "../../../components/Typography"
 import { Imagem } from "../../../components/HeroSection/HeroSection"
 import { createClient } from "../../../../prismicio"
 import { useRouter } from "next/router"
+import { PrismicRichText } from "@prismicio/react"
 
 interface List {
 	id: string
@@ -10,7 +11,9 @@ interface List {
 	description: string
 	content: string
 	image: string
+	richText: string
 }
+
 export default function MyBlog() {
 	const router = useRouter()
 	const [post, setPost] = useState<List[]>([])
@@ -20,12 +23,14 @@ export default function MyBlog() {
 		async function getProps() {
 			const client = createClient()
 			const response = [await client.getByUID("my-blog", String(slug))]
+			console.log(response)
 			const data = response.map((p) => ({
 				id: p.id,
 				title: p.data.title,
 				description: p.data.description,
 				content: p.data.content,
 				image: p.data.image.url,
+				richText: p.data.richText,
 			}))
 			setPost(data)
 		}
@@ -50,7 +55,7 @@ export default function MyBlog() {
 						className="opacity-20 "
 					/>
 					<div className="pr-20">
-						<p className="pt-5 break-words leading-8">{p.content}</p>
+						<PrismicRichText field={p.richText} />
 					</div>
 				</div>
 			))}
