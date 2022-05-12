@@ -11,22 +11,7 @@ export const _Default = () => (
 			name: "Default",
 			slice_type: "my_slice",
 			items: [],
-			primary: {
-				title: [
-					{
-						type: "heading1",
-						text: "Generate one-to-one e-markets",
-						spans: [],
-					},
-				],
-				description: [
-					{
-						type: "paragraph",
-						text: "Eu ipsum nulla anim qui duis exercitation reprehenderit laboris. Nostrud cillum anim ex ea magna anim minim do in. Eu reprehenderit labore aliquip voluptate quis occaecat deserunt.",
-						spans: [],
-					},
-				],
-			},
+			primary: {},
 			id: "_Default",
 		}}
 	/>
