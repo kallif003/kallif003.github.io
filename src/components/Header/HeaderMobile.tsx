@@ -73,6 +73,15 @@ const HeaderMobile = (data: any) => {
 					</Li>
 					<Li className={LiMobile} id="style-li">
 						<Ancora
+							href={data.blog}
+							data-testid="mobile-about-me"
+							data-cy="cy-mobile-aboutMe"
+							id="style-a">
+							Blog
+						</Ancora>
+					</Li>
+					<Li className={LiMobile} id="style-li">
+						<Ancora
 							href="https://api.whatsapp.com/send?l=pt_pt&phone=5512991116524"
 							target="_blank"
 							data-testid="mobile-contact-me"

@@ -15,6 +15,7 @@ const Header = (data: any) => {
 				homeMobile={data.home}
 				projectMobile={data.project}
 				aboutMeMobile={data.aboutMe}
+				blog={data.blog}
 			/>
 
 			<nav className={HeaderNav} data-cy="div-anchor">
@@ -42,6 +43,14 @@ const Header = (data: any) => {
 							data-testid="about-me"
 							data-cy="cy-aboutMe">
 							Sobre
+						</Ancora>
+					</Li>
+					<Li className={Hidden}>
+						<Ancora
+							href={data.blog}
+							data-testid="about-me"
+							data-cy="cy-aboutMe">
+							Blog
 						</Ancora>
 					</Li>
 				</Ul>
