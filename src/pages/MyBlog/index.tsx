@@ -23,14 +23,14 @@ export default function MyBlog({ post }: Posts) {
 	// const { getPost }: any = useContext(AuthContext)
 
 	return (
-		<section className="items-center ">
-			<H1Head className="text-yellow text-[50px] px-10 pt-10 sm:text-[30px] sm:leading-9 pb-2 text-center xl:text-left">
+		<section className="items-center text-center">
+			<H1Head className="text-yellow text-[50px] px-10 pt-10 sm:text-[30px] sm:leading-9 pb-2  ">
 				Confira os Posts Semanais
 			</H1Head>
-			<h2 className="text-white pb-10 px-10 text-center xl:text-left">
+			<h2 className="text-white pb-10 px-10 text-center ">
 				Tudo sobre tecnlogia front end
 			</h2>
-			<ContainerCards className="flex-wrap text-white xl:justify-start px-5">
+			<ContainerCards className="flex-wrap text-white  px-5">
 				{post.map((post) => (
 					<DivMyBlog key={post.slug}>
 						<H3Head className=" absolute z-20 pl-4 pt-4 font-bold ">
@@ -55,7 +55,7 @@ export default function MyBlog({ post }: Posts) {
 								query: { slug: post.slug },
 							}}
 							passHref>
-							<Button1 className="text-[18px] mb-5 absolute z-20 top-[-80px] left-60 sm:left-40 sm:w-[120px] lg:left-56">
+							<Button1 className="text-[18px] mb-5 absolute z-20 top-[-80px] left-28 sm:left-20 sm:w-[120px] lg:left-24">
 								Ler
 							</Button1>
 						</Link>

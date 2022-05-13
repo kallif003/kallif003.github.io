@@ -36,7 +36,7 @@ px-5
 export const HeaderUl = `
 md:space-x-10 
 lg:space-x-12 
-xl:space-x-20
+xl:space-x-8
 `
 export const HeaderNav = `
 self-center 

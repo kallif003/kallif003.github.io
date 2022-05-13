@@ -40,9 +40,11 @@ export default function MyBlog() {
 		}
 	})
 	return (
-		<section className="items-center text-white">
+		<section className="w-screen">
 			{post.map((p) => (
-				<div key={p.id} className="my-10 mx-10">
+				<div
+					key={p.id}
+					className="my-10  text-center flex flex-col items-center text-white">
 					<H1Head className="text-yellow sm:text-[30px] sm:leading-9 pb-2">
 						{p.title}
 					</H1Head>
@@ -50,12 +52,12 @@ export default function MyBlog() {
 					<Imagem
 						src={p.image}
 						alt={p.title}
-						height={515}
-						width={1600}
+						height={415}
+						width={800}
 						quality={100}
 						className="opacity-20 "
 					/>
-					<div className="pr-20 ">
+					<div className=" w-[50rem] mt-5 text-left sm:w-[18rem] bg-slate-500">
 						<PrismicRichText field={p.richText} />
 					</div>
 				</div>

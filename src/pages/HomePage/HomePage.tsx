@@ -80,7 +80,12 @@ function HomePage() {
 
 	return (
 		<div className={ContainerHome}>
-			<Header home="/" project="#projetos" aboutMe="/AboutMe" />
+			<Header
+				home="/"
+				project="#projetos"
+				aboutMe="/AboutMe"
+				blog={"/MyBlog"}
+			/>
 
 			<div className={GradientDiv}>
 				<h1 id="home" className={Title}>
