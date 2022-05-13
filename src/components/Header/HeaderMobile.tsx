@@ -72,11 +72,7 @@ const HeaderMobile = (data: any) => {
 						</Ancora>
 					</Li>
 					<Li className={LiMobile} id="style-li">
-						<Ancora
-							href={data.blog}
-							data-testid="mobile-about-me"
-							data-cy="cy-mobile-aboutMe"
-							id="style-a">
+						<Ancora href={data.blog} data-cy="cy-mobile-aboutMe" id="style-a">
 							Blog
 						</Ancora>
 					</Li>

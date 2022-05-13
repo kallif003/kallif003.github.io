@@ -46,10 +46,7 @@ const Header = (data: any) => {
 						</Ancora>
 					</Li>
 					<Li className={Hidden}>
-						<Ancora
-							href={data.blog}
-							data-testid="about-me"
-							data-cy="cy-aboutMe">
+						<Ancora href={data.blog} data-cy="cy-aboutMe">
 							Blog
 						</Ancora>
 					</Li>
