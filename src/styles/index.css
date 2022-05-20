@@ -64,6 +64,9 @@ html {
 #style-li:nth-child(3) #style-a:after {
 	background: #9000ff;
 }
+#style-li:nth-child(4) #style-a:after {
+	background: #3d3d3d;
+}
 #style-li:last-child #style-a:after {
 	background: #fc8771;
 }

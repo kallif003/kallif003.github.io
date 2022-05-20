@@ -45,6 +45,7 @@ export const WelcomeH1 = `
 text-[30px]
 md:text-[25px]
 `
+
 export const ItemAlignment = `
 flex 
 flex-row 
