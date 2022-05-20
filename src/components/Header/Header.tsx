@@ -45,11 +45,6 @@ const Header = (data: any) => {
 							Sobre
 						</Ancora>
 					</Li>
-					<Li className={Hidden}>
-						<Ancora href={data.blog} data-cy="cy-aboutMe">
-							Blog
-						</Ancora>
-					</Li>
 				</Ul>
 			</nav>
 

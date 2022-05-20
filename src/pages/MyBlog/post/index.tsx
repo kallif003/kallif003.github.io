@@ -78,6 +78,7 @@ export default function MyBlog() {
 								paragraph: ({ children }) => (
 									<p className="paragraph ">{children}</p>
 								),
+								list: ({ children }) => <ul className=" ">{children}</ul>,
 							}}
 						/>
 					</div>
