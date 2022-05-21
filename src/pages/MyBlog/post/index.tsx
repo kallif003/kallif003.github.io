@@ -12,6 +12,7 @@ interface List {
 	content: string
 	image: string
 	richText: []
+	date: string
 }
 
 export default function MyBlog() {
@@ -31,6 +32,11 @@ export default function MyBlog() {
 				content: p.data.content,
 				image: p.data.image.url,
 				richText: p.data.richText,
+				date: p.last_publication_date
+					.slice(0, 10)
+					.split("-")
+					.reverse()
+					.join("/"),
 			}))
 
 			setPost(data)
@@ -48,7 +54,8 @@ export default function MyBlog() {
 					<H1Head className="text-yellow sm:text-[30px] sm:leading-9 pb-2">
 						{p.title}
 					</H1Head>
-					<h2 className="pb-5">{p.description}</h2>
+					<h2 className="pb-2">{p.description}</h2>
+					<p className="pb-5 text-[10px]">{`Postado em ${p.date}`}</p>
 					<div className="sm:w-[20rem] md:w-[40rem]">
 						<Imagem
 							src={p.image}
