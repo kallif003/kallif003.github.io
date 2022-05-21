@@ -45,6 +45,11 @@ const Header = (data: any) => {
 							Sobre
 						</Ancora>
 					</Li>
+					<Li className={Hidden}>
+						<Ancora href={data.blog} data-cy="cy-aboutMe">
+							Blog
+						</Ancora>
+					</Li>
 				</Ul>
 			</nav>
 
@@ -53,7 +58,8 @@ const Header = (data: any) => {
 				target="_blank"
 				data-testid="contact-me"
 				data-cy="cy-contact-me"
-				rel="noreferrer">
+				rel="noreferrer"
+				className="mr-5">
 				<Button1 className={Hidden}>Contate-me</Button1>
 			</a>
 		</header>

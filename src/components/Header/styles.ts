@@ -36,11 +36,11 @@ px-5
 export const HeaderUl = `
 md:space-x-10 
 lg:space-x-12 
-xl:space-x-8
+xl:space-x-5
 `
 export const HeaderNav = `
 self-center 
-ml-8
+ml-5
 `
 export const UlMobile = `
 pl-2
