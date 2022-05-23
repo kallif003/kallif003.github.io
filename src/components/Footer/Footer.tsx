@@ -39,7 +39,7 @@ const Footer = (data: any) => {
 					<div>
 						<Ancora
 							href={type ? "/AboutMe" : "./"}
-							data-testid="btnSobreMim"
+							data-testid="btnAboutMe"
 							data-cy="cy-footer-home">
 							<Body2 className="pl-8 pb-6">
 								{type ? "Sobre mim" : "Home Page"}
@@ -47,8 +47,8 @@ const Footer = (data: any) => {
 						</Ancora>
 
 						<Ancora
-							href="./#projetos"
-							data-testid="btnProjetos"
+							href="./#project"
+							data-testid="btnProject"
 							data-cy="cy-footer-project">
 							<Body2 className="pl-8">Projetos</Body2>
 						</Ancora>

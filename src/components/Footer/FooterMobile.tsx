@@ -35,7 +35,7 @@ const FooterMobile = (data: any) => {
 					<Body2 className={TextMobile}>{type ? "Sobre mim" : "Home"}</Body2>
 				</Ancora>
 
-				<Ancora href="./#projetos" data-testid="btnMobileProjetos">
+				<Ancora href="./#projects" data-testid="btnMobileProjects">
 					<Body2 className={TextMobile}>Projetos</Body2>
 				</Ancora>
 			</div>

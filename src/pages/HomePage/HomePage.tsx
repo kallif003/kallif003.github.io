@@ -82,7 +82,7 @@ function HomePage() {
 		<div className={ContainerHome}>
 			<Header
 				home="/"
-				project="#projetos"
+				project="#projects"
 				aboutMe="/AboutMe"
 				blog={"/MyBlog"}
 			/>
@@ -108,7 +108,7 @@ function HomePage() {
 			</div>
 
 			<div className={DivButtons}>
-				<Link href="#projetos" passHref>
+				<Link href="#projects" passHref>
 					<Button1 className="text-[18px] mb-5">Ver projetos</Button1>
 				</Link>
 				<Button3
@@ -193,7 +193,7 @@ function HomePage() {
 				</Cards>
 			</ContainerCards>
 
-			<h1 id="projetos" />
+			<h1 id="projects" />
 
 			<Link href="/AboutMe#skills" passHref>
 				<Button2 className={`${ItemAlignment} ${WidthAuto} mb-40 mt-24`}>

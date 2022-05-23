@@ -10,13 +10,13 @@ describe("Footer", () => {
 	})
 	test("About me button", () => {
 		render(<Footer />)
-		const btnSobreMim = screen.getByTestId("btnSobreMim")
-		fireEvent.click(btnSobreMim)
+		const btnAboutMe = screen.getByTestId("btnAboutMe")
+		fireEvent.click(btnAboutMe)
 	})
 	test("projects button", () => {
 		render(<Footer />)
-		const btnProjetos = screen.getByTestId("btnProjetos")
-		fireEvent.click(btnProjetos)
+		const btnProject = screen.getByTestId("btnProject")
+		fireEvent.click(btnProject)
 	})
 	test("Email button", () => {
 		render(<Footer />)

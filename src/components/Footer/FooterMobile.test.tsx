@@ -15,8 +15,8 @@ describe("Footer", () => {
 	})
 	test("projects button", () => {
 		render(<FooterMobile />)
-		const btnProjetos = screen.getByTestId("btnMobileProjetos")
-		fireEvent.click(btnProjetos)
+		const btnMobileProjects = screen.getByTestId("btnMobileProjects")
+		fireEvent.click(btnMobileProjects)
 	})
 	test("Email button", () => {
 		render(<FooterMobile />)
